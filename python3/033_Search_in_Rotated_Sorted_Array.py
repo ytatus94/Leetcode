@@ -47,3 +47,43 @@ class Solution:
         if nums[end] == target:
             return end
         return -1
+
+# lintcode 62
+class Solution:
+    """
+    @param A: an integer rotated sorted array
+    @param target: an integer to be searched
+    @return: an integer
+    """
+    def search(self, A, target):
+        # write your code here
+        if len(A) == 0:
+            return -1
+            
+        start = 0
+        end = len(A) - 1
+        while start + 1 < end:
+            mid = start + (end - start) // 2
+            if A[mid] == target:
+                return mid
+                
+            if A[mid] > A[start]:
+                # S...T...M...max min...E
+                if A[start] <= target <= A[mid]:
+                    end = mid
+                # S...M...T...max min...E
+                else:
+                    start = mid
+            else:
+                # S...max min...M...T...E
+                if A[mid] <= target <= A[end]:
+                    start = mid
+                # S...max min...T...M...E
+                else:
+                    end = mid
+
+        if A[start] == target:
+            return start
+        if A[end] == target:
+            return end
+        return -1
