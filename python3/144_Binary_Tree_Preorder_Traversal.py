@@ -6,12 +6,13 @@
 #         self.right = None
 
 class Solution:
+#     # 方法一: Traverse (32ms)
 #     def preorderTraversal(self, root):
 #         """
 #         :type root: TreeNode
 #         :rtype: List[int]
 #         """
-#         # 方法一: Traverse (32ms)
+         
 #         result = []
 #         self.traverse(root, result)
 #         return result
