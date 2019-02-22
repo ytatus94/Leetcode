@@ -65,3 +65,39 @@ class Solution:
         if matrix[target_row][head] == target or matrix[target_row][tail] == target:
             return True
         return False
+
+# lintcode 28
+class Solution:
+    """
+    @param matrix: matrix, a list of lists of integers
+    @param target: An integer
+    @return: a boolean, indicate whether matrix contains target
+    """
+    def searchMatrix(self, matrix, target):
+        # write your code here
+        nrows = len(matrix)
+        if nrows == 0:
+            return False
+            
+        ncols = len(matrix[0])
+        if ncols == 0:
+            return False
+        
+        # find which row
+        start = 0
+        end = nrows - 1
+        while start + 1 < end:
+            mid = start + (end - start) // 2
+            if matrix[mid][0] == target:
+                return True
+            elif matrix[mid][0] > target:
+                end = mid
+            elif matrix[mid][0] < target:
+                start = mid
+                
+        if target in matrix[start]:
+            return True
+        if target in matrix[end]:
+            return True
+        
+        return False
