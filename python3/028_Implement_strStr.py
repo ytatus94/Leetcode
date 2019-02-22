@@ -17,3 +17,20 @@ class Solution:
             i += 1
             
         return -1
+
+# lintcode 13
+class Solution:
+    """
+    @param source: 
+    @param target: 
+    @return: return the index
+    """
+    def strStr(self, source, target):
+        # Write your code here
+        if source is None or target is None:
+            return 0
+            
+        if target not in source:
+            return -1
+        else:
+            return source.index(target)
