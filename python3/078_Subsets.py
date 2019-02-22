@@ -36,5 +36,3 @@ class Solution:
             return results
         self.helper(nums, results, subset + [nums[current_index]], current_index + 1)
         self.helper(nums, results, subset, current_index + 1) # 會跑到這行時，表示上一行已經跑到底，又一直 return 到 current_index 所指向的元素，所以 current_index 可以往後移動一個元素了
-
-# https://www.jiuzhang.com/solution/subsets/#tag-highlight-lang-python
