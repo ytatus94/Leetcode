@@ -16,3 +16,16 @@ class Solution:
         
         # 更簡單的方法，又跑得快
         return target in nums
+
+# lintcode 63
+class Solution:
+    """
+    @param A: an integer ratated sorted array and duplicates are allowed
+    @param target: An integer
+    @return: a boolean 
+    """
+    def search(self, A, target):
+        # write your code here
+        if len(A) == 0:
+            return False
+        return target in A
