@@ -36,3 +36,36 @@ class Solution:
             return results
         self.helper(nums, results, subset + [nums[current_index]], current_index + 1)
         self.helper(nums, results, subset, current_index + 1) # 會跑到這行時，表示上一行已經跑到底，又一直 return 到 current_index 所指向的元素，所以 current_index 可以往後移動一個元素了
+        
+# lintcode 17
+class Solution:
+    """
+    @param nums: A set of numbers
+    @return: A list of lists
+    """
+    def subsets(self, nums):
+        # write your code here
+        if nums is None:
+            return []
+            
+        nums = sorted(nums)
+        results  = []
+        subset = []
+        self.dfs(nums, results, subset, 0)
+        
+        return results
+        
+    # def dfs(self, nums, results, subset, index):
+    #     if index == len(nums):
+    #         results.append(subset[:])
+    #         return results
+            
+    #     self.dfs(nums, results, subset + [nums[index]], index + 1)
+    #     self.dfs(nums, results, subset, index + 1)
+    
+    def dfs(self, nums, results, subset, index):
+        results.append(subset[:])
+        for i in range(index, len(nums)):
+            subset.append(nums[index])
+            self.dfs(nums, results, subset, index + 1)
+            subset.pop()
