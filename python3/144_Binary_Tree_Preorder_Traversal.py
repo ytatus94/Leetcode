@@ -6,28 +6,29 @@
 #         self.right = None
 
 class Solution:
-#     # 方法一: Traverse (32ms)
-#     def preorderTraversal(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: List[int]
-#         """
+    # 方法一: Traverse (32ms)
+    def preorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
          
-#         result = []
-#         self.traverse(root, result)
-#         return result
+        result = []
+        self.traverse(root, result)
+        return result
 
-#     # 定義: 傳回以 root 為根的遍歷的結果
-#     def traverse(self, root, result):
-#         # 出口: 處理空節點
-#         if root is None:
-#             return
+    # 定義: 傳回以 root 為根的遍歷的結果
+    def traverse(self, root, result):
+        # 出口: 處理空節點
+        if root is None:
+            return
         
-#         # 拆解
-#         result.append(root.val)
-#         self.traverse(root.left, result)
-#         self.traverse(root.right, result)
-            
+        # 拆解
+        result.append(root.val)
+        self.traverse(root.left, result)
+        self.traverse(root.right, result)
+
+class Solution:     
     # 方法二: divide conquer
     def preorderTraversal(self, root):
         result = []
@@ -62,35 +63,37 @@ class Solution:
     @return: Preorder in ArrayList which contains node values.
     """
     # divide conquer
-    # def preorderTraversal(self, root):
-    #     # write your code here
-    #     result = []
-    #     if root is None:
-    #         return result
+    def preorderTraversal(self, root):
+        # write your code here
+        result = []
+        if root is None:
+            return result
             
-    #     left = self.preorderTraversal(root.left)
-    #     right = self.preorderTraversal(root.right)
+        left = self.preorderTraversal(root.left)
+        right = self.preorderTraversal(root.right)
         
-    #     result.append(root.val)
-    #     result = result + left
-    #     result = result + right
+        result.append(root.val)
+        result = result + left
+        result = result + right
         
-    #     return result
-        
+        return result
+
+class Solution:
     # traverse
-    # def preorderTraversal(self, root):
-    #     result = []
-    #     self.helper(root, result)
-    #     return result
+    def preorderTraversal(self, root):
+        result = []
+        self.helper(root, result)
+        return result
         
-    # def helper(self, root, result):
-    #     if root is None:
-    #         return
+    def helper(self, root, result):
+        if root is None:
+            return
         
-    #     result.append(root.val)
-    #     self.helper(root.left, result)
-    #     self.helper(root.right, result)
-    
+        result.append(root.val)
+        self.helper(root.left, result)
+        self.helper(root.right, result)
+
+class Solution:
     # Non recursion
     def preorderTraversal(self, root):
         result = []
