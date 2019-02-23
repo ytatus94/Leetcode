@@ -6,28 +6,29 @@
 #         self.right = None
 
 class Solution:
-#     depth = 0 # 要每個函數都能看到 depth 所以要放在函數外面
+    depth = 0 # 要每個函數都能看到 depth 所以要放在函數外面
     
-#     def maxDepth(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: int
-#         """
-#         # traverse (76ms)
-#         self.traverse(root, 1) # root 當前深度是 1
-#         return self.depth
+    def maxDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        # traverse (76ms)
+        self.traverse(root, 1) # root 當前深度是 1
+        return self.depth
         
-#     def traverse(self, root, curr_depth):
-#         # 出口
-#         if root is None:
-#             return
-#
-#         if self.depth < curr_depth:
-#             self.depth = curr_depth
-#         # 拆解
-#         self.traverse(root.left, curr_depth + 1) # +1 是加上目前這層
-#         self.traverse(root.right, curr_depth + 1)
+    def traverse(self, root, curr_depth):
+        # 出口
+        if root is None:
+            return
 
+        if self.depth < curr_depth:
+            self.depth = curr_depth
+        # 拆解
+        self.traverse(root.left, curr_depth + 1) # +1 是加上目前這層
+        self.traverse(root.right, curr_depth + 1)
+
+class Solution:
     # divide conquer
     def maxDepth(self, root):
         depth = 0
@@ -57,18 +58,19 @@ class Solution:
     """
     # divide conquer
     # 傳回以 root 為根的子樹的最大深度
-    # def maxDepth(self, root):
-    #     # write your code here
-    #     if root is None:
-    #         return 0
+    def maxDepth(self, root):
+        # write your code here
+        if root is None:
+            return 0
             
-    #     left = self.maxDepth(root.left)
-    #     right = self.maxDepth(root.right)
+        left = self.maxDepth(root.left)
+        right = self.maxDepth(root.right)
 
-    #     max_depth = 1 + max(left, right)
+        max_depth = 1 + max(left, right)
         
-    #     return max_depth
-    
+        return max_depth
+
+class Solution:
     # traverse
     def maxDepth(self, root):
         self.max_depth = 0
