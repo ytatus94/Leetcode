@@ -12,31 +12,32 @@ class Solution:
     @return: the root of the minimum subtree
     """
     # Traverse + divide conquer
-    # findSubtree() 本身用的是 Traverse
-    # def findSubtree(self, root):
-    #     # write your code here
-    #     self.minimum = float('inf') # 要記錄當前 subtree sum 的最小值
-    #     self.subtree = None # 紀錄是哪一個節點有最小的 subtree sum
-    #     self.helper(root)
-    #     return self.subtree
+    findSubtree() 本身用的是 Traverse
+    def findSubtree(self, root):
+        # write your code here
+        self.minimum = float('inf') # 要記錄當前 subtree sum 的最小值
+        self.subtree = None # 紀錄是哪一個節點有最小的 subtree sum
+        self.helper(root)
+        return self.subtree
      
-    # # helper() 本身是 divide conquer，用來計算和傳回 minimum of the subtree sum
-    # def helper(self, node):
-    #     if node is None:
-    #         return 0
+    # helper() 本身是 divide conquer，用來計算和傳回 minimum of the subtree sum
+    def helper(self, node):
+        if node is None:
+            return 0
         
-    #     # divide conquer
-    #     left = self.helper(node.left)
-    #     right = self.helper(node.right)
+        # divide conquer
+        left = self.helper(node.left)
+        right = self.helper(node.right)
         
-    #     subtree_sum = node.val + left + right
+        subtree_sum = node.val + left + right
         
-    #     if subtree_sum < self.minimum:
-    #         self.minimum = subtree_sum
-    #         self.subtree = node
+        if subtree_sum < self.minimum:
+            self.minimum = subtree_sum
+            self.subtree = node
             
-    #     return subtree_sum
-    
+        return subtree_sum
+
+class Solution:
     # divide conquer
     def findSubtree(self, root):
         subtree, minimum, sum = self.helper(root)
