@@ -5,35 +5,35 @@
 #         self.left = None
 #         self.right = None
 
-# class Solution:
-#     last_node = None
+class Solution:
+    last_node = None
     
-#     # traverse
-#     def flatten(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: void Do not return anything, modify root in-place instead.
-#         """
-#         # 用 divide conquer 的想法：
-#         # 先各自把左右子樹 flatten (用前序遍歷)
-#         # 再把 根節點 + 左子樹的前序遍歷 flatten + 右子樹的前序遍歷 flatten 接起來
-#         # 但是左子樹的 flatten 是要接到 root 的右邊
-#         # 右子樹的 flatten 要接到左子樹的 flatten 的最後一點
-#         # 所以要記錄上一層的最後一個節點
+    # traverse
+    def flatten(self, root):
+        """
+        :type root: TreeNode
+        :rtype: void Do not return anything, modify root in-place instead.
+        """
+        # 用 divide conquer 的想法：
+        # 先各自把左右子樹 flatten (用前序遍歷)
+        # 再把 根節點 + 左子樹的前序遍歷 flatten + 右子樹的前序遍歷 flatten 接起來
+        # 但是左子樹的 flatten 是要接到 root 的右邊
+        # 右子樹的 flatten 要接到左子樹的 flatten 的最後一點
+        # 所以要記錄上一層的最後一個節點
 
-#         # 出口
-#         if root is None:
-#             return
+        # 出口
+        if root is None:
+            return
         
-#         if self.last_node is not None:
-#             self.last_node.left = None
-#             self.last_node.right = root
+        if self.last_node is not None:
+            self.last_node.left = None
+            self.last_node.right = root
         
-#         # 拆解
-#         self.last_node = root
-#         right = root.right # 要先把 root 的右子樹記下來
-#         self.flatten(root.left) # 在這個函數內部會把 root 的右邊接成左子樹
-#         self.flatten(right) # 如果沒先把 root 的右子樹記下來，跑這個函數時會出錯
+        # 拆解
+        self.last_node = root
+        right = root.right # 要先把 root 的右子樹記下來
+        self.flatten(root.left) # 在這個函數內部會把 root 的右邊接成左子樹
+        self.flatten(right) # 如果沒先把 root 的右子樹記下來，跑這個函數時會出錯
         
 # divide conquer
 class Solution:
