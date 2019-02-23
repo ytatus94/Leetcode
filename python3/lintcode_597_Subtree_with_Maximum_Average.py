@@ -12,31 +12,32 @@ class Solution:
     @return: the root of the maximum average of subtree
     """
     # Traverse + divide conquer
-    # def findSubtree2(self, root):
-    #     # write your code here
-    #     self.node = None
-    #     self.max_avg = float('-inf')
-    #     self.helper(root)
-    #     return self.node
+    def findSubtree2(self, root):
+        # write your code here
+        self.node = None
+        self.max_avg = float('-inf')
+        self.helper(root)
+        return self.node
         
-    # # return subtree sum and node counts
-    # def helper(self, root):
-    #     if root is None:
-    #         return 0, 0
+    # return subtree sum and node counts
+    def helper(self, root):
+        if root is None:
+            return 0, 0
             
-    #     left_sum, left_counts = self.helper(root.left)
-    #     right_sum , right_counts = self.helper(root.right)
+        left_sum, left_counts = self.helper(root.left)
+        right_sum , right_counts = self.helper(root.right)
         
-    #     curr_sum = root.val + left_sum + right_sum
-    #     curr_counts = 1 + left_counts + right_counts
-    #     curr_avg = float(curr_sum) / curr_counts
+        curr_sum = root.val + left_sum + right_sum
+        curr_counts = 1 + left_counts + right_counts
+        curr_avg = float(curr_sum) / curr_counts
         
-    #     if curr_avg > self.max_avg:
-    #         self.max_avg = curr_avg
-    #         self.node = root
+        if curr_avg > self.max_avg:
+            self.max_avg = curr_avg
+            self.node = root
             
-    #     return curr_sum, curr_counts
-        
+        return curr_sum, curr_counts
+
+class Solution:
     # divide conquer
     def findSubtree2(self, root):
         node, sum, counts = self.helper(root)
