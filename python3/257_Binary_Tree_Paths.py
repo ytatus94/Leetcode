@@ -7,32 +7,33 @@
 
 class Solution:
     # divide conquer
-#     def binaryTreePaths(self, root):
-#         """
-#         :type root: TreeNode
-#         :rtype: List[str]
-#         """
-#         paths = []
+    def binaryTreePaths(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[str]
+        """
+        paths = []
         
-#         # 出口
-#         if root is None:
-#             return paths
+        # 出口
+        if root is None:
+            return paths
         
-#         # 因為有個 -> 符號，所以要考慮是葉子節點的特殊情況
-#         if root.left is None and root.right is None:
-#             paths.append(str(root.val))
+        # 因為有個 -> 符號，所以要考慮是葉子節點的特殊情況
+        if root.left is None and root.right is None:
+            paths.append(str(root.val))
         
-#         # 拆解
-#         left_paths = self.binaryTreePaths(root.left)
-#         right_paths = self.binaryTreePaths(root.right)
+        # 拆解
+        left_paths = self.binaryTreePaths(root.left)
+        right_paths = self.binaryTreePaths(root.right)
         
-#         for path in left_paths:
-#             paths.append(str(root.val) + '->' + path)
-#         for path in right_paths:
-#             paths.append(str(root.val) + '->' + path)
+        for path in left_paths:
+            paths.append(str(root.val) + '->' + path)
+        for path in right_paths:
+            paths.append(str(root.val) + '->' + path)
 
-#         return paths
+        return paths
 
+class Solution:
     # traverse
     def binaryTreePaths(self, root):
         paths = []
@@ -70,27 +71,27 @@ class Solution:
     """
     # divide conquer
     # 傳回所有以 root 為根的所有路徑
-    # def binaryTreePaths(self, root):
-    #     # write your code here
-    #     paths = []
-    #     if root is None:
-    #         return paths
+    def binaryTreePaths(self, root):
+        # write your code here
+        paths = []
+        if root is None:
+            return paths
             
-    #     if root.left is None and root.right is None:
-    #         return [str(root.val)]
+        if root.left is None and root.right is None:
+            return [str(root.val)]
             
-    #     left_paths = self.binaryTreePaths(root.left)
-    #     right_paths = self.binaryTreePaths(root.right)
+        left_paths = self.binaryTreePaths(root.left)
+        right_paths = self.binaryTreePaths(root.right)
         
-    #     for left in left_paths: # 所有以 root.left 為根的路徑可能有好幾條
-    #         paths.append(str(root.val) + '->' + left)
+        for left in left_paths: # 所有以 root.left 為根的路徑可能有好幾條
+            paths.append(str(root.val) + '->' + left)
             
-    #     for right in right_paths:
-    #         paths.append(str(root.val) + '->' + right)
+        for right in right_paths:
+            paths.append(str(root.val) + '->' + right)
             
-    #     return paths
+        return paths
         
-
+class Solution:
     # traverse
     def binaryTreePaths(self, root):
         result = []
