@@ -18,21 +18,22 @@ class Solution:
         self.traverse(root.right, result)
         result.append(root.val)
 
+class Solution:
     # divide conquer (32ms)
-#     def postorderTraversal(self, root):
-#         result = []
-#         # 出口:
-#         if root is None:
-#             return result
-#         # 拆解:
-#         left = self.postorderTraversal(root.left)
-#         right = self.postorderTraversal(root.right)
-#         # 合併:
-#         result = result + left
-#         result = result + right
-#         result.append(root.val)
+    def postorderTraversal(self, root):
+        result = []
+        # 出口:
+        if root is None:
+            return result
+        # 拆解:
+        left = self.postorderTraversal(root.left)
+        right = self.postorderTraversal(root.right)
+        # 合併:
+        result = result + left
+        result = result + right
+        result.append(root.val)
         
-#         return result
+        return result
 
 # lintcode 68
 """
@@ -49,35 +50,37 @@ class Solution:
     @return: Postorder in ArrayList which contains node values.
     """
     # divide conquer
-    # def postorderTraversal(self, root):
-    #     # write your code here
-    #     result = []
-    #     if root is None:
-    #         return result
+    def postorderTraversal(self, root):
+        # write your code here
+        result = []
+        if root is None:
+            return result
             
-    #     left = self.postorderTraversal(root.left)
-    #     right = self.postorderTraversal(root.right)
+        left = self.postorderTraversal(root.left)
+        right = self.postorderTraversal(root.right)
         
-    #     result = result + left
-    #     result = result + right
-    #     result.append(root.val)
+        result = result + left
+        result = result + right
+        result.append(root.val)
         
-    #     return result
-    
+        return result
+
+class Solution:
     # traverse
-    # def postorderTraversal(self, root):
-    #     result = []
-    #     self.helper(root, result)
-    #     return result
+    def postorderTraversal(self, root):
+        result = []
+        self.helper(root, result)
+        return result
         
-    # def helper(self, root, result):
-    #     if root is None:
-    #         return
+    def helper(self, root, result):
+        if root is None:
+            return
         
-    #     self.helper(root.left, result)
-    #     self.helper(root.right, result)
-    #     result.append(root.val)
-    
+        self.helper(root.left, result)
+        self.helper(root.right, result)
+        result.append(root.val)
+
+class Solution:
     # Non-recurssion
     def postorderTraversal(self, root):
         result = []
