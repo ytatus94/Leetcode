@@ -19,24 +19,25 @@ class Solution:
         self.traverse(root.left, result)
         result.append(root.val)
         self.traverse(root.right, result)
-    
-#     # divide conquer (76ms)
-#     def inorderTraversal(self, root):
-#         result = []
-#         # 出口:
-#         if root is None:
-#             return result
-        
-#         # 分: 無腦調用左右子樹
-#         left = self.inorderTraversal(root.left)
-#         right = self.inorderTraversal(root.right)
-        
-#         # 合:
-#         result = result + left
-#         result.append(root.val)
-#         result = result + right
 
-#         return result
+class Solution:
+    # divide conquer (76ms)
+    def inorderTraversal(self, root):
+        result = []
+        # 出口:
+        if root is None:
+            return result
+        
+        # 分: 無腦調用左右子樹
+        left = self.inorderTraversal(root.left)
+        right = self.inorderTraversal(root.right)
+        
+        # 合:
+        result = result + left
+        result.append(root.val)
+        result = result + right
+
+        return result
 
 # lintcode 67
 """
@@ -53,35 +54,37 @@ class Solution:
     @return: Inorder in ArrayList which contains node values.
     """
     # divide conquer
-    # def inorderTraversal(self, root):
-    #     # write your code here
-    #     result = []
-    #     if root is None:
-    #         return result
+    def inorderTraversal(self, root):
+        # write your code here
+        result = []
+        if root is None:
+            return result
             
-    #     left = self.inorderTraversal(root.left)
-    #     right = self.inorderTraversal(root.right)
+        left = self.inorderTraversal(root.left)
+        right = self.inorderTraversal(root.right)
         
-    #     result = result + left
-    #     result.append(root.val)
-    #     result = result + right
+        result = result + left
+        result.append(root.val)
+        result = result + right
 
-    #     return result
-        
+        return result
+
+class Solution:
     # traverse
-    # def inorderTraversal(self, root):
-    #     result = []
-    #     self.helper(root, result)
-    #     return result
+    def inorderTraversal(self, root):
+        result = []
+        self.helper(root, result)
+        return result
         
-    # def helper(self, root, result):
-    #     if root is None:
-    #         return
+    def helper(self, root, result):
+        if root is None:
+            return
         
-    #     self.helper(root.left, result)
-    #     result.append(root.val)
-    #     self.helper(root.right, result)
-    
+        self.helper(root.left, result)
+        result.append(root.val)
+        self.helper(root.right, result)
+
+class Solution:
     def inorderTraversal(self, root):
         result = []
         if root is None:
