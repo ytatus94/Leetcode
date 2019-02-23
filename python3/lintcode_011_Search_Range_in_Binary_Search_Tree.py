@@ -14,20 +14,20 @@ class Solution:
     @return: return: Return all keys that k1<=key<=k2 in ascending order
     """
     # traverse
-    # def searchRange(self, root, k1, k2):
-    #     # write your code here
-    #     self.result = []
-    #     self.helper(root, k1, k2)
-    #     return self.result
+    def searchRange(self, root, k1, k2):
+        # write your code here
+        self.result = []
+        self.helper(root, k1, k2)
+        return self.result
         
-    # def helper(self, root, k1, k2):
-    #     if root is None:
-    #         return None
+    def helper(self, root, k1, k2):
+        if root is None:
+            return None
             
-    #     self.helper(root.left, k1, k2)
-    #     if k1 <= root.val and root.val <= k2:
-    #         self.result.append(root.val)
-    #     self.helper(root.right, k1, k2)
+        self.helper(root.left, k1, k2)
+        if k1 <= root.val and root.val <= k2:
+            self.result.append(root.val)
+        self.helper(root.right, k1, k2)
 
 class Solution:   
     # divide conquer
