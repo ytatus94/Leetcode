@@ -30,3 +30,33 @@ class MinStack:
 # obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.getMin()
+
+# lintcode 12
+class MinStack:
+    
+    def __init__(self):
+        # do intialization if necessary
+        self.items = []
+    """
+    @param: number: An integer
+    @return: nothing
+    """
+    def push(self, number):
+        # write your code here
+        self.items.append(number)
+    """
+    @return: An integer
+    """
+    def pop(self):
+        # write your code here
+        if len(self.items) == 0:
+            return None
+        return self.items.pop()
+    """
+    @return: An integer
+    """
+    def min(self):
+        # write your code here
+        if len(self.items) == 0:
+            return None
+        return min(self.items)
