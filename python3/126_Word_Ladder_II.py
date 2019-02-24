@@ -58,3 +58,65 @@ class Solution:
             self.dfs(beginWord, endWord, dist, res, path)
             path.pop()
             last_word = path[-1]
+
+# lintcode 121
+class Solution:
+    """
+    @param: start: a string
+    @param: end: a string
+    @param: dict: a set of string
+    @return: a list of lists of string
+    """
+    def findLadders(self, start, end, dict):
+        # write your code here
+        if start in dict:
+            dict.remove(start)
+        if end not in dict:
+            dict.add(end)
+        
+        results = []
+        distance = {word: 0 for word in dict}
+        # 找出最短路徑用 BFS
+        # 先計算每個點到 start 的距離
+        self.bfs(start, end, dict, distance)
+        print(distance)
+        # 找出所有滿足條件的方案用 DFS
+        # 再沿著最短路徑，從 end 一層一層往上走到 start
+        self.dfs(start, end, distance, results, [end], end)
+        
+        return results
+        
+    def bfs(self, start, end, dict, distance):
+        queue = [(start, 0)] # 第二個參數是和 start 的距離
+
+        while queue:
+            word, dist = queue.pop(0)
+            distance[word] = dist
+            if word == end:
+                return
+            for i in range(len(word)):
+                for ch in 'abcdefghijklmnopqrstuvwxyz':
+                    if word[i] == ch:
+                        continue
+                    new_word = word[:i] + ch + word[i + 1:]
+                    if new_word in dict:
+                        queue.append((new_word, dist + 1))
+                        dict.remove(new_word)
+        
+    def dfs(self, start, end, distance, results, path, curr_word):
+        if curr_word == start:
+            print(path[::-1])
+            results.append(path[::-1])
+        for key, val in distance.items():
+            if val == distance[path[-1]] - 1:
+                different_char_count = 0
+                for i in range(len(curr_word)):
+                    if curr_word[i] != key[i]:
+                        different_char_count += 1
+                if different_char_count > 1:
+                    continue
+                path.append(key)
+                curr_word = path[-1]
+                self.dfs(start, end, distance, results, path, curr_word)
+                path.pop()
+                curr_word = path[-1]
