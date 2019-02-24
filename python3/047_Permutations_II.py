@@ -36,3 +36,44 @@ class Solution:
             self.dfs(nums, results, permutation, visited)
             visited[i] = 0 # 沒用過就標記 0
             permutation.pop()
+
+# lintcode 16
+class Solution:
+    """
+    @param: :  A list of integers
+    @return: A list of unique permutations
+    """
+
+    def permuteUnique(self, nums):
+        # write your code here
+        results = []
+        if nums is None:
+            return results
+            
+        # 有重複的數字，一定要排序
+        nums = sorted(nums)
+        
+        permutations = []
+        visited = [False for i in range(len(nums))]
+        
+        self.dfs(nums, visited, results, permutations)
+        
+        return results
+        
+    def dfs(self, nums, visited, results, permutations):
+        if len(permutations) == len(nums):
+            results.append(permutations[:])
+            return
+        
+        for i in range(len(nums)):
+            # 用過的不可以再用
+            if visited[i]:
+                continue
+            # 當前元素的值和前一個元素一樣，但是前面的元素卻還沒用過，那當前元素就不可以使用
+            if i > 0 and nums[i] == nums[i - 1] and visited[i - 1] == False:
+                continue
+            permutations.append(nums[i])
+            visited[i] = True # 用過了標記成 True
+            self.dfs(nums, visited, results, permutations)
+            permutations.pop()
+            visited[i] = False
