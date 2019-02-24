@@ -35,3 +35,38 @@ class Solution:
             results.append(current_level)
         
         return results
+
+# lintcode 69
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: A Tree
+    @return: Level order a list of lists of integer
+    """
+    def levelOrder(self, root):
+        # write your code here
+        results = []
+        if root is None:
+            return results
+        
+        queue = [root]
+
+        while queue:
+            curr_level = []
+            for i in range(len(queue)):
+                node = queue.pop(0)
+                curr_level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            results.append(curr_level)
+            
+        return results
