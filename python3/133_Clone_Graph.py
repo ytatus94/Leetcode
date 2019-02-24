@@ -61,3 +61,55 @@ class Solution:
                     queue.append(neighbor)
                     
         return result
+
+# lintcode 137
+"""
+Definition for a undirected graph node
+class UndirectedGraphNode:
+    def __init__(self, x):
+        self.label = x
+        self.neighbors = []
+"""
+
+
+class Solution:
+    """
+    @param: node: A undirected graph node
+    @return: A undirected graph node
+    """
+    def cloneGraph(self, node):
+        # write your code here
+        if node is None:
+            return
+        
+        # 用 BFS 找到所有的點
+        nodes = self.get_all_nodes(node)
+        # clone 所有的點
+        mapping = dict()
+        for n in nodes:
+            mapping[n] = UndirectedGraphNode(n.label)
+            
+        # clone 所有的邊
+        for n in nodes:
+            new_node = mapping[n]
+            for neighbor in n.neighbors:
+                new_neighbor = mapping[neighbor]
+                new_node.neighbors.append(new_neighbor)
+                
+        return mapping[node]
+        
+    def get_all_nodes(self, node):
+        if node is None:
+            return []
+            
+        q = [node]
+        hash = [node]
+        
+        while q:
+            n = q.pop(0)
+            for neighbor in n.neighbors:
+                if neighbor not in hash:
+                    q.append(neighbor)
+                    hash.append(neighbor)
+        
+        return hash
