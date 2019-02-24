@@ -46,3 +46,40 @@ class Solution:
     # 更簡潔的寫法，但是比較慢
     # def isPalindrome(self, string):
     #     return string == string[::-1]
+
+# lintcode 136
+class Solution:
+    """
+    @param: s: A string
+    @return: A list of lists of string
+    """
+    def partition(self, s):
+        # write your code here
+        results = []
+        if s is None or len(s) == 0:
+            return results
+        partition = []
+        self.dfs(s, 0, results, partition)
+        return results
+        
+    def dfs(self, s, index, results, partition):
+        if index == len(s):
+            results.append(partition[:])
+            return
+        for i in range(index, len(s)):
+            substr = s[index : i + 1]
+            # if not self.is_palindrome(substr):
+            #     continue
+            if substr != substr[::-1]:
+                continue
+            self.dfs(s, i + 1, results, partition + [substr])
+            
+    # def is_palindrome(self, substr):
+    #     head = 0
+    #     tail = len(substr) - 1
+    #     while head < tail:
+    #         if substr[head] != substr[tail]:
+    #             return False
+    #         head += 1
+    #         tail -= 1
+    #     return True
