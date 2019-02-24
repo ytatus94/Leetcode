@@ -33,3 +33,44 @@ class Solution:
             left_to_right = not left_to_right
             
         return results
+
+# lintcode 71
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: A Tree
+    @return: A list of lists of integer include the zigzag level order traversal of its nodes' values.
+    """
+    def zigzagLevelOrder(self, root):
+        # write your code here
+        if root is None:
+            return []
+            
+        results =[]
+        q = [root]
+        left_to_right = True
+        while q:
+            curr_level = []
+            for i in range(len(q)):
+                node = q.pop(0)
+                curr_level.append(node.val)
+                if node.left is not None:
+                    q.append(node.left)
+                if node.right is not None:
+                    q.append(node.right)
+                    
+            if left_to_right:
+                results.append(curr_level)
+            else:
+                reversed_curr_level = list(reversed(curr_level))
+                results.append(reversed_curr_level)
+            left_to_right = not left_to_right
+            
+        return results
