@@ -55,49 +55,119 @@ class Solution:
                 indegree[neighbor] = indegree[neighbor] + 1
                 
         return indegree
-    
+ 
+class Solution:
     # 把函數包裝起來，讓主函數變得簡潔
-    # def topSort(self, graph):
-    #     if graph is None:
-    #         return []
-    #     # 計算每個點的 indegree
-    #     indegree = self.get_indegree(graph)
-    #     # 找起點
-    #     start_nodes = self.get_start_nodes(graph, indegree)
-    #     # 用 BFS 找出拓樸排序
-    #     order = self.bfs(start_nodes, indegree)
+    def topSort(self, graph):
+        if graph is None:
+            return []
+        # 計算每個點的 indegree
+        indegree = self.get_indegree(graph)
+        # 找起點
+        start_nodes = self.get_start_nodes(graph, indegree)
+        # 用 BFS 找出拓樸排序
+        order = self.bfs(start_nodes, indegree)
         
-    #     if len(order) == len(graph):
-    #         return order
+        if len(order) == len(graph):
+            return order
             
-    #     return None
+        return None
         
-    # def get_start_nodes(self, graph, indegree):
-    #     # nodes = []
+    def get_start_nodes(self, graph, indegree):
+        # nodes = []
         
-    #     # for node in graph:
-    #     #     if indegree[node] == 0:
-    #     #         nodes.append(node)
+        # for node in graph:
+        #     if indegree[node] == 0:
+        #         nodes.append(node)
                 
-    #     # return nodes
-    #     return [node for node in graph if indegree[node] == 0]
+        # return nodes
+        return [node for node in graph if indegree[node] == 0]
         
-    # def bfs(self, start_nodes, indegree):
-    #     queue = []
-    #     order = []
+    def bfs(self, start_nodes, indegree):
+        queue = []
+        order = []
         
-    #     # 把所有起點放到 queue 裡面
-    #     # hash map 要跟 queue 同步處理
-    #     for node in start_nodes:
-    #         queue.append(node)
-    #         order.append(node)
+        # 把所有起點放到 queue 裡面
+        # hash map 要跟 queue 同步處理
+        for node in start_nodes:
+            queue.append(node)
+            order.append(node)
             
-    #     while queue:
-    #         n = queue.pop(0)
-    #         for neighbor in n.neighbors:
-    #             indegree[neighbor] = indegree[neighbor] - 1
-    #             if indegree[neighbor] == 0:
-    #                 queue.append(neighbor)
-    #                 order.append(neighbor)
+        while queue:
+            n = queue.pop(0)
+            for neighbor in n.neighbors:
+                indegree[neighbor] = indegree[neighbor] - 1
+                if indegree[neighbor] == 0:
+                    queue.append(neighbor)
+                    order.append(neighbor)
                     
-    #     return order
+        return order
+
+# lintcode 120
+class Solution:
+    """
+    @param: start: a string
+    @param: end: a string
+    @param: dict: a set of string
+    @return: An integer
+    """
+    def ladderLength(self, start, end, dict):
+        # write your code here
+        if end not in dict:
+            dict.add(end)
+            
+        queue = [(start, 1)]
+        
+        while queue:
+            word, dist = queue.pop(0)
+            if word == end:
+                return dist
+            for i in range(len(word)):
+                for ch in 'abcdefghijklmnopqrstuvwxyz':
+                    if word[i] == ch:
+                        continue
+                    new_word = word[:i] + ch + word[i+1:]
+                    if new_word in dict:
+                        queue.append((new_word, dist+1))
+                        dict.remove(new_word)
+        
+        return 0
+        
+class Solution:
+    def ladderLength(self, start, end, dict):
+        if len(dict) == 0:
+            return 0
+        
+        if start == end:
+            return 1
+        
+        if end not in dict:
+            dict.add(end) # dict 是一個 set() 所以用 add()
+        
+        queue = [start]
+        hash_set = set([start]) # 不知道為什麼要用 set() 才不會超時
+        length = 0
+        
+        while queue:
+            length += 1
+            for i in range(len(queue)): # 層級遍歷
+                word = queue.pop(0)
+                if word == end:
+                    return length
+                for new_word in self.get_next_word(word, dict):
+                    if new_word in hash_set: # 已經用過的單字不可再使用
+                        continue
+                    queue.append(new_word)
+                    hash_set.add(new_word)
+        return 0
+        
+    def get_next_word(self, word, dict):
+        new_words = []
+        for i in range(len(word)):
+            for ch in 'abcdefghijklmnopqrstuvwxyz':
+                if word[i] == ch:
+                    continue
+                new_word = word[:i] + ch + word[i+1:]
+                if new_word in dict:
+                    new_words.append(new_word)
+        return new_words
