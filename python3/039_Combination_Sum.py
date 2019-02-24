@@ -31,3 +31,32 @@ class Solution:
             # 因為可以重複選取，所以 start_index 仍然是從 i 開始
             self.dfs(nums, i, results, combination, sum + nums[i], target)
             combination.pop()
+
+# lintcode 135
+class Solution:
+    """
+    @param candidates: A list of integers
+    @param target: An integer
+    @return: A list of lists of integers
+    """
+    def combinationSum(self, candidates, target):
+        # write your code here
+        if candidates is None:
+            return []
+            
+        nums = sorted(list(set(candidates)))
+        
+        results = []
+        self.dfs(nums, target, 0, results, [])
+        return results
+        
+    def dfs(self, nums, target, index, results, curr):
+        if sum(curr) == target:
+            results.append(curr.copy())
+            return
+        
+        for i in range(index, len(nums)):
+            if sum(curr + [nums[i]]) > target:
+                break
+            # 由於可以重複選取，所以 index 仍然從 i 開始
+            self.dfs(nums, target, i, results, curr + [nums[i]])
