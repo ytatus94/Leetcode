@@ -73,3 +73,60 @@ class Solution:
             if v > 0:
                 return False
         return True
+
+ # lintcode 615
+class Solution:
+    """
+    @param: numCourses: a total of n courses
+    @param: prerequisites: a list of prerequisite pairs
+    @return: true if can finish all courses or false
+    """
+    def canFinish(self, numCourses, prerequisites):
+        # write your code here
+        if prerequisites is None or len(prerequisites) == 0:
+            return True
+            
+        graph = self.build_graph(prerequisites)
+        return self.topo_sort(graph)
+        
+    def build_graph(self, prerequisites):
+        graph = {}
+        for pre in prerequisites:
+            for course in pre:
+                if course not in graph:
+                    graph[course] = set()
+                    
+        for pre in prerequisites:
+            for i in range(1, len(pre)):
+                graph[pre[i]].add(pre[i - 1])
+                
+        return graph
+    
+    def get_indegree(self, graph):
+        indegrees = {node:0 for node in graph} # 初始化成 0
+        
+        for node in graph:
+            for neighbor in graph[node]:
+                indegrees[neighbor] += 1
+                
+        return indegrees
+        
+    def topo_sort(self, graph):
+        indegrees = self.get_indegree(graph)
+        
+        queue = []
+        for node in graph:
+            if indegrees[node] == 0:
+                queue.append(node)
+        
+        while queue:
+            course = queue.pop(0)
+            for neighbor in graph[course]:
+                indegrees[neighbor] -= 1
+                if indegrees[neighbor] == 0:
+                    queue.append(neighbor)
+
+        for k, v in indegrees.items():
+            if indegrees[k] != 0:
+                return False
+        return True
