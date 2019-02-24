@@ -46,7 +46,7 @@ class Solution:
                     queue.append((neighbor_x, neighbor_y))
                     self.visited[neighbor_x][neighbor_y] = True
 
- # lintcode 433
+# lintcode 433
 class Solution:
     """
     @param grid: a boolean 2D matrix
