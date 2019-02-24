@@ -32,3 +32,36 @@ class Solution:
             # 下一個要從第 i + 1 個數開始選起，因為不可重複選取同一個數字
             self.dfs(nums, i + 1, results, combination, sum + nums[i], target)
             combination.pop()
+
+# lintcode 153
+class Solution:
+    """
+    @param num: Given the candidate numbers
+    @param target: Given the target number
+    @return: All the combinations that sum to target
+    """
+    def combinationSum2(self, num, target):
+        # write your code here
+        results  = []
+        
+        if num is None:
+            return results
+        
+        # 有重複的數，每一個元素只可以取一次
+        # 不同元素，值相同，可以取
+        # 只排序，不要 set()
+        nums = sorted(num) 
+        self.dfs(nums, target, 0, results, [])
+        return results
+        
+    def dfs(self, nums, target, index, results, curr):
+        if sum(curr) == target:
+            results.append(curr.copy())
+            return
+        
+        for i in range(index, len(nums)):
+            if i != index and nums[i] == nums[i - 1]:
+                continue
+            if sum(curr + [nums[i]]) > target:
+                break
+            self.dfs(nums, target, index + 1, results, curr + [nums[i]])
