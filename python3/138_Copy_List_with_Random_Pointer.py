@@ -1,76 +1,78 @@
 class Solution(object):
     # 方法1:
-#     def copyRandomList(self, head):
-#         """
-#         :type head: RandomListNode
-#         :rtype: RandomListNode
-#         """
-#         if head is None:
-#             return None
+    def copyRandomList(self, head):
+        """
+        :type head: RandomListNode
+        :rtype: RandomListNode
+        """
+        if head is None:
+            return None
         
-#         # 1. copy nodes
-#         self.copy_nodes(head)
-#         # 2. copy random
-#         self.copy_random(head)
+        # 1. copy nodes
+        self.copy_nodes(head)
+        # 2. copy random
+        self.copy_random(head)
         
-#         return self.split_list(head)
+        return self.split_list(head)
         
-#     # 邊掃描 1->2->3->4 邊拷貝節點建立成 1->1'->2->2'->3->3'->4->4'
-#     def copy_nodes(self, head):
-#         while head is not None:
-#             # 拷貝節點
-#             node = RandomListNode(head.label)
-#             node.next = head.next
-#             node.random = head.random # 這時候 node 的 random 並不是我要的結果
+    # 邊掃描 1->2->3->4 邊拷貝節點建立成 1->1'->2->2'->3->3'->4->4'
+    def copy_nodes(self, head):
+        while head is not None:
+            # 拷貝節點
+            node = RandomListNode(head.label)
+            node.next = head.next
+            node.random = head.random # 這時候 node 的 random 並不是我要的結果
             
-#             # 把拷貝的節點接上原本的 list
-#             head.next = node
-#             # 再把 head 移動到原本 list 中的下一個節點
-#             head = head.next.next
+            # 把拷貝的節點接上原本的 list
+            head.next = node
+            # 再把 head 移動到原本 list 中的下一個節點
+            head = head.next.next
             
-#     def copy_random(self, head):
-#         while head != None:
-#             if head.next.random != None: # head.next 就是指向新拷貝的節點
-#                 head.next.random = head.random.next
-#             head = head.next.next
+    def copy_random(self, head):
+        while head != None:
+            if head.next.random != None: # head.next 就是指向新拷貝的節點
+                head.next.random = head.random.next
+            head = head.next.next
             
-#     def split_list(self, head):
-#         new_head = head.next
-#         while head != None:
-#             curr = head.next
-#             head.next = curr.next # 把原先 list 中的下一個接回來
-#             head = head.next # 移動到下一個原先 list 中的節點
+    def split_list(self, head):
+        new_head = head.next
+        while head != None:
+            curr = head.next
+            head.next = curr.next # 把原先 list 中的下一個接回來
+            head = head.next # 移動到下一個原先 list 中的節點
             
-#             if curr.next != None: # curr 有可能是在原先加上拷貝過後的 list 中的最後一個
-#                 curr.next = curr.next.next
-#         return new_head
+            if curr.next != None: # curr 有可能是在原先加上拷貝過後的 list 中的最後一個
+                curr.next = curr.next.next
+        return new_head
 
+class Solution(object):
     # 方法2: 用 hash map
-#     def copyRandomList(self, head):
-#         self.dummy = RandomListNode(0)
-#         self.curr = self.dummy
-#         self.hash_map = {}
+    def copyRandomList(self, head):
+        self.dummy = RandomListNode(0)
+        self.curr = self.dummy
+        self.hash_map = {}
         
-#         while head != None:
-#             if head in self.hash_map:
-#                 new_node = self.hash_map[head]
-#             else:
-#                 new_node = RandomListNode(head.label)
-#                 self.hash_map[head] = new_node
-#             self.curr.next = new_node
+        while head != None:
+            if head in self.hash_map:
+                new_node = self.hash_map[head]
+            else:
+                new_node = RandomListNode(head.label)
+                self.hash_map[head] = new_node
+            self.curr.next = new_node
             
-#             if head.random is not None:
-#                 if head.random in self.hash_map:
-#                     new_node.random = self.hash_map[head.random]
-#                 else:
-#                     new_node.random = RandomListNode(head.random.label)
-#                     self.hash_map[head.random] = new_node.random
+            if head.random is not None:
+                if head.random in self.hash_map:
+                    new_node.random = self.hash_map[head.random]
+                else:
+                    new_node.random = RandomListNode(head.random.label)
+                    self.hash_map[head.random] = new_node.random
                     
-#             self.curr = new_node
-#             head = head.next
+            self.curr = new_node
+            head = head.next
             
-#         return self.dummy.next
+        return self.dummy.next
 
+class Solution(object):
     # 方法3:
     def copyRandomList(self, head):
         # write your code here
