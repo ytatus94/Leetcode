@@ -31,3 +31,41 @@ class Solution:
             if row_idx - pos[row_idx] == row - col:
                 return True
         return False
+
+# lintcode 34
+class Solution:
+    """
+    @param n: The number of queens.
+    @return: The total number of distinct solutions.
+    """
+    def totalNQueens(self, n):
+        # write your code here
+        results  = []
+        if n <= 0:
+            return results
+            
+        pos = []
+        self.dfs(n, results, pos)
+        return len(results)
+        
+    def dfs(self, n, results, pos):
+        if len(pos) == n:
+            results.append(pos[:])
+            return
+        for i in range(n):
+            if self.is_diagonal(pos, i):
+                continue
+            pos.append(i)
+            self.dfs(n, results, pos)
+            pos.pop()
+            
+    def is_diagonal(self, pos, val):
+        m = len(pos)
+        for row in range(m):
+            if pos[row] == val:
+                return True
+            if row + pos[row] == m + val:
+                return True
+            if row - pos[row] == m - val:
+                return True
+        return False
