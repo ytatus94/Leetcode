@@ -46,3 +46,30 @@ class Solution:
             self.dfs(nums, results, permutation, hash_set)
             del hash_set[nums[i]]
             permutation.pop()
+
+# lintcode 15
+class Solution:
+    """
+    @param: nums: A list of integers.
+    @return: A list of permutations.
+    """
+    def permute(self, nums):
+        # write your code here
+        results = []
+        if nums is None:
+            return results
+            
+        permutations = []
+        self.dfs(nums, results, permutations)
+        return results
+        
+    def dfs(self, nums, results, permutations):
+        if len(permutations) == len(nums):
+            results.append(permutations[:])
+            return results
+        for i in range(len(nums)):
+            if nums[i] in permutations:
+                continue
+            permutations.append(nums[i])
+            self.dfs(nums, results, permutations)
+            permutations.pop()
