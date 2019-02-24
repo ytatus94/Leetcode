@@ -62,3 +62,60 @@ class Solution:
                 return False
             
         return True
+
+# lintcode 33
+class Solution:
+    """
+    @param: n: The number of queens
+    @return: All distinct solutions
+    """
+    def solveNQueens(self, n):
+        # write your code here
+        results = []
+        if n <= 0:
+            return results
+          
+        nums = [i for i in range(n)]
+        
+        # 紀錄 queens 的位置，每一行每一列每一個對角線上只能有一個皇后
+        # 每一個元素的 index 表示第幾個 row，每一個元素的值表示第幾個 column
+        # 因為每一個元素只會放一個值，可以確保每個 row 上只有一個皇后
+        # 只要每個元素的值都不同，就可以確保每個 col 上只有一個皇后
+        queens_position = []
+        self.dfs(nums, results, queens_position)
+        # print(results)
+        return results
+        
+    def dfs(self, nums, results, queens_position):
+        if len(queens_position) == len(nums):
+            # 確保每一條對角線上只有一個皇后
+            # if not self.is_diagonal(queens_position):
+            chase_board = self.draw_queens_position(queens_position)
+            results.append(chase_board)
+        for i in range(len(nums)):
+            # 用過的不能再用了，這樣可以保證每一個 col 上只有一個皇后 
+            if nums[i] in queens_position:
+                continue
+            # 確保每一條對角線上只有一個皇后
+            if self.is_diagonal(queens_position, nums[i]):
+                continue
+            queens_position.append(nums[i])
+            self.dfs(nums, results, queens_position)
+            queens_position.pop()
+            
+    def is_diagonal(self, position, val):
+        n = len(position)
+        for x in range(n):
+            if x + position[x] == n + val:
+                return True
+            if x - position[x] == n - val:
+                return True
+        return False
+        
+    def draw_queens_position(self, position):
+        n = len(position)
+        chase_board = []
+        for queen in position:
+            string = ['.' if i != queen else 'Q' for i in range(n)]
+            chase_board.append(''.join(string))
+        return chase_board
