@@ -40,3 +40,35 @@ class Solution:
         if len(topo_order) == len(graph):
             return topo_order
         return []
+
+# lintcode 616
+class Solution:
+    """
+    @param: numCourses: a total of n courses
+    @param: prerequisites: a list of prerequisite pairs
+    @return: the course order
+    """
+    def findOrder(self, numCourses, prerequisites):
+        # write your code here
+        graph = [[] for i in range(numCourses)]
+        indegrees = [0] * numCourses
+        
+        for course, pre in prerequisites:
+            graph[pre].append(course)
+            indegrees[course] += 1
+        
+        queue = []
+        for course in range(numCourses):
+            if indegrees[course] == 0:
+                queue.append(course)
+                
+        topo_order = []
+        while queue:
+            course = queue.pop(0)
+            topo_order.append(course)
+            for i in graph[course]:
+                indegrees[i] -= 1
+                if indegrees[i] == 0:
+                    queue.append(i)
+                    
+        return topo_order if len(topo_order) == numCourses else []
