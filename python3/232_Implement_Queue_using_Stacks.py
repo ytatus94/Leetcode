@@ -85,29 +85,29 @@ class MyQueue:
         return self.out_stack[-1]
         
 class MyQueue:
-    # def __init__(self):
-    #     # do intialization if necessary
-    #     self.items = []
-    # """
-    # @param: element: An integer
-    # @return: nothing
-    # """
-    # def push(self, element):
-    #     # write your code here
-    #     self.items.append(element)
-    # """
-    # @return: An integer
-    # """
-    # def pop(self):
-    #     # write your code here
-    #     if len(self.items) == 0:
-    #         return None
-    #     return self.items.pop(0)
-    # """
-    # @return: An integer
-    # """
-    # def top(self):
-    #     # write your code here
-    #     if len(self.items) == 0:
-    #         return None
-    #     return self.items[0]
+    def __init__(self):
+        # do intialization if necessary
+        self.items = []
+    """
+    @param: element: An integer
+    @return: nothing
+    """
+    def push(self, element):
+        # write your code here
+        self.items.append(element)
+    """
+    @return: An integer
+    """
+    def pop(self):
+        # write your code here
+        if len(self.items) == 0:
+            return None
+        return self.items.pop(0)
+    """
+    @return: An integer
+    """
+    def top(self):
+        # write your code here
+        if len(self.items) == 0:
+            return None
+        return self.items[0]
