@@ -39,3 +39,37 @@ class Solution(object):
         # 所以當離開回圈時 result 就存放了每一層的節點，由 root 到 leaf
         # 因此要把順序顛倒過來 (用 reversed，但是 reversed 不傳回 list)
         return list(reversed(self.result))
+
+# lintcode 70
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: A tree
+    @return: buttom-up level order a list of lists of integer
+    """
+    def levelOrderBottom(self, root):
+        # write your code here
+        results = []
+        if root is None:
+            return results
+
+        queue = [root]
+        while queue:
+            curr_level = []
+            for i in range(len(queue)):
+                node = queue.pop(0)
+                curr_level.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            results.append(curr_level)
+            
+        return list(reversed(results))
