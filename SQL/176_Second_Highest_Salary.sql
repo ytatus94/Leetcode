@@ -4,3 +4,9 @@ SELECT (SELECT DISTINCT Salary
         ORDER BY 1 DESC
         LIMIT 1
         OFFSET 1) AS SecondHighestSalary;
+
+# 方法二:
+SELECT MAX(Salary) AS SecondHighestSalary
+FROM Employee
+WHERE Salary < (SELECT MAX(Salary)
+                FROM Employee);
