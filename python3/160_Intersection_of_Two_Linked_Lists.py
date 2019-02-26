@@ -55,3 +55,53 @@ class Solution(object):
         return None
 
 # lintcode 380
+"""
+Definition of ListNode
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
+class Solution:
+    """
+    @param headA: the first list
+    @param headB: the second list
+    @return: a ListNode
+    """
+    def getIntersectionNode(self, headA, headB):
+        # write your code here
+        if headA is None:
+            return headA
+        if headB is None:
+            return headB
+        
+        # 把 A, B 接成環狀 linked list 
+        # a1->a2->c1->c2->c3
+        #         ^       |
+        #         |       v
+        #         b3<-b2<-b1
+        tailA = headA
+        while tailA.next:
+            tailA = tailA.next
+        # 離開回圈時 tailA 停在 A 的最後一個節點上
+        # 所以把它接上 B
+        tailA.next = headB
+        
+        slow, fast = headA, headA
+        while fast.next and fast.next.next:
+            fast = fast.next.next
+            slow = slow.next
+            print(fast.val, slow.val)
+            if slow == fast:
+                break
+        # 離開時兩者停在環上的同一個點
+        
+        fast = headA
+        while fast != slow:
+            fast = fast.next
+            slow = slow.next
+        # 離開時兩者停在環的入口
+        tailA.next = None
+        
+        return slow
