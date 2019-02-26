@@ -1,3 +1,4 @@
+# lintcode 600
 class Solution:
     """
     @param image: a binary matrix with '0' and '1'
