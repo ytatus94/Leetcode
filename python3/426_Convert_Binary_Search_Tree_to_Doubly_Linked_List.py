@@ -1,3 +1,4 @@
+# lintcode 378
 """
 Definition of Doubly-ListNode
 class DoublyListNode(object):
