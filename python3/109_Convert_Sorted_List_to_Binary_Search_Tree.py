@@ -1,4 +1,49 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def sortedListToBST(self, head: ListNode) -> TreeNode:
+        # BST 是用中序遍歷 (左根右)
+        # 所以 root 會是 linked list 正中間的那個節點
+        # 要先找到 root 的節點，左半邊的 linked list 用來構成左子樹
+        # 右半邊的 linked list 用來構成右子樹
+        
+        # 出口:
+        if head is None:
+            return None
+        
+        # 找 root
+        prev = None
+        slow, fast = head, head
+        while fast and fast.next:
+            prev = slow
+            fast = fast.next.next
+            slow = slow.next
+        # 離開回圈時 slow 會停在正中間的節點上
+        # prev 停在 slow 前一個節點上，要把 prev 接上 None
+        # 才能形成用來構成左子樹的 linked list
+        if prev is not None:
+            prev.next = None
+        mid = slow
+        root = TreeNode(mid.val)
+        
+        if head == mid:
+            return root
+        
+        root.left = self.sortedListToBST(head)
+        root.right = self.sortedListToBST(mid.next)
+        return root
+    
 # lintcode 106
 """
 Definition of ListNode
