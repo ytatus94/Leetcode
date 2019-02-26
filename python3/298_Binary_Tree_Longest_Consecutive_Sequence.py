@@ -1,3 +1,4 @@
+# lintcode 595
 """
 Definition of TreeNode:
 class TreeNode:
