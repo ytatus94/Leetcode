@@ -1,3 +1,4 @@
+# lintcode 178
 class Solution:
     """
     @param n: An integer
