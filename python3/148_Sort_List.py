@@ -61,7 +61,8 @@ class Solution:
         if head is None:
             return head
         
-        result = self.merge_sort(head)
+        # result = self.merge_sort(head)
+        result = self.quick_sort(head)
         return result
         
     # 定義：拆成兩半，每個半段各自做 merge sort，然後再合併
@@ -107,10 +108,14 @@ class Solution:
             curr.next = list1
             
         return dummy.next
-    
-# quick sort
-class Solution:
-    def sortList(self, head):
+        
+    # 定義：每個節點和 pivot 比較大小，可以分成三種:
+    # 1. 比 pivot 小的 linked list
+    # 2. pivot 自己
+    # 3. 比 pivot 大的 linked list
+    # 每一段各自做 quick sort 後再合併起來
+    def quick_sort(self, head):
+        # 出口:
         if head is None or head.next is None:
             return head
         
