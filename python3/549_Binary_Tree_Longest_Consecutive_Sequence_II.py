@@ -1,3 +1,4 @@
+# lintcode 614
 """
 Definition of TreeNode:
 class TreeNode:
