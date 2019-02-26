@@ -1,3 +1,4 @@
+# lintcode 605
 class Solution:
     """
     @param org: a permutation of the integers from 1 to n
