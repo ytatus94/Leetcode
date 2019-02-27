@@ -1,4 +1,17 @@
 class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        i, j = 0, 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[i], nums[j] = nums[j], nums[i]
+                j += 1
+            i += 1
+            
+# lintcode 539
+class Solution:
     """
     @param nums: an integer array
     @return: nothing
