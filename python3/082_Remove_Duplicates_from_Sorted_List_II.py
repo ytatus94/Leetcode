@@ -24,18 +24,27 @@ class Solution:
         dummy.next = head
         prev = dummy
         
+        # 要分成 head.next 是空還不是空兩種
+        # 當 head.next 不是空的時候，又要再分成和 head.val 是否相同兩種
         while head:
             # 如果兩個相鄰的節點值不相等，就把 prev 和 head 往下移動
             if head.next and head.next.val != head.val:
                 prev = head
                 head = head.next
+            # 如果兩個相鄰的節點的值相同，就要去找出下一個值不同的節點
+            # 然後把 prev.next 指向這個值不同的節點
             elif head.next and head.next.val == head.val:
                 while head.next and head.next.val == head.val:
                     head.next = head.next.next
                 # 離開回圈時 head.next 是停在值不同的節點
                 prev.next = head.next
+                # 先不移動 prev 到 prev.next 因為這個 prev.next 仍有可能和
+                # 後面的節點的值相同，所以要繼續找到不同的值的節點才行
+                # 移動 prev 的步驟由 if 子句來做
                 head = head.next
             elif head.next is None:
+                # 如果是空表示現在 head 是最後一個元素了
+                # 把 head 移動到 null 後會結束 wile 迴圈
                 head = head.next
                 
         return dummy.next
