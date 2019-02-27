@@ -14,6 +14,7 @@ class Solution:
         #         print(nums)
         #         break
         
+        # 三步翻轉法
         for i in range(len(nums) - 1):
             if nums[i] > nums[i + 1]:
                 self.swap(nums, 0, i+1)
