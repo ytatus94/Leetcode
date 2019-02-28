@@ -15,7 +15,8 @@ class Solution:
             if nums[i] >= k:
                 return i
         return len(nums)
-        
+
+class Solution:
     def partitionArray(self, nums, k):
         if nums is None or len(nums) == 0:
             return 0
