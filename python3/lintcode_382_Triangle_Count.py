@@ -1,3 +1,4 @@
+# lintcode 382
 class Solution:
     """
     @param S: A list of integers
