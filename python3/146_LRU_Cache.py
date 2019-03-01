@@ -117,6 +117,7 @@ class LRUCache:
         self.capacity = capacity
         self.hash_map = {} # key 是 node 的 key, val 是 node 本身 (不是節點的值)
         
+        # 建立 head 和 tail 兩個 dummy nodes
         self.head = ListNode(0, 0)
         self.tail = ListNode(0, 0)
         
@@ -136,7 +137,9 @@ class LRUCache:
         # 要把 node 從 linked list 當前位置移除，然後放到最末端
         curr = self.hash_map[key] # 得到 key 所代表的節點
         
-        # 要把 prev->curr->next->...->tail 改成 prev->next->...->tail->curr
+        # 要把 prev->curr->next->...->n_last(tail.prev)->tail
+        # 改成 prev->next->...->n_last->curr->tail
+        # tail 是 dummy 的，永遠放在最尾巴方便存取
         prev = curr.prev
         next = curr.next
         
