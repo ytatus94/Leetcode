@@ -103,8 +103,8 @@ class Solution(object):
         
 # lintcode 105
 class Solution:
-    @param head: A RandomListNode
-    @return: A RandomListNode
+    # @param head: A RandomListNode
+    # @return: A RandomListNode
     def copyRandomList(self, head):
         # write your code here
         if head is None:
