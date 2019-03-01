@@ -41,7 +41,7 @@ class Solution:
                         curr = curr.next
                     curr.next = ListNode(item.val)
                 
-                # 
+                # item 是一個 linked list 的節點，所以要把全部的節點都看過一遍
                 item = item.next
     
         return new_hash_table
