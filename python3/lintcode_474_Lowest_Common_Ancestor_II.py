@@ -1,3 +1,4 @@
+# lintcode 474
 """
 Definition of ParentTreeNode:
 class ParentTreeNode:
