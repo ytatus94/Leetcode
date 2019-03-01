@@ -1,3 +1,4 @@
+# lintcode 039
 class Solution:
     """
     @param nums: An integer array
