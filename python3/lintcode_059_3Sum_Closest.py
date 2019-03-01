@@ -1,3 +1,4 @@
+# lintcode 059
 class Solution:
     """
     @param numbers: Give an array numbers of n integer
