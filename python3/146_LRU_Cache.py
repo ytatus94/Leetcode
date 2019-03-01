@@ -100,6 +100,7 @@ class LRUCache:
 # open hashing 每個位置是一個 linked list
 # 所以要先定義一個 linked list 類別
 # 又可以分成用 singly linked list 或是 doubly linked list 兩種
+# 這邊用 doubly linked list 的方式
 class ListNode:
     def __init__(self, key, val):
         self.key = key
@@ -114,7 +115,7 @@ class LRUCache:
     def __init__(self, capacity):
         # do intialization if necessary
         self.capacity = capacity
-        self.hash_map = {} # key 是 key, val 是 node (不是節點的值)
+        self.hash_map = {} # key 是 node 的 key, val 是 node 本身 (不是節點的值)
         
         self.head = ListNode(0, 0)
         self.tail = ListNode(0, 0)
@@ -133,7 +134,9 @@ class LRUCache:
         
         # 因為是 linked list 所以當 node 存在的時候
         # 要把 node 從 linked list 當前位置移除，然後放到最末端
-        curr = self.hash_map[key]
+        curr = self.hash_map[key] # 得到 key 所代表的節點
+        
+        # 要把 prev->curr->next->...->tail 改成 prev->next->...->tail->curr
         prev = curr.prev
         next = curr.next
         
@@ -156,12 +159,13 @@ class LRUCache:
     """
     def set(self, key, value):
         # write your code here
-        # 會用到 set 函數表示當前節點不在 hash_map 裡面
-        # 所以要把當前節點加入 hash_map，和 linked list 裡面
+        # 會用到 set 函數表示
+        # 1. 要改變 key 對應到的節點的值
+        # 2. 或是 key 對應到的節點不在 hash_map 裡面，所以要把當前節點加入 hash_map，和 linked list 裡面
         
         # 情形1:
         # 有可能 key 存在，但是 value 不同
-        # 所以要把原先的 value 改成餵給 set 函數的
+        # 所以要把原先的 value 改成餵給 set 函數的 value
         if self.get(key) != -1:
             # 執行過 self.get(key) 後 key 對應的節點會被移動到 linked list 最末端
             # 所以直接修改值就好
