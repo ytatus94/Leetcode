@@ -1,3 +1,4 @@
+# lintcode 138
 class Solution:
     """
     @param nums: A list of integers
