@@ -1,3 +1,4 @@
+# lintcode 127
 """
 Definition for a Directed graph node
 class DirectedGraphNode:
