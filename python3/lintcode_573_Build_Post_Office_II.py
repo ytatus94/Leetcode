@@ -1,3 +1,4 @@
+# lintcode 573
 class Solution:
     """
     @param grid: a 2D grid
