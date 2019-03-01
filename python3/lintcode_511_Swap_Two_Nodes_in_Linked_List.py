@@ -1,4 +1,4 @@
-
+# lintcode 511
 """
 Definition of ListNode
 class ListNode(object):
