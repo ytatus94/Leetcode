@@ -1,4 +1,4 @@
-# 用 single linked list
+# 用 singl linked list
 class ListNode(object):
     def __init__(self, key, val):
         self.key = key
@@ -76,7 +76,7 @@ class LRUCache:
             node = ListNode(key, value)
             self.hash[key] = self.tail
             self.tail.next = node
-            self.tail = node
+            self.tail = node # 把 tail 指標移動到最後一個節點
             # 但是塞到後面後可能造成 hash 的大小比 capacity 大
             # 這時候要把第一個 (最不常用的那個) 刪掉
             if len(self.hash) > self.capacity:
@@ -139,7 +139,7 @@ class LRUCache:
         
         # 要把 prev->curr->next->...->n_last(tail.prev)->tail
         # 改成 prev->next->...->n_last->curr->tail
-        # tail 是 dummy 的，永遠放在最尾巴方便存取
+        # 和用 singly linked list 方法不同的是，這邊的 tail 永遠是 dummy 的，永遠放在最尾巴方便存取
         prev = curr.prev
         next = curr.next
         
