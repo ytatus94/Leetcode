@@ -1,3 +1,4 @@
+# lintcode 006
 class Solution:
     """
     @param A: sorted integer array A
