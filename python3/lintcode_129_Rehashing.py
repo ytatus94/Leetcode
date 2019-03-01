@@ -53,8 +53,9 @@ class Solution:
         new_hash_table = [None for i in range(new_capacity)]
         for item in hashTable:
             while item != None:
-                # 在新的 hash table 中插入值
+                # 在新的 hash table 中插入值，插到 linked list 的最尾巴
                 self.add_node(new_hash_table, item.val)
+                # 全部的節點都要看一遍
                 item = item.next
         return new_hash_table
         
