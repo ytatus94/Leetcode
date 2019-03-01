@@ -1,3 +1,4 @@
+# lintcode 171
 class Solution:
     """
     @param strs: A list of strings
