@@ -1,5 +1,5 @@
 class Solution:
-    def kthSmallest(k, nums):
+    def kthSmallest(self, k, nums):
         return self.quick_select(nums, 0, len(nums) - 1, k - 1) # 從 0 開始，第 k 小的數是第 k - 1
         
     def quick_select(self, nums, start, end, k):
