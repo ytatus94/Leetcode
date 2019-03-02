@@ -7,6 +7,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 """
+# 用 merge sort 的思路，先切小再由下往上合併 buttom up
 class Solution:
     """
     @param lists: a list of ListNode
@@ -51,6 +52,7 @@ class Solution:
             tail.next = list2
         return dummy.next
 
+# 由上往下合併 top down
 class Solution:
     def mergeKLists(self, lists):
         if lists is None or len(lists) == 0:
