@@ -1,5 +1,5 @@
 class Solution:
-    def twoSumClosest(nums, target):
+    def twoSumClosest(self, nums, target):
         if nums is None:
             return -1
             
