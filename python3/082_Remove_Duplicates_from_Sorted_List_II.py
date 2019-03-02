@@ -8,6 +8,7 @@ class Solution:
             # 找出下一個不同的節點，並以其為開頭找出正確的 next 讓 na 接上
             while head.next and head.next.val == head.val:
                 head = head.next
+            # 離開迴圈時 head 停留在一系列相同的值的節點的最後一個
             return self.deleteDuplicates(head.next)
         else:
             # na->(nb->...) 當 val_a != val_b 時，從 nb 開頭的 linked list 中
