@@ -1,5 +1,5 @@
 class Solution:
-    def searchNode(graph, values, node, target):
+    def searchNode(self, graph, values, node, target):
         queue = []
         hash = []
         
