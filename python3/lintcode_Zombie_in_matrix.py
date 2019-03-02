@@ -1,5 +1,5 @@
 class Coordinate:
-    def __init__(x, y):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
         
@@ -11,7 +11,7 @@ class Solution:
     deltaX = [1, 0, 0, -1]
     deltaY = [0, 1, -1, 0]
     
-    def zombie(grid):
+    def zombie(self, grid):
         if grid is None or len(grid) == 0 or len(grid[0]) == 0:
             return None
             
@@ -52,4 +52,4 @@ class Solution:
                     queue.append()
         return -1
         
-    def isPeople(coor, grid):
+    def isPeople(self, coor, grid):
