@@ -84,6 +84,7 @@ class Solution:
         result.append(root.val)
         self.helper(root.right, result)
 
+# Non-recursion 版本
 class Solution:
     def inorderTraversal(self, root):
         result = []
@@ -104,3 +105,22 @@ class Solution:
             if stack:
                 result.append(stack[-1].val)
         return result
+
+# Non-recursion 版本
+class Solution:
+    def inorderTraversal(self, root):
+        stack = []
+        result = []
+        curr = root
+        while curr or stack:
+            # 一路把最左邊都塞到 stack 裡面
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+            # 從 stack pop 出最後一個，把它加入 result 裡面
+            # 然後移動到它的右子樹
+            curr = stack.pop()
+            result.append(curr.val)
+            curr = curr.right
+        return result
+                
