@@ -1,5 +1,5 @@
 class Solution:
-    def searchBigSortedArray(reader, target):
+    def searchBigSortedArray(self, reader, target):
         index = 1
         while reader[index - 1] < target:
             index = index * 2
