@@ -1,4 +1,37 @@
-# lintcode 053
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        if nums is None or len(nums) < 3:
+            return []
+        
+        nums = sorted(nums)
+        
+        res = []
+        
+        for i in range(len(nums) - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+                
+            start = i + 1
+            end = len(nums) - 1
+            target = -1 * nums[i]
+            
+            while start < end:
+                if nums[start] + nums[end] == target:
+                    res.append([-1 * target, nums[start], nums[end]])
+                    start += 1
+                    end -= 1
+                    while start < end and nums[start] == nums[start - 1]:
+                        start += 1
+                    while start < end and nums[end] == nums[end + 1]:
+                        end -= 1
+                elif nums[start] + nums[end] < target:
+                    start += 1
+                else:
+                    end -= 1
+                    
+        return res
+    
+# lintcode 057
 class Solution:
     """
     @param numbers: Give an array numbers of n integer
