@@ -26,6 +26,8 @@ class Solution:
                 left += 1
                 right -= 1
         # 離開迴圈時 right 會比 left 小，變成 start ... right left ... end 的順序
+        # 然後 pivot 的左半邊都 <= pivot 小，右半邊都 >= pivot
+        # 但是兩個半邊都還沒有正確排序，只是大致上區分出比 pivot 大的和小的兩段
         
         # 要找第 k 小，如果 right 比 k 還大，那一定是在 start ... right 這段
         # 如果 k 比 left 還大，那一定是在 left ... end 這段
