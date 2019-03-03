@@ -29,8 +29,10 @@ class Solution:
             # 只是往下/往前移動一個
             while start <= end and nums[start] < k:
                 start += 1
+            # 離開迴圈時，start 停在 >= k 的
             while start <= end and nums[end] >= k:
                 end -= 1
+            # 離開迴圈時，end 停在 < k 的
             if start <= end:
                 nums[start], nums[end] = nums[end], nums[start]
                 start += 1
