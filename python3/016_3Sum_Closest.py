@@ -1,3 +1,28 @@
+class Solution:
+    def threeSumClosest(self, nums: List[int], target: int) -> int:
+        if nums is None or len(nums) < 3:
+            return -1
+        
+        nums = sorted(nums)
+        
+        closest = sys.maxsize
+        
+        for i in range(len(nums) - 2):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            start = i + 1
+            end = len(nums) - 1
+            while start < end:
+                sum = nums[i] + nums[start] + nums[end]
+                if abs(sum - target) < abs(closest - target):
+                    closest = sum
+                if sum < target:
+                    start += 1
+                else:
+                    end -= 1
+                
+        return closest
+    
 # lintcode 059
 class Solution:
     """
