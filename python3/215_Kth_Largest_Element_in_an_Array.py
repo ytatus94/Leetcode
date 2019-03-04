@@ -31,9 +31,9 @@ class Solution:
                 left += 1
                 right -= 1
                 
-        if start <= k and k <= right:
+        if k <= right:
             return self.findKthSmallest(nums, start, right, k)
-        elif left <= k and k <= end:
+        elif left <= k:
             return self.findKthSmallest(nums, left, end, k)
         else:
             return nums[k]
