@@ -14,7 +14,7 @@ class LRUCache:
         self.capacity = capacity
         self.hash = {}
         self.dummy = ListNode(0, 0)
-        self.tail = self.dummy # 這時候 dummy 和 tail 指向同一個 node
+        self.tail = self.dummy # tail 是指標，這時候 dummy 和 tail 指向同一個 node
         
 
     def get(self, key):
