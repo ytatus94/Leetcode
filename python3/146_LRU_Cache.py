@@ -118,6 +118,8 @@ class LRUCache:
         self.hash_map = {} # key 是 node 的 key, val 是 node 本身 (不是節點的值)
         
         # 建立 head 和 tail 兩個 dummy nodes
+        # head 永遠是第一個，tail 永遠是最後一個，然後在這個 head tail 組成的 linked list 裡面沒有 null 結尾
+        # 會是這樣的形式head->(n1->n2->n3->...->nk)->tail
         self.head = ListNode(0, 0)
         self.tail = ListNode(0, 0)
         
