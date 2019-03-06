@@ -23,3 +23,20 @@ class Solution:
                     f[i] = True
                     
         return f[len(A) - 1]
+
+class Solution:
+    # 用貪心算法
+    def canJump(self, A):
+        # write your code here
+        if A is None or len(A) == 0:
+            return False
+            
+        farthest = A[0] # 目前能走最遠是走到 fasthest 的位置
+        for i in range(1, len(A)):
+            # 如果 i <= farthest 表示能走到 i
+            # 走到 i 之後，要計算從 i 開始能走最遠是走到哪
+            # 然後更新最遠距離
+            if i <= farthest and A[i] + i >= farthest:
+                farthest = A[i] + i
+                
+        return farthest >= len(A) - 1
