@@ -1,4 +1,5 @@
 # lintcode 545
+# 會超時
 class Solution:
     """
     @param: k: An integer
@@ -31,6 +32,57 @@ class Solution:
         # write your code here
         return sorted(self.heap, reverse=True) # 會超時
 
+# 會超時
+class Solution:
+    def __init__(self, k):
+        self.k = k
+        self.nums = []
+
+    def add(self, num):
+        if len(self.nums) < self.k:
+            self.nums.append(num)
+        elif num > min(self.nums):
+            self.nums.remove(min(self.nums))
+            self.nums.append(num)
+
+    def topk(self):
+        if self.k >= len(self.nums):
+            return sorted(self.nums, reverse=True)
+
+        start = 0
+        end = len(self.nums) - 1
+        top = self.quick_select(self.nums, start, end, len(self.nums) - self.k)
+        res = []
+        for i in self.nums:
+            if i > top:
+                res.append(i)
+        return sorted(res, reverse=True)
+
+    def quick_select(self, nums, start, end, n):
+        if start >= end:
+            return nums[n]
+
+        left = start
+        right = end
+        pivot = nums[(start + end) // 2]
+
+        while left <= right:
+            while left <= right and nums[left] < pivot:
+                left += 1
+            while left <= right and nums[right] > pivot:
+                right -= 1
+            if left <= right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
+
+        if n <= right:
+            return self.quick_select(nums, start, right, n)
+        if n >= left:
+            return self.quick_select(nums, left, end, n)
+        return nums[n]
+
+# 用 priority queue 才不會超時
 import heapq
 class Solution:
     """
