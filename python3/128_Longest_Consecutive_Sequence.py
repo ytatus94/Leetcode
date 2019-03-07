@@ -1,3 +1,19 @@
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        # 用 DP
+        if nums is None or len(nums) == 0:
+            return 0
+
+        nums = sorted(nums)
+        f = [1 for i in range(len(nums))]
+        for i in range(1, len(nums)):
+            if nums[i] - nums[i -1] == 1:
+                f[i] = f[i] + f[i - 1]
+            elif nums[i] == nums[i - 1]:
+                f[i] = f[i - 1]
+                
+        return max(f)
+
 # lintcode 124
 class Solution:
     """
