@@ -9,5 +9,5 @@ class Solution:
             else:
                 res.append(A.pop())
         res.append(A.pop())
-        print(res)
+
         return res
