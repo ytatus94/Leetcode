@@ -9,7 +9,7 @@ class Solution:
     # 定義: 傳回滿足 [L, R] 區間的樹的根節點
     def trimBST(self, root: TreeNode, L: int, R: int) -> TreeNode:
         if root is None:
-            return root
+            return None
         
         '''
         當根節點的值比 R 大時，只有在左子樹裡面才可能找到符合 [L, R] 區間的樹
