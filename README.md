@@ -4,7 +4,7 @@ Leetcode exercises for SQL and algorithm problems.
 
 |Num|Title|Level|
 |:---|:---|:---|
-|175|Combine Two Tables|Easy|
+|175|[Combine Two Tables](SQL/175_Combine_Two_Tables.sql)|Easy|
 |176|Second Highest Salary|Easy|
 |177|Nth Highest Salary|Medium|
 |178|Rank Scores|Medium|
