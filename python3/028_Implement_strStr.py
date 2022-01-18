@@ -18,6 +18,18 @@ class Solution:
             
         return -1
 
+# 方法 2:
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if len(needle) == 0: # 也可以用 if needle == "" 但是執行起來會比較慢
+            return 0
+
+        if needle in haystack:
+            return haystack.find(needle)
+        else:
+            return -1
+    
+    
 # lintcode 13
 class Solution:
     """
