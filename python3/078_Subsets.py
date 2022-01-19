@@ -36,7 +36,27 @@ class Solution:
             return results
         self.helper(nums, results, subset + [nums[current_index]], current_index + 1)
         self.helper(nums, results, subset, current_index + 1) # 會跑到這行時，表示上一行已經跑到底，又一直 return 到 current_index 所指向的元素，所以 current_index 可以往後移動一個元素了
+
+# 方法三
+class Solution:
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        if nums == None:
+            return []
         
+        results = [] # results 宣告放到 if 後面會比較快
+        dfs(results, [], nums)
+
+        return results
+    
+def dfs(results, subset, rest):
+    results.append(subset)
+    for i in range(len(rest)):
+        dfs(results, subset + [rest[i]], rest[i+1:])
+# 當 rest[i] 已經是列表中最後一個數的時候，rest[i+1:] 理論上是超過了會傳回錯誤才對，但是實際上 python 會傳回一個空列表 []
+# 所以變成 dfs(results, subset + [最後一個數], [])
+# 而 len([]) = 0 --> range(len(rest)) = range(0, 0) 因此不會進入 for loop
+# 只有第一行的 results.append(subset) 被執行
+
 # lintcode 17
 class Solution:
     """
