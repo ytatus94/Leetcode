@@ -16,7 +16,7 @@ class TwoSum:
         # write your code here
         # 這部分就是 two sum = target 經典
 
-        nums = sorted(self.nums)
+        nums = sorted(self.nums) # 因為這邊做了 sort 所以會很慢
 
         start = 0
         end = len(nums) - 1
@@ -31,3 +31,6 @@ class TwoSum:
                 start += 1
         
         return False
+
+    def find(self, value):
+        # 可以用 hash 來加快
