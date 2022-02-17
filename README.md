@@ -60,30 +60,33 @@ Leetcode exercises for SQL and algorithm problems.
     * The algorithm problems contain Leetcode and lintcode problems.
 
 #### 九章 python
-* 範例
-  * Fizz Buzz http://www.lintcode.com/en/problem/fizz-buzz/
-  * Reverse 3-digit Integer http://www.lintcode.com/en/problem/reverse-3-digit-integer/
-  * http://www.lintcode.com/en/problem/root-of-equation/
-  * String To Integer http://www.lintcode.com/en/problem/string-to-integer/
-  * Rotate String http://www.lintcode.com/en/problem/rotate-string/
-  * Remove Element http://www.lintcode.com/en/problem/remove-element/
-  * Reverse Linked List http://www.lintcode.com/en/problem/reverse-linked-list/
-  * Remove Nth Node From End of List http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/
-  * Implement Stack https://www.lintcode.com/en/problem/implement-stack/
-  * Valid Parentheses https://www.lintcode.com/en/problem/valid-parentheses/
-  * Implement Queue by Linked List http://www.lintcode.com/en/problem/implement-queue-by-linked-list/
-  * Fibonacci http://www.lintcode.com/en/problem/fibonacci/
-  * Binary Tree Leaf Sum http://www.lintcode.com/en/problem/binary-tree-leaf-sum/
-  * Maximum Depth of Binary Tree http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
-  * Identical Binary Tree http://www.lintcode.com/en/problem/identical-binary-tree/
-  * Binary Tree Preorder Traversal http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/
-  * Binary Tree Inorder Traversal http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/
-  * Binary Tree Postorder Traversal http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/
-  * Merge Two Sorted Arrays http://www.lintcode.com/en/problem/merge-two-sorted-arrays/
-  * Sort Integer II http://www.lintcode.com/en/problem/sort-integers-ii/
-  * Merge Sort http://www.jiuzhang.com/solutions/merge-sort
-  * Partition Array http://www.lintcode.com/en/problem/partition-array/
-  * Quick Sort http://www.jiuzhang.com/solutions/quick-sort
+* 範例 (23 題)
+
+|Title|Lintcode|Leetcode|
+|:---|:---|:---|
+|Fizz Buzz|http://www.lintcode.com/en/problem/fizz-buzz/||
+|Reverse 3-digit Integer|http://www.lintcode.com/en/problem/reverse-3-digit-integer/||
+|Root of Equation|http://www.lintcode.com/en/problem/root-of-equation/||
+|String To Integer|http://www.lintcode.com/en/problem/string-to-integer/||
+|Rotate String|http://www.lintcode.com/en/problem/rotate-string/||
+|Remove Element|http://www.lintcode.com/en/problem/remove-element/||
+|Reverse Linked List|http://www.lintcode.com/en/problem/reverse-linked-list/||
+|Remove Nth Node From End of List|http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/||
+|Implement Stack|https://www.lintcode.com/en/problem/implement-stack/||
+|Valid Parentheses|https://www.lintcode.com/en/problem/valid-parentheses/||
+|Implement Queue by Linked List|http://www.lintcode.com/en/problem/implement-queue-by-linked-list/||
+|Fibonacci|http://www.lintcode.com/en/problem/fibonacci/||
+|Binary Tree Leaf Sum|http://www.lintcode.com/en/problem/binary-tree-leaf-sum/||
+|Maximum Depth of Binary Tree|http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/||
+|Identical Binary Tree|http://www.lintcode.com/en/problem/identical-binary-tree/||
+|Binary Tree Preorder Traversal|http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/||
+|Binary Tree Inorder Traversal|http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/||
+|Binary Tree Postorder Traversal|http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/||
+|Merge Two Sorted Arrays|http://www.lintcode.com/en/problem/merge-two-sorted-arrays/||
+|Sort Integer II|http://www.lintcode.com/en/problem/sort-integers-ii/||
+|Merge Sort|http://www.jiuzhang.com/solutions/merge-sort||
+|Partition Array|http://www.lintcode.com/en/problem/partition-array/||
+|Quick Sort|http://www.jiuzhang.com/solutions/quick-sort||
 
 * 作業
 
