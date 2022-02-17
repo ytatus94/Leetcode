@@ -62,31 +62,31 @@ Leetcode exercises for SQL and algorithm problems.
 #### 九章 python
 * 範例 (23 題)
 
-|Title|Lintcode|Leetcode|
+|Lintcode|Leetcode|Level|
 |:---|:---|:---|
-|Fizz Buzz|http://www.lintcode.com/en/problem/fizz-buzz/||
-|Reverse 3-digit Integer|http://www.lintcode.com/en/problem/reverse-3-digit-integer/||
-|Root of Equation|http://www.lintcode.com/en/problem/root-of-equation/||
-|String To Integer|http://www.lintcode.com/en/problem/string-to-integer/||
-|Rotate String|http://www.lintcode.com/en/problem/rotate-string/||
-|Remove Element|http://www.lintcode.com/en/problem/remove-element/||
-|Reverse Linked List|http://www.lintcode.com/en/problem/reverse-linked-list/||
-|Remove Nth Node From End of List|http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/||
-|Implement Stack|https://www.lintcode.com/en/problem/implement-stack/||
-|Valid Parentheses|https://www.lintcode.com/en/problem/valid-parentheses/||
-|Implement Queue by Linked List|http://www.lintcode.com/en/problem/implement-queue-by-linked-list/||
-|Fibonacci|http://www.lintcode.com/en/problem/fibonacci/||
-|Binary Tree Leaf Sum|http://www.lintcode.com/en/problem/binary-tree-leaf-sum/||
-|Maximum Depth of Binary Tree|http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/||
-|Identical Binary Tree|http://www.lintcode.com/en/problem/identical-binary-tree/||
-|Binary Tree Preorder Traversal|http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/||
-|Binary Tree Inorder Traversal|http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/||
-|Binary Tree Postorder Traversal|http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/||
-|Merge Two Sorted Arrays|http://www.lintcode.com/en/problem/merge-two-sorted-arrays/||
-|Sort Integer II|http://www.lintcode.com/en/problem/sort-integers-ii/||
-|Merge Sort|http://www.jiuzhang.com/solutions/merge-sort||
-|Partition Array|http://www.lintcode.com/en/problem/partition-array/||
-|Quick Sort|http://www.jiuzhang.com/solutions/quick-sort||
+|[Fizz Buzz](http://www.lintcode.com/en/problem/fizz-buzz/)|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|
+|[Reverse 3-digit Integer](http://www.lintcode.com/en/problem/reverse-3-digit-integer/)|||
+|[Root of Equation](http://www.lintcode.com/en/problem/root-of-equation/)|||
+|[String To Integer](http://www.lintcode.com/en/problem/string-to-integer/)|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
+|[Rotate String](http://www.lintcode.com/en/problem/rotate-string/)|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
+|[Remove Element](http://www.lintcode.com/en/problem/remove-element/)|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
+|[Reverse Linked List](http://www.lintcode.com/en/problem/reverse-linked-list/)|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
+|[Remove Nth Node From End of List](http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Medium|
+|[Implement Stack](https://www.lintcode.com/en/problem/implement-stack/)|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|
+|[Valid Parentheses](https://www.lintcode.com/en/problem/valid-parentheses/)|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|
+|[Implement Queue by Linked List](http://www.lintcode.com/en/problem/implement-queue-by-linked-list/)|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
+|[Fibonacci](http://www.lintcode.com/en/problem/fibonacci/)|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
+|[Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/binary-tree-leaf-sum/)|||
+|[Maximum Depth of Binary Tree](http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/)|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
+|[Identical Binary Tree](http://www.lintcode.com/en/problem/identical-binary-tree/)|||
+|[Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/)|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
+|[Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/)|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
+|[Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/)|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
+|[Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/merge-two-sorted-arrays/)|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
+|[Sort Integer II](http://www.lintcode.com/en/problem/sort-integers-ii/)|||
+|[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
+|[Partition Array](http://www.lintcode.com/en/problem/partition-array/)|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
+|[Quick Sort](http://www.jiuzhang.com/solutions/quick-sort)|||
 
 * 作業 (42 題)
 
@@ -101,5 +101,23 @@ Leetcode exercises for SQL and algorithm problems.
 |7|463 [Sort Integers](https://www.lintcode.com/problem/463/), 464 [Sort Integers II](https://www.lintcode.com/problem/464/), 173 [Insertion Sort List](https://www.lintcode.com/problem/173/), 184 [Largest Number](https://www.lintcode.com/problem/184/), 148 [Sort Colors](https://www.lintcode.com/problem/148/), 143 [Sort Colors II](https://www.lintcode.com/problem/143/), 139 [Subarray Sum Closest](https://www.lintcode.com/problem/139/), 98 [Sort List](https://www.lintcode.com/problem/98/), 5 [Kth Largest Element](https://www.lintcode.com/problem/5/)||
 
 #### 九章算法
+* 範例 ( 題)
+
+|Lintcode|Leetcode|Level|
+|:---|:---|:---|
+
+* 作業 (76 題)
+
+|chapter|lintCode|leetcode|
+|:---|:---|:---|
+|1|13, 15, 16||
+|2|459, 458, 28, 585, 447, 159, 75, 74, 62, 600, 462, 254, 14, 460, 414, 38, 61, 617, 141, 457, 586, 160, 63, 437, 183||
+|3|597, 596, 595, 376, 480, 453, 97, 93, 578||
+|4|433, 69, 618, 598, 178, 137, 7, 573, 616, 611||
+|5|136, 18, 16, 15, 121, 153, 135||
+|6|599, 165, 138, 41, 139, 105, 102, 98, 450, 65||
+|7|607, 521, 609, 608, 587, 533, 148, 143, 57, 31||
+|8|||
+|9|||
 
 #### 九章動態規劃
