@@ -88,7 +88,7 @@ Leetcode exercises for SQL and algorithm problems.
 |Partition Array|http://www.lintcode.com/en/problem/partition-array/||
 |Quick Sort|http://www.jiuzhang.com/solutions/quick-sort||
 
-* 作業
+* 作業 (42 題)
 
 |chapter|lintCode|leetcode|
 |:---|:---|:---|
