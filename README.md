@@ -72,21 +72,21 @@ Leetcode exercises for SQL and algorithm problems.
 |3|[172. Remove Element](http://www.lintcode.com/en/problem/remove-element/)|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
 |3|[35. Reverse Linked List](http://www.lintcode.com/en/problem/reverse-linked-list/)|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
 |3|[174. Remove Nth Node From End of List](http://www.lintcode.com/en/problem/remove-nth-node-from-end-of-list/)|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Medium|
-||[495. Implement Stack](https://www.lintcode.com/en/problem/implement-stack/)|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|
-||[423. Valid Parentheses](https://www.lintcode.com/en/problem/valid-parentheses/)|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|
-||[492. Implement Queue by Linked List](http://www.lintcode.com/en/problem/implement-queue-by-linked-list/)|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
-||[366. Fibonacci](http://www.lintcode.com/en/problem/fibonacci/)|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
-||[481. Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/binary-tree-leaf-sum/)|||
-||[97. Maximum Depth of Binary Tree](http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/)|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
-||[Identical Binary Tree](http://www.lintcode.com/en/problem/identical-binary-tree/)|||
-||[66. Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/)|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
-||[67. Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/)|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
-||[68. Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/)|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
-||[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/merge-two-sorted-arrays/)|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
-||[464. Sort Integer II](http://www.lintcode.com/en/problem/sort-integers-ii/)|||
-||[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
-||[31. Partition Array](http://www.lintcode.com/en/problem/partition-array/)|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
-||[Quick Sort](http://www.jiuzhang.com/solutions/quick-sort)|||
+|4|[495. Implement Stack](https://www.lintcode.com/en/problem/implement-stack/)|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|
+|4|[423. Valid Parentheses](https://www.lintcode.com/en/problem/valid-parentheses/)|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|
+|4|[492. Implement Queue by Linked List](http://www.lintcode.com/en/problem/implement-queue-by-linked-list/)|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
+|5|[366. Fibonacci](http://www.lintcode.com/en/problem/fibonacci/)|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
+|5|[481. Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/binary-tree-leaf-sum/)|||
+|5|[97. Maximum Depth of Binary Tree](http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/)|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
+|5|[Identical Binary Tree](http://www.lintcode.com/en/problem/identical-binary-tree/)|||
+|5|[66. Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/)|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
+|5|[67. Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/binary-tree-inorder-traversal/)|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
+|5|[68. Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/binary-tree-postorder-traversal/)|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
+|6|[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/merge-two-sorted-arrays/)|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
+|6|[464. Sort Integer II](http://www.lintcode.com/en/problem/sort-integers-ii/)|||
+|6|[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
+|6|[31. Partition Array](http://www.lintcode.com/en/problem/partition-array/)|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
+|6|[Quick Sort](http://www.jiuzhang.com/solutions/quick-sort)|||
 
 * 作業 (42 題)
 
@@ -138,13 +138,14 @@ Leetcode exercises for SQL and algorithm problems.
 #### 九章算法
 * 範例 ( 題)
 
-|Lintcode|Leetcode|Level|
-|:---|:---|:---|
+|Chapter|Lintcode|Leetcode|Level|
+|:---|:---|:---|:---|
+
 
 * 作業 (76 題)
 
-|chapter|lintCode|leetcode|
-|:---|:---|:---|
+|Chapter|Lintcode|Leetcode|Level|
+|:---|:---|:---|:---|
 |1|13, 15, 16||
 |2|459, 458, 28, 585, 447, 159, 75, 74, 62, 600, 462, 254, 14, 460, 414, 38, 61, 617, 141, 457, 586, 160, 63, 437, 183||
 |3|597, 596, 595, 376, 480, 453, 97, 93, 578||
