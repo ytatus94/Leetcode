@@ -36,6 +36,42 @@ class Solution:
         
         return results
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        results = []
+        if root is None:
+            return results
+        
+        # BFS 用 Queue
+        # 步驟
+        # 1. 把所有的起點放到 queue 裡面
+        # 2. 用 while loop 不斷地從 queue 把節點 pop 出來
+        # 3. 把 pop 出來的節點當作 head, 把 head 的下一層放到 queue 裡面
+        
+        queue = list()
+        queue.append(root)
+        
+        while len(queue) > 0:
+            current_level = []
+            size = len(queue)
+            for node in range(size):
+                head = queue.pop(0)
+                current_level.append(head.val)
+                if head.left is not None:
+                    queue.append(head.left)
+                if head.right is not None:
+                    queue.append(head.right)
+            results.append(current_level)
+            
+        return results
+    
+    
 # lintcode 69
 """
 Definition of TreeNode:
