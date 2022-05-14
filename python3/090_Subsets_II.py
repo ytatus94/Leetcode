@@ -22,6 +22,7 @@ class Solution:
             if i > index and nums[i] == nums[i - 1]: # 這邊在去重
                 continue
             self.dfs(nums, results, subset + [nums[i]], i + 1)
+            # 傳入 subset + [num[i]] 這樣就不用處理在 DFS 之前先在 subset 中加入一個，然後還要在 DFS 之後在 subset 中回朔的問題
 
 # 方法2:
 class Solution:
