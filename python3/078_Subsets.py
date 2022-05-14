@@ -29,15 +29,19 @@ class Solution:
     #         subset.pop()
 
     # 方法一是每次 subset 有新的數加入之後，就塞到 results 裏面
+    # 所以方法一的結果是 [[], [1], [1,2], [1,2,3], [1,3], [2], [2,3],[3]]
     # 方法二是跑到底了，才把整個 subset 加入到 results 裏面
+    # 所以方法二的結果是 [[1,2,3], [1,2], [1,3], [1], [2,3], [2],[3], []]
+    # 兩者放入 results 的順序不一樣
 
     # 方法二
     def helper(self, nums, results, subset, current_index):
         if current_index == len(nums): # 跑到底了，可以塞給 result
             results.append(subset[:]) # 注意 subset 要用 deep copy
             return results
-        self.helper(nums, results, subset + [nums[current_index]], current_index + 1)
-        self.helper(nums, results, subset, current_index + 1) # 會跑到這行時，表示上一行已經跑到底，又一直 return 到 current_index 所指向的元素，所以 current_index 可以往後移動一個元素了
+        self.helper(nums, results, subset + [nums[current_index]], current_index + 1) # 要把 nums[current_index] 放入 subset 中
+        self.helper(nums, results, subset, current_index + 1) # 不把 nums[current_index] 放入 subset 中，會跑到這行時，表示上一行已經跑到底，
+                                                              # 又一直 return 到 current_index 所指向的元素，所以 current_index 可以往後移動一個元素了
 
 # 方法三
 class Solution:
