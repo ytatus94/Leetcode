@@ -27,7 +27,9 @@ class Solution:
     #         subset.append(nums[i])
     #         self.helper(nums, results, subset, i + 1)
     #         subset.pop()
-        
+
+    # 方法一是每次 subset 有新的數加入之後，就塞到 results 裏面
+    # 方法二是跑到底了，才把整個 subset 加入到 results 裏面
 
     # 方法二
     def helper(self, nums, results, subset, current_index):
