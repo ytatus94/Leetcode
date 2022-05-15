@@ -132,8 +132,8 @@ Leetcode exercises for SQL and algorithm problems.
 |7|[148. Sort Colors](https://www.lintcode.com/problem/148/)|[75. Sort Colors](https://leetcode.com/problems/sort-colors)| Medium | 
 |7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)||| 
 |7|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/)||| 
-|7|[98 Sort List](https://www.lintcode.com/problem/98/)|[148. Sort List](https://leetcode.com/problems/sort-list)| Medium | 
-|7|[5 Kth Largest Element](https://www.lintcode.com/problem/5/)|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)| Medium |
+|7|[98. Sort List](https://www.lintcode.com/problem/98/)|[148. Sort List](https://leetcode.com/problems/sort-list)| Medium | 
+|7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)| Medium |
 
 #### 九章算法
 * 範例 ( 題)
@@ -146,14 +146,93 @@ Leetcode exercises for SQL and algorithm problems.
 
 |Chapter|Lintcode|Leetcode|Level|
 |:---|:---|:---|:---|
-|1|13, 15, 16||
-|2|459, 458, 28, 585, 447, 159, 75, 74, 62, 600, 462, 254, 14, 460, 414, 38, 61, 617, 141, 457, 586, 160, 63, 437, 183||
-|3|597, 596, 595, 376, 480, 453, 97, 93, 578||
-|4|433, 69, 618, 598, 178, 137, 7, 573, 616, 611||
-|5|136, 18, 16, 15, 121, 153, 135||
-|6|599, 165, 138, 41, 139, 105, 102, 98, 450, 65||
-|7|607, 521, 609, 608, 587, 533, 148, 143, 57, 31||
+|1|[13. Implement strStr()](https://www.lintcode.com/problem/13/)||
+|1|[15. Permutations](https://www.lintcode.com/problem/15/)||
+|1|[16. Permutations II](https://www.lintcode.com/problem/16/)||
+|2|[459. Closest Number in Sorted Array](https://www.lintcode.com/problem/459/)||
+|2|[458. Last Position of Target](https://www.lintcode.com/problem/458/)||
+|2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)||
+|2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)||
+|2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)||
+|2|159||
+|2|75||
+|2|74||
+|2|62||
+|2|600||
+|2|462||
+|2|254||
+|2|14||
+|2|460||
+|2|414||
+|2|38||
+|2|61||
+|2|617||
+|2|141||
+|2|457||
+|2|586||
+|2|160||
+|2|63||
+|2|437||
+|2|183||
+|3|597||
+|3|596||
+|3|595||
+|3|376||
+|3|480||
+|3|453||
+|3|97||
+|3|93||
+|3|578||
+|3|95||
+|4|433||
+|4|69||
+|4|618||
+|4|598||
+|4|178||
+|4|137||
+|4|7||
+|4|573||
+|4|616||
+|4|611||
+|5|136||
+|5|18||
+|5|16||
+|5|15||
+|5|121||
+|5|153||
+|5|135||
+|6|599||
+|6|165||
+|6|138||
+|6|41||
+|6|139||
+|6|105||
+|6|102||
+|6|98||
+|6|450||
+|6|65||
+|7|607||
+|7|521||
+|7|609||
+|7|608||
+|7|587||
+|7|533||
+|7|148||
+|7|143||
+|7|57||
+|7|31||
 |8|||
 |9|||
 
 #### 九章動態規劃
+
+* 範例 ( 題)
+
+|Chapter|Lintcode|Leetcode|Level|
+|:---|:---|:---|:---|
+
+
+* 作業 ( 題)
+
+|Chapter|Lintcode|Leetcode|Level|
+|:---|:---|:---|:---|
