@@ -1,4 +1,3 @@
-// 用 Traversal 的寫法
 from typing import (
     List,
 )
@@ -14,6 +13,7 @@ class TreeNode:
         self.left, self.right = None, None
 """
 
+# 用 Traversal 的寫法
 class Solution:
     """
     @param root: A Tree
@@ -35,7 +35,7 @@ class Solution:
         self.traversal(root.left, result)
         self.traversal(root.right, result)
 
-// 用 Divider conquer
+# 用 Divider conquer
 class Solution:
     """
     @param root: A Tree
