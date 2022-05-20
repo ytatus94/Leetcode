@@ -22,7 +22,7 @@ class Solution:
     def dfs(self, nums, start_index, current, result):
         # 出口:
         if start_index == len(nums):
-            result.append(current.copy())
+            result.append(current.copy()) # 要深度拷貝
             return
         # 拆解
         current.append(nums[start_index]) # 要放入 nums[start_index]
