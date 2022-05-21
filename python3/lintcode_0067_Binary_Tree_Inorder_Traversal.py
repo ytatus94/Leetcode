@@ -25,9 +25,12 @@ class Solution:
         self.traversal(root, result)
         return result
     
+    # 定義: 把以 root 爲根的 inorder 放到 result 裡面
     def traversal(self, root, result):
+        # 出口: 處理空節點
         if root is None:
             return
+        # 拆解:
         self.traversal(root.left, result)
         result.append(root.val)
         self.traversal(root.right, result)
@@ -40,12 +43,14 @@ class Solution:
     """
     def inorder_traversal(self, root: TreeNode) -> List[int]:
         result = []
+        # 出口:
+        result = []
         if root is None:
             return result
-        
+        # 拆解:
         left = self.inorder_traversal(root.left)
         right = self.inorder_traversal(root.right)
-        
+        # 合併:
         result += left
         result.append(root.val)
         result += right
