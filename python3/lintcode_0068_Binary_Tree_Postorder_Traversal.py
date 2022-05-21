@@ -21,15 +21,16 @@ class Solution:
     """
     def postorder_traversal(self, root: TreeNode) -> List[int]:
         # write your code here
-        if root is None:
-            return []
         result = []
         self.traversal(root, result)
         return result
 
+    # 定義: 把以 root 為根的 post 放到 result 裡面
     def traversal(self, root, result):
+        # 出口: 處理空節點
         if root is None:
             return result
+        # 拆解:
         self.traversal(root.left, result)
         self.traversal(root.right, result)
         result.append(root.val)
@@ -48,7 +49,7 @@ class Solution:
         # 拆解:
         left = self.postorder_traversal(root.left)
         right = self.postorder_traversal(root.right)
-        
+        # 合併:
         result += left
         result += right
         result.append(root.val)
