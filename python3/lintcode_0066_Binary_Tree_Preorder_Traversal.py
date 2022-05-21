@@ -25,12 +25,13 @@ class Solution:
         self.traversal(root, result) # traversal 是把結果當參數傳遞
         return result
         
-    # 把以 root 為根的 preorder 放到 result 裡面去
+    # 定義: 把以 root 為根的 preorder 放到 result 裡面去
     def traversal(self, root, result):
         # 遞歸的出口: 處理空節點
         # 空節點時 ==> 什麼都不做
         if root is None:
             return
+        # 拆解
         result.append(root.val)
         self.traversal(root.left, result)
         self.traversal(root.right, result)
