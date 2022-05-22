@@ -1,5 +1,6 @@
 # Leetcode
-Leetcode exercises for SQL and algorithm problems.
+
+* Leetcode exercises for SQL and algorithm problems.
 
 ### SQL
 
@@ -57,7 +58,9 @@ Leetcode exercises for SQL and algorithm problems.
 |1069|Product Sales Analysis II|Easy|
 
 ### Algorithm
-    * The algorithm problems contain Leetcode and lintcode problems.
+
+* The algorithm problems contain Leetcode and lintcode problems.
+* The level is the Leetcode level.
 
 #### 九章 python
 * 範例 (23 題)
@@ -140,6 +143,33 @@ Leetcode exercises for SQL and algorithm problems.
 
 |Chapter|Lintcode|Leetcode|Level|
 |:---|:---|:---|:---|
+|1|[13. Implement strStr()](https://www.lintcode.com/problem/13/)||
+|1|[17. Subsets](https://www.lintcode.com/problem/17/)||
+|1|[18. Subsets II](https://www.lintcode.com/problem/18/)||
+|2|[Binary search](https://www.jiuzhang.com/solutions/binary-search/)||
+|2|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)||
+|2|[14.First Position of Target](https://www.lintcode.com/problem/14/)||
+|2|[458. Last Position of Target](https://www.lintcode.com/problem/458/)||
+|2|[74. First Bad Version](https://www.lintcode.com/problem/74/)||
+|2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)||
+|2|[159. Find Minimum in Rotated Sorted Array](https://www.lintcode.com/problem/159/)||
+|2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)||
+|2|[38. Search a 2D Matrix II](https://www.lintcode.com/problem/38/)||
+|2|[61. Search for a Range](https://www.lintcode.com/problem/61/)||
+|2|[462. Total Occurrence of Target](https://www.lintcode.com/problem/462/)||
+|2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)||
+|2|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)||
+|2|[75. Find Peak Element](https://www.lintcode.com/problem/75/)||
+|2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)||
+|2|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)||
+|2|[1790. Rotate String II](https://www.lintcode.com/problem/1790/)||
+|3|[66. Binary Tree Preorder Traversal]()||
+|3|[67. Binary Tree Inorder Traversal]()||
+|3|[68. Binary Tree Postorder Traversal]()||
+|3|[97. Maximum Depth of Binary Tree]()||
+|3|[480. Binary Tree Paths]()||
+|3|[596. Minimum Subtree]()||
+
 
 
 * 作業 (76 題)
@@ -154,73 +184,73 @@ Leetcode exercises for SQL and algorithm problems.
 |2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)||
 |2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)||
 |2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)||
-|2|159||
-|2|75||
-|2|74||
-|2|62||
-|2|600||
-|2|462||
-|2|254||
-|2|14||
-|2|460||
-|2|414||
-|2|38||
-|2|61||
-|2|617||
-|2|141||
-|2|457||
-|2|586||
-|2|160||
-|2|63||
-|2|437||
-|2|183||
-|3|597||
-|3|596||
-|3|595||
-|3|376||
-|3|480||
-|3|453||
-|3|97||
-|3|93||
-|3|578||
-|3|95||
-|4|433||
-|4|69||
-|4|618||
-|4|598||
-|4|178||
-|4|137||
-|4|7||
-|4|573||
-|4|616||
-|4|611||
-|5|136||
-|5|18||
-|5|16||
-|5|15||
-|5|121||
-|5|153||
-|5|135||
-|6|599||
-|6|165||
-|6|138||
-|6|41||
-|6|139||
-|6|105||
-|6|102||
-|6|98||
-|6|450||
-|6|65||
-|7|607||
-|7|521||
-|7|609||
-|7|608||
-|7|587||
-|7|533||
-|7|148||
-|7|143||
-|7|57||
-|7|31||
+|2|[159. Find Minimum in Rotated Sorted](https://www.lintcode.com/problem/159/)||
+|2|[75. Find Peak Element](https://www.lintcode.com/problem/75/)||
+|2|[74. First Bad Version](https://www.lintcode.com/problem/74/)||
+|2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)||
+|2|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)||
+|2|[462. Total Occurrence of Target](https://www.lintcode.com/problem/462/)||
+|2|[254. Drop Eggs](https://www.lintcode.com/problem/254/)||
+|2|[14. First Position of Target](https://www.lintcode.com/problem/14/)||
+|2|[460. Find K Closest Elements](https://www.lintcode.com/problem/460/)||
+|2|[414. Divide Two Integers](https://www.lintcode.com/problem/414/)||
+|2|[38. Search a 2D Matrix II](https://www.lintcode.com/problem/38/)||
+|2|[61. Search for a Range](https://www.lintcode.com/problem/61/)||
+|2|[617. Maximum Average Subarray II](https://www.lintcode.com/problem/617/)||
+|2|[141. Sqrt(x)](https://www.lintcode.com/problem/141/)||
+|2|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)||
+|2|[586. Sqrt(x) II](https://www.lintcode.com/problem/586/)||
+|2|[160. Find Minimum in Rotated Sorted Array II](https://www.lintcode.com/problem/160/)||
+|2|[63. Search in Rotated Sorted Array II](https://www.lintcode.com/problem/63/)||
+|2|[437. Copy Books](https://www.lintcode.com/problem/437/)||
+|2|[183. Wood Cut](https://www.lintcode.com/problem/183/)||
+|3|[597. Subtree with Maximum Average](https://www.lintcode.com/problem/597/)||
+|3|[596. Minimum Subtree](https://www.lintcode.com/problem/596/)||
+|3|[595. Binary Tree Longest Consecutive Sequence](https://www.lintcode.com/problem/595/)||
+|3|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/)||
+|3|[480. Binary Tree Paths](https://www.lintcode.com/problem/480/)||
+|3|[453. Flatten Binary Tree to Linked List](https://www.lintcode.com/problem/453/)||
+|3|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/problem/97/)||
+|3|[93. Balanced Binary Tree](https://www.lintcode.com/problem/93/)||
+|3|[578. Lowest Common Ancestor III](https://www.lintcode.com/problem/578/)||
+|3|[95. Validate Binary Search Tree](https://www.lintcode.com/problem/95/)||
+|4|[433. Number of Islands](https://www.lintcode.com/problem/433/)||
+|4|[69. Binary Tree Level Order Traversal](https://www.lintcode.com/problem/69/)||
+|4|[618. Search Graph Nodes](https://www.lintcode.com/problem/618/)||
+|4|[598. Zombie in Matrix](https://www.lintcode.com/problem/598/)||
+|4|[178. Graph Valid Tree](https://www.lintcode.com/problem/178/)||
+|4|[137. Clone Graph](https://www.lintcode.com/problem/137/)||
+|4|[7. Serialize and Deserialize Binary Tree](https://www.lintcode.com/problem/7/)||
+|4|[573. Build Post Office II](https://www.lintcode.com/problem/573/)||
+|4|[616. Course Schedule II](https://www.lintcode.com/problem/616/)||
+|4|[611. Knight Shortest Path](https://www.lintcode.com/problem/611/)||
+|5|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)||
+|5|[18. Subsets II](https://www.lintcode.com/problem/18/)||
+|5|[16. Permutations II](https://www.lintcode.com/problem/16/)||
+|5|[15. Permutations](https://www.lintcode.com/problem/15/)||
+|5|[121. Word Ladder II](https://www.lintcode.com/problem/121/)||
+|5|[153. Combination Sum II](https://www.lintcode.com/problem/153/)||
+|5|[135. Combination Sum](https://www.lintcode.com/problem/135/)||
+|6|[599. Insert into a Cyclic Sorted List](https://www.lintcode.com/problem/599/)||
+|6|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)||
+|6|[138. 找不到這題](https://www.lintcode.com/problem/138/)||
+|6|[41. Maximum Subarray](https://www.lintcode.com/problem/41/)||
+|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/)||
+|6|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)||
+|6|[102. Linked List Cycle](https://www.lintcode.com/problem/102/)||
+|6|[98. Sort List](https://www.lintcode.com/problem/98/)||
+|6|[450. Reverse Nodes in k-Group](https://www.lintcode.com/problem/450/)||
+|6|[65. Median of two Sorted Arrays](https://www.lintcode.com/problem/65/)||
+|7|[607. Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)||
+|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/)||
+|7|[609. Two Sum - Less than or equal to target](https://www.lintcode.com/problem/609/)||
+|7|[608. Two Sum II - Input array is sorted](https://www.lintcode.com/problem/608/)||
+|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/)||
+|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/)||
+|7|[148. Sort Colors](https://www.lintcode.com/problem/148/)||
+|7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)||
+|7|[57. 3Sum](https://www.lintcode.com/problem/57/)||
+|7|[31. Partition Array](https://www.lintcode.com/problem/31/)||
 |8|||
 |9|||
 
