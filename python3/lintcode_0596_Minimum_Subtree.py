@@ -63,3 +63,42 @@ class Solution:
         if right_min == curr_min:
             return right_node, curr_min, curr_sum
         return root, curr_min, curr_sum
+
+    
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: the root of binary tree
+    @return: the root of the minimum subtree
+    """
+    def find_subtree(self, root: TreeNode) -> TreeNode:
+        # write your code here
+        self.min_sum = float("inf")
+        self.min_sum_node = None
+        self.helper(root)
+        return self.min_sum_node
+
+    # 定義: 傳回以 root 為根的子樹的 sum
+    def helper(self, root):
+        # 出口:
+        if root is None:
+            return 0
+        
+        # 拆解:
+        left_sum = self.helper(root.left)
+        right_sum = self.helper(root.right)
+        current_sum = root.val + left_sum + right_sum
+
+        # 打擂台
+        if current_sum < self.min_sum:
+            self.min_sum = current_sum
+            self.min_sum_node = root
+
+        return current_sum
