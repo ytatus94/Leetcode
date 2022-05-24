@@ -102,3 +102,28 @@ class Solution:
             self.min_sum_node = root
 
         return current_sum
+
+class Solution:
+    """
+    @param root: the root of binary tree
+    @return: the root of the minimum subtree
+    """
+    def find_subtree(self, root: TreeNode) -> TreeNode:
+        # write your code here
+        min_sum, min_sum_node, current_sum = self.helper(root, float("inf"), None)
+        return min_sum_node
+
+    def helper(self, root, min_sum, min_sum_node):
+        if root is None:
+            return min_sum, min_sum_node, 0
+
+        min_sum, min_sum_node, left_sum = self.helper(root.left, min_sum, min_sum_node)
+        min_sum, min_sum_node, right_sum = self.helper(root.right, min_sum, min_sum_node)
+
+        current_sum = root.val + left_sum + right_sum
+
+        if current_sum < min_sum:
+            min_sum = current_sum
+            min_sum_node = root
+
+        return min_sum, min_sum_node, current_sum
