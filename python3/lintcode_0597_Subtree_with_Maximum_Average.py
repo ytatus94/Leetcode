@@ -73,3 +73,47 @@ class Solution:
             return right_node, right_sum, right_counts
         
         return root, curr_sum, curr_counts
+    
+from lintcode import (
+    TreeNode,
+)
+
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: the root of binary tree
+    @return: the root of the maximum average of subtree
+    """
+    def find_subtree2(self, root: TreeNode) -> TreeNode:
+        # write your code here
+        self.node = None
+        self.max_average = float("-inf")
+        sum_of_nodes, num_of_nodes = self.helper(root)
+        return self.node
+
+    # 定義: 找出以 root 為根的子樹的和，還有節點數目
+    def helper(self, root):
+        # 出口:
+        if root is None:
+            return 0, 0
+        # 拆解:
+        left_sum, left_num = self.helper(root.left)
+        right_sum, right_num = self.helper(root.right)
+
+        current_sum = left_sum + right_sum + root.val
+        current_num = left_num + right_num + 1
+
+        # 打擂台
+        if current_sum / current_num > self.max_average:
+            self.max_average = current_sum / current_num
+            self.node = root
+
+        return current_sum, current_num
+
