@@ -28,3 +28,19 @@ class Solution:
         temp = temp[::-1]
         for i in range(len(temp)):
             nums[start + i] = temp[i]
+
+# 方法2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param nums: An integer array
+    @return: nothing
+    """
+    def recover_rotated_sorted_array(self, nums: List[int]):
+        # write your code here
+        new_nums = sorted(nums)
+        for i in range(len(nums)):
+            nums[i] = new_nums[i]
