@@ -143,26 +143,26 @@
 
 |Chapter|Lintcode|Leetcode|Level|
 |:---|:---|:---|:---|
-|1|[13. Implement strStr()](https://www.lintcode.com/problem/13/)||
-|1|[17. Subsets](https://www.lintcode.com/problem/17/)||
-|1|[18. Subsets II](https://www.lintcode.com/problem/18/)||
-|2|[Binary search](https://www.jiuzhang.com/solutions/binary-search/)||
-|2|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)||
-|2|[14.First Position of Target](https://www.lintcode.com/problem/14/)||
-|2|[458. Last Position of Target](https://www.lintcode.com/problem/458/)||
-|2|[74. First Bad Version](https://www.lintcode.com/problem/74/)||
+|1|[13. Implement strStr()](https://www.lintcode.com/problem/13/)|[28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)|Easy|
+|1|[17. Subsets](https://www.lintcode.com/problem/17/)|[78. Subsets](https://leetcode.com/problems/subsets/)|Medium|
+|1|[18. Subsets II](https://www.lintcode.com/problem/18/)|[90. Subsets II](https://leetcode.com/problems/subsets-ii/)|Medium|
+|2|[Binary search](https://www.jiuzhang.com/solutions/binary-search/)|||
+|2|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)|[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|
+|2|[14.First Position of Target](https://www.lintcode.com/problem/14/)|[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|
+|2|[458. Last Position of Target](https://www.lintcode.com/problem/458/)|[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|
+|2|[74. First Bad Version](https://www.lintcode.com/problem/74/)|[278. First Bad Version](https://leetcode.com/problems/first-bad-version/)|Easy|
 |2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)||
-|2|[159. Find Minimum in Rotated Sorted Array](https://www.lintcode.com/problem/159/)||
-|2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)||
-|2|[38. Search a 2D Matrix II](https://www.lintcode.com/problem/38/)||
-|2|[61. Search for a Range](https://www.lintcode.com/problem/61/)||
-|2|[462. Total Occurrence of Target](https://www.lintcode.com/problem/462/)||
-|2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)||
-|2|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)||
-|2|[75. Find Peak Element](https://www.lintcode.com/problem/75/)||
-|2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)||
-|2|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)||
-|2|[1790. Rotate String II](https://www.lintcode.com/problem/1790/)||
+|2|[159. Find Minimum in Rotated Sorted Array](https://www.lintcode.com/problem/159/)|[153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)|Medium|
+|2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)|[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)|Medium|
+|2|[38. Search a 2D Matrix II](https://www.lintcode.com/problem/38/)|[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|Medium|
+|2|[61. Search for a Range](https://www.lintcode.com/problem/61/)|||
+|2|[462. Total Occurrence of Target](https://www.lintcode.com/problem/462/)|||
+|2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)|||
+|2|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)|[302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)|Hard|
+|2|[75. Find Peak Element](https://www.lintcode.com/problem/75/)|[162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)|Medium|
+|2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|Medium|
+|2|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)|||
+|2|[1790. Rotate String II](https://www.lintcode.com/problem/1790/)|[796. Rotate String](https://leetcode.com/problems/rotate-string/)|Easy|
 |3|[66. Binary Tree Preorder Traversal](https://www.lintcode.com/problem/66/)||
 |3|[67. Binary Tree Inorder Traversal](https://www.lintcode.com/problem/67/)||
 |3|[68. Binary Tree Postorder Traversal](https://www.lintcode.com/problem/68/)||
