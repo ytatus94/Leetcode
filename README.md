@@ -61,7 +61,7 @@
 
 * The algorithm problems contain Leetcode and lintcode problems.
 * The level is the Leetcode level.
-* **九章算法 [GitHub](https://github.com/ninechapter-algorithm/linghu-algorithm-templete)**
+* 必看！**九章算法 [GitHub](https://github.com/ninechapter-algorithm/linghu-algorithm-templete)**
 
 #### 九章 python
 * 範例 (23 題)
