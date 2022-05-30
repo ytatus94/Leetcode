@@ -32,6 +32,28 @@ class Solution:
         self.traversal(root.left, depth + 1)
         self.traversal(root.right, depth + 1)
 
+class Solution:
+    """
+    @param root: The root of binary tree.
+    @return: An integer
+    """
+    def max_depth(self, root: TreeNode) -> int:
+        # write your code here
+        self.max_depth = 0
+        self.helper(root, 0)
+        return self.max_depth
+
+    def helper(self, root, depth):
+        if root is None:
+            return
+        if root.left is None and root.right is None:
+            self.max_depth = max(self.max_depth, depth + 1)
+            return
+        depth += 1
+        self.helper(root.left, depth)
+        self.helper(root.right, depth)
+
+
 # 用 divide conquer 的方法
 class Solution:
     """
