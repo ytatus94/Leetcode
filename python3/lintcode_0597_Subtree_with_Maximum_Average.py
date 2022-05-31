@@ -117,3 +117,41 @@ class Solution:
 
         return current_sum, current_num
 
+from lintcode import (
+    TreeNode,
+)
+
+"""
+Definition of TreeNode:
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
+"""
+
+class Solution:
+    """
+    @param root: the root of binary tree
+    @return: the root of the maximum average of subtree
+    """
+    def find_subtree2(self, root: TreeNode) -> TreeNode:
+        # write your code here
+        _, _, _, best_node = self.helper(root, float("-inf"), None)
+        return best_node
+
+    def helper(self, root, maximum_average, best_node):
+        if root is None:
+            return 0, 0, maximum_average, best_node
+
+        left_sum, left_nodes, maximum_average, best_node = self.helper(root.left, maximum_average, best_node)
+        right_sum, right_nodes, maximum_average, best_node = self.helper(root.right, maximum_average, best_node)
+
+        current_sum = root.val + left_sum + right_sum
+        current_nodes = 1 + left_nodes + right_nodes
+        current_average = current_sum / current_nodes
+
+        if current_average > maximum_average:
+            maximum_average = current_average
+            best_node = root
+
+        return current_sum, current_nodes, maximum_average, best_node
