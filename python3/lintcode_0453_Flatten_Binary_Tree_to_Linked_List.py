@@ -10,6 +10,34 @@ class TreeNode:
         self.left, self.right = None, None
 """
 
+# 用 Traverse
+class Solution:
+    """
+    @param root: a TreeNode, the root of the binary tree
+    @return: nothing
+    """
+    def flatten(self, root: TreeNode):
+        # write your code here
+        self.last_node = None # 要用來記錄左子樹最後一個節點
+        self.helper(root)
+        return
+    
+    def helper(self, root):
+        if root is None:
+            return
+
+        if self.last_node is not None:
+            self.last_node.left = None
+            # 當 last_node = 1 的時候，這邊把右子樹改成 2 了
+            self.last_node.right = root # 這時候 root = 2 是 1 的左子樹
+
+        self.last_node = root
+        # 當 last_node = 1 時這裡要記下右子樹是 5
+        right_subtree = root.right
+        self.helper(root.left) # 這裡會在下個循環中把 1 的右子樹改成 2
+        self.helper(right_subtree)
+
+# 用 Divid conquer
 class Solution:
     """
     @param root: a TreeNode, the root of the binary tree
