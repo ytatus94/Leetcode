@@ -22,19 +22,21 @@ class Solution:
         self.helper(root)
         return
     
+    # 定義: 把以 root 為根的左子樹，變成 root 的右子樹
     def helper(self, root):
+        # 出口:
         if root is None:
             return
 
         if self.last_node is not None:
             self.last_node.left = None
-            # 當 last_node = 1 的時候，這邊把右子樹改成 2 了
-            self.last_node.right = root # 這時候 root = 2 是 1 的左子樹
-
-        self.last_node = root
+            # 當 last_node = 1 的時候，要把右子樹改成 2 (這時候的 root 就是 2)
+            self.last_node.right = root # 這時候 root = 2 是 1 的右子樹了
+        # 拆解:
+        self.last_node = root # 上面完成把左子樹變成右子樹，所以這邊要把 last_node 改成現在的 root
         # 當 last_node = 1 時這裡要記下右子樹是 5
         right_subtree = root.right
-        self.helper(root.left) # 這裡會在下個循環中把 1 的右子樹改成 2
+        self.helper(root.left) # 這裡會在下個循環中把 1 的右子樹改成 2，所以我們才需要先把 1 的右子樹記下來
         self.helper(right_subtree)
 
 # 用 Divid conquer
