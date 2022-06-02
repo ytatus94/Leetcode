@@ -25,7 +25,7 @@ class Solution:
         self.traversal(root, result)
         return result
 
-    # 定義: 把以 root 為根的 post order 放到 result 裡面
+    # 定義: 把以 root 為根的 postorder 放到 result 裡面
     def traversal(self, root, result):
         # 出口: 處理空節點
         if root is None:
