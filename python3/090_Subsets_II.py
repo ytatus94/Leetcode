@@ -23,6 +23,7 @@ class Solution:
                 continue
             self.dfs(nums, results, subset + [nums[i]], i + 1)
             # 傳入 subset + [num[i]] 這樣就不用處理在 DFS 之前先在 subset 中加入一個，然後還要在 DFS 之後在 subset 中回朔的問題
+            # (就是不需要 subset.pop() 這步驟)
 
 # 方法2:
 class Solution:
@@ -47,4 +48,4 @@ def dfs(results, subset, rest):
         # 這反而不對了，所以要避開 i = 0 的狀況
         if i != 0 and rest[i] == rest[i - 1]:
             continue
-        dfs(results, subset + [rest[i]], rest[i+1:])
+        dfs(results, subset + [rest[i]], rest[i+1:]) # 注意這邊 rest 用 rest[i+1] 傳入，因此 for loop 的時候 i 是從 0 開始
