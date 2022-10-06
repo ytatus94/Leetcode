@@ -7,9 +7,12 @@ class Solution:
         """
         if not needle: # 空 string 要這樣判斷，不可以用 needle == None
             return 0
-        if len(haystack) < len(needle):
+        if len(haystack) < len(needle): # 如果 haystack 的長度比 needle 短，那就不可能在 haystack 中找到 needle
             return -1
         
+        # 如果 needle 有在 haystack 裡面的話，那不需要 loop 整個 haystack 的長度
+        # 例如 haystack 的倒數 n 個字元等於 needle 那只要 loop 到 len(haystack) - n 就可以了
+        # abcdefg 要找 efg 那只要 loop 到 len(abcdefg) - len(eft) = 7 - 3 = 4 就好
         i = 0
         while i <= len(haystack) - len(needle):
             if haystack[i: i + len(needle)] == needle:
