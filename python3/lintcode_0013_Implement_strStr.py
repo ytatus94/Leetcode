@@ -1,3 +1,5 @@
+# 方法1
+# index() 傳回 index，如果找不到就會有 ValueError
 class Solution:
     """
     @param source: 
