@@ -39,3 +39,14 @@ class Solution:
 #
 # n = 4:
 # 歸納出 sum = (1+2+3+4)*2^(4-1)=(1+2+3+4)*2^3 = 80
+
+# 方法2
+class Solution:
+    """
+    @param n: the given number
+    @return: Sum of elements in subsets
+    """
+    def sub_sum(self, n: int) -> int:
+        # write your code here
+        # return sum([i for i in range(1, n+1)]) * 2**(n-1)
+        return int((1 + n) * n / 2) * 2**(n-1)
