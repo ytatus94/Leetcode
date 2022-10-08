@@ -24,3 +24,17 @@ class Solution:
     def str_str(self, source: str, target: str) -> int:
         # Write your code here
         return source.find(target)
+
+# 方法3
+class Solution:
+    """
+    @param source: 
+    @param target: 
+    @return: return the index
+    """
+    def str_str(self, source: str, target: str) -> int:
+        # Write your code here
+        for i in range(len(source)-len(target) + 1):
+            if source[i: i+len(target)] == target:
+                return i
+        return -1
