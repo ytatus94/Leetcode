@@ -92,8 +92,8 @@ class Solution:
     def dfs(self, nums, results, subset, index):
         results.append(subset[:])
         for i in range(index, len(nums)):
-            subset.append(nums[index])
-            self.dfs(nums, results, subset, index + 1)
+            subset.append(nums[i])
+            self.dfs(nums, results, subset, i + 1)
             subset.pop()
 
 # 方法 2:
