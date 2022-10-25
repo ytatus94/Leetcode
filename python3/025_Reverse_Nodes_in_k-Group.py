@@ -39,6 +39,7 @@ class Solution:
         if node_k is None: # 走完 for 迴圈後，指標會停在 nk，且 nk 一定要存在
             return
         
+        # nk 要存在才能 .next
         node_k_plus_one = node_k.next # 要先記住 nk+1
         
         # 這邊才開始做反轉的動作
