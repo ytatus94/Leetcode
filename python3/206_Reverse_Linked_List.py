@@ -28,7 +28,9 @@ class Solution:
             prev = curr # prev 和 curr 往下移動一個節點
             curr = temp
         
-        # 離開 while 迴圈後 curr 是原先 linked list 的最後一個節點的下一個 (就是空)
+        # 離開 while 迴圈後:
+        # curr 是原先 linked list 的最後一個節點的下一個 (就是空)
+        # 而此時 prev 是原先 linked list 的最後一個節點
         # 所以 prev 正好是反轉後的第一個節點，所以回傳 prev
         return prev
 
