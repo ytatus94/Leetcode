@@ -99,12 +99,12 @@ class Solution:
         nodek = prev
         node1 = prev.next
         
-        for i in range(k):
+        for i in range(k): # 這樣跑完 for loop 時 nodek 正好停在第 k 個節點上
             if nodek is None:
                 return None
             nodek = nodek.next
               
-        if nodek is None:
+        if nodek is None: ＃第 k 個節點仍然可能會是 None 所以要檢查
             return None
         
         nodekplus = nodek.next
