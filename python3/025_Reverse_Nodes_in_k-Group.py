@@ -104,7 +104,7 @@ class Solution:
                 return None
             nodek = nodek.next
               
-        if nodek is None: ＃第 k 個節點仍然可能會是 None 所以要檢查
+        if nodek is None: # 第 k 個節點仍然可能會是 None 所以要檢查
             return None
         
         nodekplus = nodek.next
