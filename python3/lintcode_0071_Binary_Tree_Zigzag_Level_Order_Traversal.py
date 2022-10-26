@@ -1,3 +1,5 @@
+# Binary Tree Zigzag Level Order Traversal  和 Binary Tree Level Order Traversal 的差別在於
+# zigzag level order traversal 是找出 current level 的點之後，要先把 current level 反轉之後再放入 result 裡面
 from typing import (
     List,
 )
