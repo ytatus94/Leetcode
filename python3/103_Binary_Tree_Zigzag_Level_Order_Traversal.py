@@ -1,3 +1,7 @@
+# Binary Tree Zigzag Level Order Traversal 也是應用 Binary Tree Level Order Traversal 的模板
+# 只是每一層的結果在存入 results 之前要先注意是否要反轉
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -25,12 +29,13 @@ class Solution:
                 if node.right:
                     queue.append(node.right)
                     
+            # 看看是否需要反轉 current level
             if left_to_right:
                 results.append(curr_level)
             else: # 如果是從右到左，那就要反轉 curr_level 的順序後才塞入 results
                 results.append(list(reversed(curr_level)))
             
-            left_to_right = not left_to_right
+            left_to_right = not left_to_right # 每一層結束就要改變一下 left_to_right 的順序
             
         return results
 
