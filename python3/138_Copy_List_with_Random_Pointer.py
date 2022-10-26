@@ -54,7 +54,7 @@ class Solution(object):
         
         while head != None:
             if head in self.hash_map:
-                new_node = self.hash_map[head]
+                new_node = self.hash_map[head] # 因為第 65 行也可能把節點的關係放到 hash_map 中，所以可能 hash_map 中已經存在了
             else:
                 new_node = RandomListNode(head.label)
                 self.hash_map[head] = new_node
@@ -67,6 +67,7 @@ class Solution(object):
                     new_node.random = RandomListNode(head.random.label)
                     self.hash_map[head.random] = new_node.random
                     
+            # curr 和 head 個往下移動一格
             self.curr = new_node
             head = head.next
             
@@ -80,12 +81,12 @@ class Solution(object):
             return None
             
         myMap = {}
-        nHead = RandomListNode(head.label)
+        nHead = RandomListNode(head.label) # 新節點的頭
         myMap[head] = nHead
         p = head
         q = nHead
         while p != None:
-            q.random = p.random
+            q.random = p.random # 先把原先節點的 random 暫時分配給新節點，等一下再修改
             if p.next != None:
                 q.next = RandomListNode(p.next.label)
                 myMap[p.next] = q.next
@@ -94,10 +95,10 @@ class Solution(object):
             p = p.next
             q = q.next
         
-        p = nHead
+        p = nHead # 這時後 p 是指向新的 linked list 的元素
         while p!= None:
             if p.random != None:
-                p.random = myMap[p.random]
+                p.random = myMap[p.random] # 把新節點的 random 修改成正確的
             p = p.next
         return nHead
         
