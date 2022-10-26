@@ -1,3 +1,4 @@
+# 方法1:
 """
 Definition for singly-linked list with a random pointer.
 class RandomListNode:
@@ -44,3 +45,40 @@ class Solution:
                 new_node.next = new_node.next.next
             head = head.next
         return new_head
+
+    
+# 方法2: 用 hash map
+"""
+Definition for singly-linked list with a random pointer.
+class RandomListNode:
+    def __init__(self, x):
+        self.label = x
+        self.next = None
+        self.random = None
+"""
+
+
+class Solution:
+    # @param head: A RandomListNode
+    # @return: A RandomListNode
+    def copyRandomList(self, head):
+        # write your code here
+        hash_map = {}
+        curr = head
+        while curr:
+            new_node = RandomListNode(curr.label)
+            new_node.next = curr.next # 先指向原先的 next，等一下再修改
+            new_node.random = curr.random # 先指向原先的 random，等一下再修改
+            hash_map[curr] = new_node
+            curr = curr.next
+
+        curr = head
+        while curr:
+            new_node = hash_map[curr]
+            if curr.next is not None: # curr 有可能 loop 到 None 了，就不能 .next
+                new_node.next = hash_map[curr.next] # 這裡修正 new_node.next 指向的
+            if curr.random is not None: # curr 有可能 loop 到 None 了，就不能 .random
+                new_node.random = hash_map[curr.random] # 這裡修正 new_node.random 指向的
+            curr = curr.next
+
+        return hash_map[head]
