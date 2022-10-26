@@ -27,7 +27,7 @@ class Solution:
         # 2. while 循環，不斷的從 queue 中 pop 出節點
         while queue:
             current_level = []
-            for i in range(len(queue)):
+            for i in range(len(queue)): # 有分層的時候，會比沒分層的多這一個循環
                 node = queue.pop(0) # pop() 預設是 pop 最後一個，queue 是先進先出，所以要指定 index
                 current_level.append(node.val)
                 # 3. 把 node 下一層的節點放到 queue 中
