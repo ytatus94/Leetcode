@@ -40,7 +40,7 @@ class Solution:
         while head is not None:
             new_node = head.next
             head.next = new_node.next # head 的下一個點，指回原本的下一個節點
-            if new_node.next is not None: # new_node 有可能是空節點，所以要檢查
+            if new_node.next is not None: # new_node 有可能最後一個點了，所以要檢查 new_node.next 是不是空節點
                 new_node.next = new_node.next.next
             head = head.next
         return new_head
