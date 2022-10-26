@@ -1,3 +1,7 @@
+# Binary tree level order traversal 是很標準的 BFS 要背熟
+# 其他的題目的解法都可以從這個模板做修改得到
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -55,18 +59,18 @@ class Solution:
         # 3. 把 pop 出來的節點當作 head, 把 head 的下一層放到 queue 裡面
         
         queue = list()
-        queue.append(root)
+        queue.append(root) # 1. 把所有的起點放到 queue 裡面
         
         while len(queue) > 0:
-            current_level = []
-            size = len(queue)
+            current_level = [] # 每個 loop 就是新的一層
+            size = len(queue) # 我覺得先算出 size 比較好，這樣才不會因為 queue.append() 而改變長度 (雖然好像長度不會改變，先算出 size 比較保險)
             for node in range(size):
-                head = queue.pop(0)
-                current_level.append(head.val)
+                head = queue.pop(0) # 2. 從 queue 把節點 pop 出來
+                current_level.append(head.val) # 把這一層的東西加進去
                 if head.left is not None:
-                    queue.append(head.left)
+                    queue.append(head.left) # 把下一層的放到 queue 裡面
                 if head.right is not None:
-                    queue.append(head.right)
+                    queue.append(head.right) # 把下一層的放到 queue 裡面
             results.append(current_level)
             
         return results
