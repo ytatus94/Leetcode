@@ -1,4 +1,4 @@
-# 方法1:
+# 方法1: 先把 1->2->3->4->5->null 變成 1->1'->2->2'->3->3'->4->4'->5->5'->null 然後再修改新的節點所指向的 random，最後再拆開成新的 linked list
 """
 Definition for singly-linked list with a random pointer.
 class RandomListNode:
