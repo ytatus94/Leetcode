@@ -64,7 +64,7 @@ class Solution:
             return []
         # 計算每個點的 indegree
         indegree = self.get_indegree(graph)
-        # 找起點
+        # 找起點 (所有 indegree = 0 的點)
         start_nodes = self.get_start_nodes(graph, indegree)
         # 用 BFS 找出拓樸排序
         order = self.bfs(start_nodes, indegree)
