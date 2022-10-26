@@ -1,3 +1,7 @@
+# Binary Tree Level Order Traversal ii 其實和 Binary Tree Level Order Traversal i 一樣
+# 只是題目要求最後的結果的順序，必須是最底層優先。
+# 所以傳回結果的時候，要先 reverse 一下
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
