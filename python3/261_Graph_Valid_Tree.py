@@ -1,8 +1,12 @@
-# Tree 可以是多元樹，不一定要是 binary tree，但是要滿足 n 個點有 n-1 條邊並且 n 個點要互相連通
-# 互相連通是說從某個點，都可以走到圖上的另一個點
-# Tree 就是一種 graph，而 graph 的 BFS 需要一個 hash map 並且和 queue 連動
-# queue 做了什麼動作，hash map 就要做一樣的動作
+# Tree 可以是多元樹，不一定要是 binary tree
+# Tree 是 graph 的條件是: 有 n 個點，有 n-1 條邊，並且 n 個點要互相連通
+#     互相連通是說從某個點，都可以走到圖上的另一個點
+# Graph 的 BFS 需要一個 hash map 並且和 queue 連動
+#     queue 做了什麼動作，hash map 就要做一樣的動作
 # Graph 常常需要建立鄰接矩陣 adjacency matrix
+
+# 這題就是先用簡單的 if 判斷是否滿足 n 個點 n-1 條邊
+# 然後再用 BFS 來判斷 n 個點是否互相連通
 
 # lintcode 178
 class Solution:
