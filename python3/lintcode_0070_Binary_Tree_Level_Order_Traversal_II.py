@@ -1,3 +1,6 @@
+# Binary tree level order traversal i 和 Binary tree level order traversal ii 做法一模一樣
+# 只是在 ii 中，最後要傳回的時候要 reverse 一下
+#
 from typing import (
     List,
 )
