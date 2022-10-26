@@ -48,13 +48,13 @@ class Solution:
         
         # 標準的 BFS
         queue = [0] # 把起點 0 放到 queue 裡面
-        hash_map = [0] # 用 hash map 來記錄有沒有走過該點，要和 queue 同步處理，所以也放入 0
+        hash_map = [0] # 用 hash map (這裡實際上是一個 hash set) 來記錄有沒有走過該點，要和 queue 同步處理，所以也放入 0
         
         while queue:
             node = queue.pop(0)
             for i in neighbors[node]:
                 if i in hash_map: # Graph 常常需要這個判斷，避免有環的情況 (有環的時候走過的點不能再走)
-                    continue # 已經在 hash map 的話就不用再放入了
+                    continue # Tree 沒有 loop ，所以這個 if 是用來判斷是否有走過，走過的不能再走 (因為再走表示往回頭方向走)
                 queue.append(i)
                 hash_map.append(i)
                 
