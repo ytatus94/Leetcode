@@ -48,7 +48,7 @@ class Solution:
         queue = []
         result = [] # 圖的時候，要用一個 has map 來記錄有沒有走過該點
         
-        # 1. 把所有起點放到 queue
+        # 1. 把所有的起點放到 queue
         queue.append(node)
         result.append(node) # 和 queue 同步 (對 hash map 要做一樣的動作)
         
