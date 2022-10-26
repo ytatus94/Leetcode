@@ -57,8 +57,8 @@ class Solution:
                 
         return indegree
  
+# 方法2: 把函數包裝起來，讓主函數變得簡潔
 class Solution:
-    # 把函數包裝起來，讓主函數變得簡潔
     def topSort(self, graph):
         if graph is None:
             return []
@@ -74,6 +74,18 @@ class Solution:
             
         return None
         
+    def get_indegree(self, graph):
+        indegree = dict()
+        for node in graph:
+            indegree[node] = 0 # 先初始化每個點的 indegree 為 0
+            
+        for node in graph:
+            for neighbor in node.neighbors:
+                # node 的每個鄰居，都有一條由 node 指向它的邊
+                indegree[neighbor] = indegree[neighbor] + 1
+                
+        return indegree
+    
     def get_start_nodes(self, graph, indegree):
         # nodes = []
         
