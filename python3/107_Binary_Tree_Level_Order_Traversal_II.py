@@ -42,7 +42,7 @@ class Solution(object):
             
         # 所以當離開回圈時 result 就存放了每一層的節點，由 root 到 leaf
         # 因此要把順序顛倒過來 (用 reversed，但是 reversed 不傳回 list)
-        return list(reversed(self.result))
+        return list(reversed(self.result)) # 這裡是和 Binary Tree Level Order Traversal i 唯一不同的地方
 
 # lintcode 70
 """
