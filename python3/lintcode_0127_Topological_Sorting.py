@@ -18,6 +18,13 @@
 #   隊列最劣情況寫佔用O(V)的空間。
 #   綜上，總複雜度為O(V + E)。
 
+# 拓樸排序三步驟
+# 1. 統計每個點的 indegree
+# 2. 把所有 indegree = 0 的點放到 queue
+# 3. 把 queue 中的點跳出來，然後對應到的鄰居點的 indegree 減一
+
+拓扑排序三步：统计入度，零入度入队，出队并且邻居入度减一
+
 # lintcode 127
 """
 Definition for a Directed graph node
