@@ -17,9 +17,8 @@ class Solution:
         
         # 初始化 graph
         graph = {}
-        for pre in prerequisites:
-            for node in pre:
-                graph[node] = set() # 不可以重複，所以用 set()
+        for node in range(numCourses):
+            graph[node] = set() # 不可以重複，所以用 set()
         # 建立圖
         for pre in prerequisites:
             graph[pre[1]].add(pre[0]) # pre[1] 是先修課，上完了才能上 pre[0]
