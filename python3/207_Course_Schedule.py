@@ -111,12 +111,11 @@ class Solution:
         graph = self.build_graph(prerequisites)
         return self.topo_sort(graph)
         
-    def build_graph(self, prerequisites):
+    def build_graph(self, numCourses, prerequisites):
         graph = {}
-        for pre in prerequisites:
-            for course in pre:
-                if course not in graph:
-                    graph[course] = set()
+        for course in range(numCourses):
+            if course not in graph:
+                graph[course] = set()
                     
         for pre in prerequisites:
             for i in range(1, len(pre)):
