@@ -1,3 +1,8 @@
+# 這題和 course schedule i, course schedule ii 一樣，都是用標準的 topological sorting 模板
+# 要注意的地方是，因為 org 的排序要唯一，那每個 loop 的 queue 只能有一個數，不然無法唯一
+# 例如: 開始的時候 queue=[1], hash_map=[1], 可是第二圈的時候如果 queue=[2,3]
+# 那加入 hash_map 後可以是 [1,2,3] 或 [1,3,2] 雖然滿足 topological sorting 的要求，但是就是不唯一的了
+
 from typing import (
     List,
 )
@@ -19,13 +24,9 @@ class Solution:
 
         # 要判斷是否能從 seqs 組成唯一的一組 org，所以建立 graph 和 indegree 時，就用 org 來建立就好
         # 如果 seqs 中存在 org 中沒有存在的點，那就是 False 因為照題目的要求會用到 seqs 中的每個點
-        graph = self.build_graph(org, seqs)
-        indegree = self.get_indegree(org, seqs)
+        graph = self.build_graph(org, seqs) # 1. 建立圖
+        indegree = self.get_indegree(org, seqs) # 2. 統計所有的 indegree
         topo_sort = self.bfs(graph, indegree)
-
-        # print(graph)
-        # print(indegree)
-        # print(topo_sort)
 
         # 如果長度不一樣，seqs 就不可能重組成 org
         if len(topo_sort) != len(org):
@@ -44,7 +45,7 @@ class Solution:
         # 表示 xi 要在其他元素之前，xi+1 要在 i+2 到 i+n 元素之前，以此類推
         for seq in seqs:
             for i in range(1, len(seq)):
-                graph[seq[i-1]].append(seq[i])
+                graph[seq[i-1]].append(seq[i]) # 只要紀錄 xi 要排在 xi+1 前面就好
         return graph
 
     def get_indegree(self, org, seqs):
@@ -63,7 +64,7 @@ class Solution:
                 return []
             n = queue.pop(0)
             for neighbor in graph[n]:
-                indegree[neighbor] -= 1
+                indegree[neighbor] -= 1 # 從 queue 中把點跳出來，把這個點的鄰居的 indegree 減一
                 if indegree[neighbor] == 0:
                     queue.append(neighbor)
                     hash_map.append(neighbor)
