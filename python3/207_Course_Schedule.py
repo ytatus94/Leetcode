@@ -1,7 +1,13 @@
 # 課程相依性，就需要用到 topological sorting
 # 重要的是要建立課程之間關係圖，再從圖中得到 indegree
-# graph[某課程] = [修完某課程後，可以修的其他課程]
+# graph[先修課程] = [修完先修課程後，可以修的其他課程]
 # indegree[某課程] = 有幾個先修課程要先上
+
+# 拓樸排序三步驟
+# 1. 統計所有點的 indegree
+# 2. 把 indegree=0 的點放到 queue 裡面
+# 3. 從 queue 中把點跳出來，然後鄰居點的 indegree 減一
+
 
 # 方法1:
 class Solution:
