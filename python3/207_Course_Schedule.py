@@ -55,6 +55,11 @@ class Solution:
             if v > 0:
                 return False
         return True
+        # 也可以用下面的方式
+        # if count == numCourses:
+        #     return True
+        # return False
+    
     
     
         # 這一題雖然是圖，但是不需要一個和 queue 連動的 hash_map，因為若使用 len(hash_map) == numCourses 是不對的
