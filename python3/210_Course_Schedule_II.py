@@ -1,3 +1,9 @@
+# Course Schedule I 和 Course Schedule II 基本上一模一樣
+# 唯一的差別是 Course Schedule I 只要知道能不能上完課
+#    ----> 只要用計數器來計算上過的課的數目，不需要 hash map 與 queue 同步
+# Course Schedule II 除了能不能上完課之外，還要知道上課順序
+#    ----> 需要用到 hash map 與 queue 同步，hash map 中紀錄上課的順序，hash map 的長度就是上過課的數目
+
 class Solution:
     def findOrder(self, numCourses: 'int', prerequisites: 'List[List[int]]') -> 'List[int]':
         graph = self.build_graph(numCourses, prerequisites)
