@@ -24,8 +24,8 @@ class Solution:
 
         # 要判斷是否能從 seqs 組成唯一的一組 org，所以建立 graph 和 indegree 時，就用 org 來建立就好
         # 如果 seqs 中存在 org 中沒有存在的點，那就是 False 因為照題目的要求會用到 seqs 中的每個點
-        graph = self.build_graph(org, seqs) # 1. 建立圖
-        indegree = self.get_indegree(org, seqs) # 2. 統計所有的 indegree
+        graph = self.build_graph(org, seqs) # 0. 建立圖
+        indegree = self.get_indegree(org, seqs) # 1. 統計所有的 indegree
         topo_sort = self.bfs(graph, indegree)
 
         # 如果長度不一樣，seqs 就不可能重組成 org
@@ -56,15 +56,15 @@ class Solution:
         return indegree
 
     def bfs(self, graph, indegree):
-        queue = [k for k, v in indegree.items() if v == 0]
-        hash_map = [k for k, v in indegree.items() if v == 0]
+        queue = [k for k, v in indegree.items() if v == 0] # 2. 把所有 indegree=0 的點加到 queue 裡面
+        hash_map = [k for k, v in indegree.items() if v == 0] # 要一個 hash_map 和 queue 連動
 
         while queue:
             if len(queue) > 1:
                 return []
             n = queue.pop(0)
             for neighbor in graph[n]:
-                indegree[neighbor] -= 1 # 從 queue 中把點跳出來，把這個點的鄰居的 indegree 減一
+                indegree[neighbor] -= 1 # 3. 從 queue 中把點跳出來，把這個點的鄰居的 indegree 減一
                 if indegree[neighbor] == 0:
                     queue.append(neighbor)
                     hash_map.append(neighbor)
