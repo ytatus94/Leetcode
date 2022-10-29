@@ -81,6 +81,7 @@ class Solution:
         queue = [(row, col)]
         grid[row][col] = 0 # 用過的點就標記成 0
         
+        # 用 BFS 把聯通的 1 通通走一遍，然後走過就標記成 0 
         while queue:
             origin = queue.pop(0)
             x = origin[0]
