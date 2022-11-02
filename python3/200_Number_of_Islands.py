@@ -1,3 +1,7 @@
+# 這一題可以用 BFS, DFS, Union-Find 三種解法
+# BFS
+# DFS
+# Union-Find (Disjoint Set)
 class Solution:
     def numIslands(self, grid: 'List[List[str]]') -> 'int':
         if grid is None or len(grid) == 0:
