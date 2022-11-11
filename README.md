@@ -242,9 +242,9 @@
 |8|[](https://www.lintcode.com/problem/)||
 |8|[](https://www.lintcode.com/problem/)||
 |8|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
+|9|[109. Triangle](https://www.lintcode.com/problem/109/)|Medium|
+|9|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|
+|9|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|
 |9|[](https://www.lintcode.com/problem/)||
 |9|[](https://www.lintcode.com/problem/)||
 |9|[](https://www.lintcode.com/problem/)||
@@ -332,8 +332,8 @@
 |7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)||
 |7|[57. 3Sum](https://www.lintcode.com/problem/57/)||
 |7|[31. Partition Array](https://www.lintcode.com/problem/31/)||
-|8|||
-|9|||
+|8|沒有資料||
+|9|沒有資料||
 
 #### 九章動態規劃
 
