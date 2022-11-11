@@ -3,7 +3,7 @@
 # DFS Traversal (超時): TC = O(2^n)
 # DFS Divid Conquer (超時): 
 # Divide Conquer + Memorization
-# Dynamic Programing 由上往下，但是這一題不適合用由上往下，程式碼沒由下往上好懂
+# Dynamic Programing 由上往下，但是這一題不適合用由上往下，程式碼沒由下往上直觀
 # Dynamic Programing 由下往上
 
 # 方法1. traversal (超時)
