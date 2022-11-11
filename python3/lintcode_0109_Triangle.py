@@ -3,7 +3,7 @@
 # DFS Traversal (超時): TC = O(2^n)
 # DFS Divid Conquer (超時): 
 # Divide Conquer + Memorization
-# Dynamic Programing 由上往下，但是這一題不適合用由上往下，程式碼會變得比較複雜
+# Dynamic Programing 由上往下，但是這一題不適合用由上往下，程式碼沒由下往上好懂
 # Dynamic Programing 由下往上
 
 # 方法1. traversal (超時)
@@ -98,6 +98,33 @@ class Solution:
         return self.memory[(row, col)]
 
 # 方法4. DP 由上往下
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param triangle: a list of lists of integers
+    @return: An integer, minimum path sum
+    """
+    def minimum_total(self, triangle: List[List[int]]) -> int:
+        # write your code here
+        nrows = len(triangle)
+        # 狀態 f
+        f = [[None] * (i+1) for i in range(nrows)]
+        # 初始化頂點與三角形的兩個邊
+        f[0][0] = triangle[0][0] # 頂點
+        for row in range(1, nrows):
+            f[row][0] = f[row-1][0] + triangle[row][0]
+            f[row][row] = f[row-1][row-1] + triangle[row][row]
+
+        # 由上往下算每個 f
+        for row in range(1, nrows):
+            for col in range(1, row): # 注意上限是 row (不包含 row)，因為最右邊的點的 f 已經在初始化時得到了
+                # 當 row = 1 的時候 for col in range(1, 1) 不會跑，直接跳到下一個 row 值
+                f[row][col] = min(f[row-1][col], f[row-1][col-1]) + triangle[row][col]
+
+        return min(f[nrows-1]) # 找出最後一個 row 中的最小值
 
 # 方法5. DP 由下往上
 from typing import (
