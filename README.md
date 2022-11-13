@@ -204,54 +204,97 @@
 |4|[431. Connected Component in Undirected Graph](https://www.lintcode.com/problem/431/)|Medium|||
 |4|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)|Hard|||
 |4|[120. Word Ladder](https://www.lintcode.com/problem/120/)|Hard|||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|5|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|6|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|7|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|8|[](https://www.lintcode.com/problem/)||
-|9|[109. Triangle](https://www.lintcode.com/problem/109/)|Medium|
-|9|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|
-|9|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
-|9|[](https://www.lintcode.com/problem/)||
+|5|[135. Combination Sum](https://www.lintcode.com/problem/135)|Medium|||
+|5|[153. Combination Sum II](https://www.lintcode.com/problem/153/)|Medium|||
+|5|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|||
+|5|[15. Permutations](https://www.lintcode.com/problem/15/)|Medium|||
+|5|[16. Permutations II](https://www.lintcode.com/problem/16)|Medium|||
+|5|[33. N-Queens](https://www.lintcode.com/problem/33/)|Medium|||
+|5|[120. Word Ladder](https://www.lintcode.com/problem/120/)|Hard|||
+|5|[121. Word Ladder II](https://www.lintcode.com/problem/121/)|Hard|||
+|5|[66. Binary Tree Preorder Traversal](https://www.lintcode.com/problem/66/)|Easy|||
+|5|[67. Binary Tree Inorder Traversal](https://www.lintcode.com/problem/67)|Easy|||
+|5|[68. Binary Tree Postorder Traversal](https://www.lintcode.com/problem/68)|Easy|||
+|5|[86. Binary Search Tree Iterator](https://www.lintcode.com/problem/86/)|Hard|||
+|5|[17. Subsets](https://www.lintcode.com/problem/17/)|Medium|||
+|6|[450. Reverse Nodes in k-Group](https://www.lintcode.com/problem/450/)|Hard|||
+|6|[96. Partition List](https://www.lintcode.com/problem/96/)|Easy|||
+|6|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)|Easy|||
+|6|[36. Reverse Linked List II](https://www.lintcode.com/problem/36/)|Medium|||
+|6|[511. Swap Two Nodes in Linked List](https://www.lintcode.com/problem/511/)|Medium|||
+|6|[99. Reorder List](https://www.lintcode.com/problem/99/)|Medium|||
+|6|[170. Rotate List](https://www.lintcode.com/problem/170/)|Medium|||
+|6|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)|Medium|||
+|6|[102. Linked List Cycle](https://www.lintcode.com/problem/102/)|Medium|||
+|6|[103. Linked List Cycle II](https://www.lintcode.com/problem/103/) (鎖住了)|Medium|||
+|6|[380. Intersection of Two Linked Lists](https://www.lintcode.com/problem/380/)|Medium|||
+|6|[98. Sort List](https://www.lintcode.com/problem/98/)|Medium|||
+|6|[106. Convert Sorted List to Binary Search Tree](https://www.lintcode.com/problem/106/)|Medium|||
+|6|Delete Node in the Middle of Singly Linked List||||
+|6|[1534. Convert Binary Search Tree to Sorted Doubly Linked List](https://www.lintcode.com/problem/1534/)|Medium|||
+|6|[6. Merge Two Sorted Arrays](https://www.lintcode.com/problem/6/)|Easy|||
+|6|[64. Merge Sorted Array](https://www.lintcode.com/problem/64/)|Easy|||
+|6|[547. Intersection of Two Arrays](https://www.lintcode.com/problem/547/)|Easy|||
+|6|[65. Median of two Sorted Arrays](https://www.lintcode.com/problem/65/)|Hard|||
+|6|[41. Maximum Subarray](https://www.lintcode.com/problem/41/)|Easy|||
+|6|[138. Subarray Sum](https://www.lintcode.com/problem/138/)|Easy|||
+|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/) (鎖住了)|Medium|||
+|7|[604. Window Sum](https://www.lintcode.com/problem/604/) (鎖住了)|Easy|||
+|7|[539. Move Zeroes](https://www.lintcode.com/problem/539/)|Easy|||
+|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/) (鎖住了)|Easy|||
+|7|[415. Valid Palindrome](https://www.lintcode.com/problem/415/)|Medium|||
+|7|Rotat String||Not found|
+|7|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)|Easy|||
+|7|[56. Two Sum](https://www.lintcode.com/problem/56/)|Easy|||
+|7|[607 . Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)|Easy|||
+|7|[608. Two Sum  II - input array is sorted](https://www.lintcode.com/problem/608/) (鎖住了)|Medium|||
+|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/) (鎖住了)|Medium|||
+|7|[57. 3Sum](https://www.lintcode.com/problem/57/)|Medium|||
+|7|[382. Triangle Count](https://www.lintcode.com/problem/382/) (鎖住了)|Medium|||
+|7|[609. Two Sum - less than or equal to target](https://www.lintcode.com/problem/609/) (鎖住了)|Medium|||
+|7|[443. Two Sum - Greater than target](https://www.lintcode.com/problem/443/) (鎖住了)|Medium|||
+|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/) (鎖住了)|Medium|||
+|7|[59. 3Sum Closest](https://www.lintcode.com/problem/59/)|Medium|||
+|7|[58. 4Sum](https://www.lintcode.com/problem/58/)|Medium|||
+|7|[610. Two Sum - Difference equals to target](https://www.lintcode.com/problem/610/) (鎖住了)|Medium|||
+|7|[31. Partition Array](https://www.lintcode.com/problem/31/)|Medium|||
+|7|[461. Kth Smallest Numbers in Unsorted Array](https://www.lintcode.com/problem/461/) (鎖住了)|Medium|||
+|7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|Medium|||
+|7|[373. Partition Array by Odd and Even](https://www.lintcode.com/problem/373/) (鎖住了)|Easy|||
+|7|[144. Interleaving Positive and Negative Numbers](https://www.lintcode.com/problem/144/)|Medium|||
+|7|[49. Sort Letters by Case](https://www.lintcode.com/problem/49/)|Medium|||
+|7|[148. Sort Colors](https://www.lintcode.com/problem/148/)|Medium|||
+|7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)|Medium|||
+|8|[129. Rehashing](https://www.lintcode.com/problem/129/) (鎖住了)|Medium|||
+|8|[134. LRU Cache](https://www.lintcode.com/problem/134/)|Hard|||
+|8|[138. Subarray Sum](https://www.lintcode.com/problem/138/)|Easy|||
+|8|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)|Medium|||
+|8|[171. Anagrams](https://www.lintcode.com/problem/171/)|Medium|||
+|8|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|||
+|8|[4. Ugly Number II](https://www.lintcode.com/problem/517/)|Medium|||
+|8|[545. Top k Largest Number II](https://www.lintcode.com/problem/545/) (鎖住了)|Medium|||
+|8|[104. Merge K Sorted Lists](https://www.lintcode.com/problem/104/)|Medimu|||
+|8|[613. High Five](https://www.lintcode.com/problem/613/) (鎖住了)|Medium|||
+|8|[612. K Closest Points](https://www.lintcode.com/problem/612/) (鎖住了)|Medium|||
+|8|[486. Merge K Sorted Arrays](https://www.lintcode.com/problem/486/) (鎖住了)|Medium|||
+|8|Data Stream Median||||
+|8|[544. TopK Largest Numbers](https://www.lintcode.com/problem/544/) (鎖住了)|Medium|||
+|8|[401. Kth Smallest Number in Sorted Matrix](https://www.lintcode.com/problem/401/)|Medium|||
+|8|Building Outline||||
+|8|[471. Top K Frequent Words](https://www.lintcode.com/problem/471/)|Medium|||
+|9|[109. Triangle](https://www.lintcode.com/problem/109/)|Medium|||
+|9|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|||
+|9|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|||
+|9|[1482. Minimum Path Sum](https://www.lintcode.com/problem/1482/) (鎖住了)|Medium|||
+|9|[114. Unique Path](https://www.lintcode.com/problem/114/)|Easy|||
+|9|[111. Climbing Stairs](https://www.lintcode.com/problem/111/)|Easy|||
+|9|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|||
+|9|[117. Jump Game II](https://www.lintcode.com/problem/117)|Medium|||
+|9|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
+|9|[513. Perfect Squares](https://www.lintcode.com/problem/513/)|Medium|||
+|9|[603. Largest Divisible Subset](https://www.lintcode.com/problem/603/)|Medium|||
+|9|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|||
+|9|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|||
 
 * 作業 (76 題)
 
