@@ -285,7 +285,7 @@
 |9|[109. Triangle](https://www.lintcode.com/problem/109/)|Medium|||
 |9|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|||
 |9|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|||
-|9|[1482. Minimum Path Sum](https://www.lintcode.com/problem/1482/) (鎖住了)|Medium|||
+|9|[110. Minimum Path Sum](https://www.lintcode.com/problem/110/)|Medium|||
 |9|[114. Unique Path](https://www.lintcode.com/problem/114/)|Easy|||
 |9|[111. Climbing Stairs](https://www.lintcode.com/problem/111/)|Easy|||
 |9|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|||
