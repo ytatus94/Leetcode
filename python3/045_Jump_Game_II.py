@@ -14,7 +14,7 @@ class Solution:
         # initialize
         step[0] = 0
         # function
-        # 要移動到元素 i 的畫，就必須是在 i 前面的某個元素 j 上
+        # 要移動到元素 i 的話，就必須是在 i 前面的某個元素 j 上
         # 然後在 j 的允許步伐內可以跳到 i
         for i in range(1, len(A)):
             for j in range(i):
