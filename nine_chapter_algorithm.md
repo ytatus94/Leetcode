@@ -296,7 +296,7 @@ BFS 處理:
 |109|[Triangle](https://www.lintcode.com/problem/109/)|Medium|[http://www.jiuzhang.com/solutions/triangle/](http://www.jiuzhang.com/solutions/triangle/)|
 |136|[Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|[https://www.jiuzhang.com/solutions/palindrome-partitioning/](https://www.jiuzhang.com/solutions/palindrome-partitioning/)|
 |124|[Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|[https://www.jiuzhang.com/solutions/longest-consecutive-sequence/](https://www.jiuzhang.com/solutions/longest-consecutive-sequence/)|
-|1482|[Minimum Path Sum](https://www.lintcode.com/problem/1482/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
+|110|[Minimum Path Sum](https://www.lintcode.com/problem/110/)|Medium|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |114|[Unique Path](https://www.lintcode.com/problem/114/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
 |111|[Climbing Stairs](https://www.lintcode.com/problem/111/)|Easy|[http://www.jiuzhang.com/solutions/climbing-stairs/](http://www.jiuzhang.com/solutions/climbing-stairs/)|
 |116|[Jump Game](https://www.lintcode.com/problem/116/)|Medium|[https://www.jiuzhang.com/solutions/jump-game/](https://www.jiuzhang.com/solutions/jump-game/)|
