@@ -84,7 +84,7 @@
 
 ## Ch7
 
-### Examples (題)
+### Examples (7 題)
 
 |No|Problem|Level|Solution|
 |:---|:---|:---|:---|
