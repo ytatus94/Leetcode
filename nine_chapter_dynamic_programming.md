@@ -20,7 +20,7 @@
 |115|[Unique Paths II](http://www.lintcode.com/problem/unique-paths-ii/)||[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
 |515|[Paint House](http://www.lintcode.com/en/problem/paint-house/)||[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
 |512|[Decode Ways](http://www.lintcode.com/problem/decode-ways/)||[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
-|397|[Longest Increasing Continuous Subsequence](http://www.lintcode.com/en/problem/longest-increasing-continuous- subsequence/)||[http://www.jiuzhang.com/solutions/longest-increasing-continuous- subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous- subsequence/)|
+|397|[Longest Increasing Continuous Subsequence](http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence/)||[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
 |110|[Minimum Path Sum](http://www.lintcode.com/problem/minimum-path-sum/)||[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |553|[Bomb Enemy](http://www.lintcode.com/problem/bomb-enemy/)||[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
 |664|[Counting Bits](http://www.lintcode.com/en/problem/counting-bits/)|||
@@ -65,8 +65,7 @@
 |440|[Backpack III](http://www.lintcode.com/problem/backpack-iii/)||[http://www.jiuzhang.com/solutions/backpack-iii/](http://www.jiuzhang.com/solutions/backpack-iii/)|
 |667|[Longest Palindromic Subsequence](http://www.lintcode.com/en/problem/longest-palindromic-subsequence/)||[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
 |396|[Coins In A Line III](http://www.lintcode.com/en/problem/coins-in-a-line-iii/)||[http://www.jiuzhang.com/solution/coins-in-a-line-iii/](http://www.jiuzhang.com/solution/coins-in-a-line-iii/)|
-|430|[Scramble String](
-http://www.lintcode.com/problem/scramble-string/)||[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
+|430|[Scramble String](http://www.lintcode.com/problem/scramble-string/)||[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
 |168|[Burst Balloons](http://www.lintcode.com/problem/burst-ballons/)||[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
 
 ## Ch6
