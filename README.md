@@ -383,7 +383,7 @@
 * 範例 ( 題)
 
 |Chapter|Lintcode|Level|Leetcode|Level|
-|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|
 |1|[669. Coin Change](https://www.lintcode.com/problem/669/)|Medium|||
 |1|[114. Unique Paths](https://www.lintcode.com/problem/114/)|Easy|||
 |1|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|||
