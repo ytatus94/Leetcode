@@ -6,10 +6,10 @@
 
 |No|Problem|Level|Solution|
 |:---|:---|:---|:---|
-|669|[Coin Change](https://www.lintcode.com/en/problem/coin-change/)||[https://www.jiuzhang.com/solution/coin-change/](https://www.jiuzhang.com/solution/coin-change/)|
-|114|[Unique Paths](http://www.lintcode.com/en/problem/unique-paths/)||[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
-|116|[Jump Game](http://www.lintcode.com/en/problem/jump-game/)||[http://www.jiuzhang.com/solutions/jump-game/](http://www.jiuzhang.com/solutions/jump-game/)|
-|191|[Maximum Product Subarray](http://www.lintcode.com/problem/maximum-product-subarray/)||[http://www.jiuzhang.com/solutions/maximum-product-subarray/](http://www.jiuzhang.com/solutions/maximum-product-subarray/)|
+|669|[Coin Change](https://www.lintcode.com/problem/669/)||[https://www.jiuzhang.com/solution/coin-change/](https://www.jiuzhang.com/solution/coin-change/)|
+|114|[Unique Paths](https://www.lintcode.com/problem/114/)||[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
+|116|[Jump Game](https://www.lintcode.com/problem/116/)||[http://www.jiuzhang.com/solutions/jump-game/](http://www.jiuzhang.com/solutions/jump-game/)|
+|191|[Maximum Product Subarray](https://www.lintcode.com/problem/191/)||[http://www.jiuzhang.com/solutions/maximum-product-subarray/](http://www.jiuzhang.com/solutions/maximum-product-subarray/)|
 
 ## Ch2
 
