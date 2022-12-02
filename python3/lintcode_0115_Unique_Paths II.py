@@ -47,3 +47,47 @@ class Solution:
                     f[row][col] = f[row - 1][col] + f[row][col - 1]
         print(f)
         return f[m-1][n-1]
+
+# 方法 2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param obstacle_grid: A list of lists of integers
+    @return: An integer
+    """
+    def unique_paths_with_obstacles(self, obstacle_grid: List[List[int]]) -> int:
+        # write your code here
+        m = len(obstacle_grid)
+        if m == 0:
+            return 0
+        n = len(obstacle_grid[0])
+        if n == 0:
+            return 0
+
+        f = [[0 for col in range(n)] for row in range(m)]
+
+        for row in range(m):
+            for col in range(n):
+                # obstacle
+                if obstacle_grid[row][col] == 1:
+                    f[row][col] = 0
+                    continue
+                
+                # 左上角起點 (能跑到這表示起點非 obstacle)
+                if row == 0 and col == 0:
+                    f[row][col] = 1
+                    continue # 有沒有這個 continue 都沒影響
+                    
+                # 這邊不把 row = 0 或 col = 0 初始化 = 1
+                # 因為有可能有格子是 obstacle 造成後面的格子 f[i][j] = 0
+                # 把 row 和 col 分開討論就可以預防這種狀況
+                
+                if row > 0:
+                    f[row][col] += f[row - 1][col]
+                if col > 0:
+                    f[row][col] += f[row][col - 1]
+
+        return f[m - 1][n - 1]
