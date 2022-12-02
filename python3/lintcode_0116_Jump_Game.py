@@ -30,6 +30,31 @@ class Solution:
 
         return f[len(a) - 1]
 
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: A list of integers
+    @return: A boolean
+    """
+    def can_jump(self, a: List[int]) -> bool:
+        # write your code here
+        # 開一個長度是 a 的數組
+        f = [False for i in range(len(a))] # 問能不能，所以先初始化為 False
+
+        # 初始化
+        f[0] = True # 本來就在 first index of the array
+
+        for i in range(len(a)): # i = 0 ~ len(a)-1
+            for j in range(i): # 枚舉 i 之前的所有 index: 0 ~ i-1
+                if f[j] == True and j + a[j] >= i: # 能跳到 j 且能從 j 跳到 i
+                    f[i] = True
+                    break # 只要 0 ~ i-1 中有一個能跳到 i 那就可以了
+
+        return f[len(a) - 1]    
+
 # 方法2: 用貪心法
 from typing import (
     List,
