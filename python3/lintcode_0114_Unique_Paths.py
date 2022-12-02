@@ -25,3 +25,34 @@ class Solution:
 
         return f[m-1][n-1]
 
+
+class Solution:
+    """
+    @param m: positive integer (1 <= m <= 100)
+    @param n: positive integer (1 <= n <= 100)
+    @return: An integer
+    """
+    def unique_paths(self, m: int, n: int) -> int:
+        # write your code here
+        # 開一個 m x n 的數組
+        f = [[0 for col in range(n)] for row in range(m)]
+
+        # 初始化:
+        # f[0][0] = 1 本來就在 (0, 0) 這一格，所以一種方法
+        # 邊界情況:
+        # 最上面一 row (m = 0) 的每一格，都只能由左邊那格走來
+        # 最左邊一 column (n = 0) 的每一格，都只能由上面那格走來
+        # 所以只有一種方式
+        # f[0][0 ~ n-1] = 1 且 f[0 ~ m-1][0] = 1
+
+        # 轉移方程: 其他格子點，可以從左邊那格走來也可以從上面那格走來
+        # f[i][j] = f[i-1][j] + f[i][j-1]
+
+        for row in range(m):
+            for col in range(n):
+                if row == 0 or col == 0:
+                    f[row][col] = 1
+                else:
+                    f[row][col] = f[row - 1][col] + f[row][col - 1]
+
+        return f[m - 1][n - 1]
