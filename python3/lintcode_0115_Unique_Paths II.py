@@ -1,3 +1,5 @@
+# 座標型 DP
+# TC=O(MN), SC=O(MN)
 from typing import (
     List,
 )
