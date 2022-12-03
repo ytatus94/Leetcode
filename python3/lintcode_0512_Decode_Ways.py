@@ -1,3 +1,5 @@
+# 劃分型 DP, 計數型 DP
+# TC = O(N), SC = O(N)
 class Solution:
     """
     @param s: a string,  encoded message
