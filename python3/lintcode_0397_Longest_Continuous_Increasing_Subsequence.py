@@ -40,3 +40,46 @@ class Solution:
         return max(maxF, maxG)
 
 # 方法 2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: An array of Integer
+    @return: an integer
+    """
+    def longest_increasing_continuous_subsequence(self, a: List[int]) -> int:
+        # write your code here
+        if len(a) == 0:
+            return 0
+
+        res1 = self.LIS(a, len(a))
+
+        # 手動把 array 顛倒 (一定要會)
+        i, j = 0, len(a) - 1
+        while i < j:
+            temp = a[i]
+            a[i] = a[j]
+            a[j] = temp
+            i += 1
+            j -= 1
+
+        # 這時候 a 已經 reverse 了
+        res2 = self.LIS(a, len(a))
+
+        # return res1 > res2 ? res1 : res2 # python 會有 syntax error
+        if res1 > res2:
+            return res1
+        else:
+            return res2
+
+    def LIS(self, a: List[int], n: int) -> int:
+        f = [0 for i in range(n)]
+        res = 0
+        for i in range(len(a)):
+            f[i] = 1
+            if i > 0 and a[i] > a[i - 1]:
+                f[i] = f[i - 1] + 1
+            res = max(res, f[i])
+        return res
