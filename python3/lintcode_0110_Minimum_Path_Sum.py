@@ -38,3 +38,45 @@ class Solution:
                 f[i][j] = min(f[i-1][j], f[i][j-1]) + grid[i][j]
 
         return f[m_rows-1][n_cols-1]
+
+# 方法 2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param grid: a list of lists of integers
+    @return: An integer, minimizes the sum of all numbers along its path
+    """
+    def min_path_sum(self, grid: List[List[int]]) -> int:
+        # write your code here
+        m = len(grid)
+        if m == 0:
+            return 0
+
+        n = len(grid[0])
+        if n == 0:
+            return 0
+
+        f = [[float('inf') for j in range(n)] for i in range(m)]
+
+        for i in range(m):
+            for j in range(n):
+                # f[i][j] = min(f[i-1][j], f[i][j-1]) + grid[i][j]
+                # f[0][0] = 1
+                if i == 0 and j == 0:
+                    f[i][j] = grid[i][j]
+                    continue # 一定要有這一個 continue
+
+                temp = float('inf')
+                if i > 0: # first column can enter this 
+                    temp = min(temp, f[i-1][j])
+                if j > 0: # first row can enter this
+                    temp = min(temp, f[i][j-1])
+
+                f[i][j] = temp + grid[i][j]
+
+        return f[m-1][n-1]
+
+                
