@@ -1,4 +1,7 @@
+
 # 方法1: 用 DP
+# 存在型 DP
+# TC=O(N^2), SC=O(N)
 from typing import (
     List,
 )
