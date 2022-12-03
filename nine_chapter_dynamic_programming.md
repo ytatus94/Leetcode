@@ -17,10 +17,10 @@
 
 |No|Problem|Level|Solution|
 |:---|:---|:---|:---|
-|115|[Unique Paths II](http://www.lintcode.com/problem/unique-paths-ii/)||[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
-|515|[Paint House](http://www.lintcode.com/en/problem/paint-house/)||[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
-|512|[Decode Ways](http://www.lintcode.com/problem/decode-ways/)||[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
-|397|[Longest Increasing Continuous Subsequence](http://www.lintcode.com/en/problem/longest-increasing-continuous-subsequence/)||[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
+|115|[Unique Paths II](https://www.lintcode.com/problem/115/)||[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
+|515|[Paint House](https://www.lintcode.com/problem/515/)||[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
+|512|[Decode Ways](https://www.lintcode.com/problem/512/)||[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
+|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)||[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
 |110|[Minimum Path Sum](http://www.lintcode.com/problem/minimum-path-sum/)||[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |553|[Bomb Enemy](http://www.lintcode.com/problem/bomb-enemy/)||[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
 |664|[Counting Bits](http://www.lintcode.com/en/problem/counting-bits/)|||
