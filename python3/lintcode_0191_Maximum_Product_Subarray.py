@@ -1,3 +1,5 @@
+# 最值型 DP
+# TC=O(N) SC=O(N) 可以用滾動數組變成 
 from typing import (
     List,
 )
