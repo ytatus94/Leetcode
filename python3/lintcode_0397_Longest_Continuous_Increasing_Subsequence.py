@@ -98,11 +98,13 @@ class Solution:
         # write your code here
         if len(a) == 0:
             return 0
+        if len(a) == 1:
+            return 1
 
         # 因為題目說可以 from right to left or from left to right
         # 看以 ai 元素結尾的最長的連續上升 (right to left) 
         # 和連續下降 (left to right) 子序列長度，然後選出最長的那個
-        longest = 1 # 只有一個元素時，最長就是 1
+        longest = 0
         dp_lr = 1 # 此時是 index=0 時的最長連續上升子序列長度
         dp_rl = 1 # 此時是 index=1 時的最長連續下降子序列長度
 
