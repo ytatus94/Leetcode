@@ -1,3 +1,6 @@
+# 序列型 DP, 最值型 DP
+# TC=O(N), SC=O(N)
+
 from typing import (
     List,
 )
