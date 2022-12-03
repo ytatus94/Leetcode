@@ -124,3 +124,105 @@ class Solution:
         print(dp)
 
         return dp[m - 1][n - 1]
+
+# 方法 4: 用滾動數組
+# 把方法 3 中的 i --> new, i-1 --> old 就好
+# 注意只能改 f 的，不能改 grid 的
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param grid: a list of lists of integers
+    @return: An integer, minimizes the sum of all numbers along its path
+    """
+    def min_path_sum(self, grid: List[List[int]]) -> int:
+        # write your code here
+        m = len(grid)
+        if m == 0:
+            return 0
+
+        n = len(grid[0])
+        if n == 0:
+            return 0
+
+        # 因為f[i][j] 只和 f[i-1][j] 與 f[i][j-1] 有關
+        # 所以只需要開 2 dim array 然後用滾動數組計算
+        f = [[float('inf') for j in range(n)] for i in [0, 1]]
+
+        # two pointers
+        # where is row i stored: new
+        # where is row i-1 stored: old = 1 - new
+        old = None
+        new = 0
+        for i in range(m):
+            # swap old and new
+            old = new
+            new = 1 - new # 0 --> 1, 1 --> 0
+            for j in range(n):
+                # f[i][j] = min(f[i-1][j], f[i][j-1]) + grid[i][j]
+                # f[0][0] = 1
+                if i == 0 and j == 0:
+                    f[new][j] = grid[i][j]
+                    continue # 一定要有這一個 continue
+
+                temp = float('inf')
+                if i > 0: # first column can enter this 
+                    temp = min(temp, f[old][j])
+                if j > 0: # first row can enter this
+                    temp = min(temp, f[new][j-1])
+
+                f[new][j] = temp + grid[i][j]
+
+        # 當離開迴圈時，最後一 row 剛好是 new
+        return f[new][n-1]
+
+    
+# 方法 5: 另一種滾動數組的寫法
+# 把方法 4 中的 new --> i%2, old --> 1 - i%2
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param grid: a list of lists of integers
+    @return: An integer, minimizes the sum of all numbers along its path
+    """
+    def min_path_sum(self, grid: List[List[int]]) -> int:
+        # write your code here
+        m = len(grid)
+        if m == 0:
+            return 0
+
+        n = len(grid[0])
+        if n == 0:
+            return 0
+
+        # 因為f[i][j] 只和 f[i-1][j] 與 f[i][j-1] 有關
+        # 所以只需要開 2 dim array 然後用滾動數組計算
+        f = [[float('inf') for j in range(n)] for i in [0, 1]]
+
+        # two pointers
+        # where is row i stored: new
+        # where is row i-1 stored: old = 1 - new
+        for i in range(m):
+            for j in range(n):
+                # f[i][j] = min(f[i-1][j], f[i][j-1]) + grid[i][j]
+                # f[0][0] = 1
+                if i == 0 and j == 0:
+                    f[i % 2][j] = grid[i][j]
+                    continue # 一定要有這一個 continue
+
+                temp = float('inf')
+                if i > 0: # first column can enter this 
+                    temp = min(temp, f[1 - (i % 2)][j])
+                if j > 0: # first row can enter this
+                    temp = min(temp, f[i % 2][j-1])
+
+                f[i % 2][j] = temp + grid[i][j]
+
+        # 當離開迴圈時，最後一 row 剛好是 new
+        return f[(m - 1) % 2][n-1]
+
