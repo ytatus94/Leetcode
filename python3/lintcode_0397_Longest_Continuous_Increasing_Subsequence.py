@@ -120,5 +120,4 @@ class Solution:
 
             longest = max(longest, max(dp_lr, dp_rl))
 
-
         return longest
