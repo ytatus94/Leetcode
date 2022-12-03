@@ -1,3 +1,7 @@
+# 座標型 DP, 計數型 DP
+# TC=O(MN), SC=O(MN)
+
+# 方法 1:
 class Solution:
     """
     @param m: positive integer (1 <= m <= 100)
@@ -26,6 +30,7 @@ class Solution:
         return f[m-1][n-1]
 
 
+# 方法 2:
 class Solution:
     """
     @param m: positive integer (1 <= m <= 100)
