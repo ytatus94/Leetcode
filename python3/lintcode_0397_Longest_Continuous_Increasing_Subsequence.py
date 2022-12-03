@@ -1,4 +1,4 @@
-# 方法 1:
+# 方法 1: TC = O(N), SC=O(N) (其實 SC 是 2N)
 from typing import (
     List,
 )
@@ -84,8 +84,8 @@ class Solution:
             res = max(res, f[i])
         return res
 
-    # 方法 3:
-    from typing import (
+# 方法 3: 滾動數組 TC=O(n), SC=O(1)
+from typing import (
     List,
 )
 
