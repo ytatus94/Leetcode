@@ -83,3 +83,40 @@ class Solution:
                 f[i] = f[i - 1] + 1
             res = max(res, f[i])
         return res
+
+    # 方法 3:
+    from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: An array of Integer
+    @return: an integer
+    """
+    def longest_increasing_continuous_subsequence(self, a: List[int]) -> int:
+        # write your code here
+        if len(a) == 0:
+            return 0
+
+        # 因為題目說可以 from right to left or from left to right
+        # 看以 ai 元素結尾的最長的連續上升 (right to left) 
+        # 和連續下降 (left to right) 子序列長度，然後選出最長的那個
+        longest = 1 # 只有一個元素時，最長就是 1
+        dp_lr = 1 # 此時是 index=0 時的最長連續上升子序列長度
+        dp_rl = 1 # 此時是 index=1 時的最長連續下降子序列長度
+
+        for i in range(1, len(a)): # index 從 1 開始才能避免 i-1 < 0 的情況
+            # from left to right (連續上升)
+            if a[i] > a[i - 1]:
+                dp_lr = dp_lr + 1
+            else:
+                dp_lr = 1
+
+            # from right to left (連續下降)
+            dp_rl = dp_rl + 1 if a[i] < a[i - 1] else 1
+
+            longest = max(longest, max(dp_lr, dp_rl))
+
+
+        return longest
