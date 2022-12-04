@@ -384,18 +384,26 @@
 
 |Chapter|Lintcode|Level|Leetcode|Level|
 |:---|:---|:---|:---|:---|
-|1|[669. Coin Change](https://www.lintcode.com/problem/669/)|Medium|||
-|1|[114. Unique Paths](https://www.lintcode.com/problem/114/)|Easy|||
-|1|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|||
-|1|[191. Maximum Product Subarray](https://www.lintcode.com/problem/191/)|Medium|||
-|2|[]()||||
-|2|[]()||||
-|2|[]()||||
-|2|[]()||||
-|2|[]()||||
-|2|[]()||||
-|2|[]()||||
-
+|1|[669. Coin Change](https://www.lintcode.com/problem/669/)|Medium|[322. Coin Change](https://leetcode.com/problems/coin-change/)|Medium|
+|1|[114. Unique Paths](https://www.lintcode.com/problem/114/)|Easy|[62. Unique Paths](https://leetcode.com/problems/unique-paths/)|Medium|
+|1|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|[55. Jump Game](https://leetcode.com/problems/jump-game/)|Medium|
+|1|[191. Maximum Product Subarray](https://www.lintcode.com/problem/191/)|Medium|[152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|Medium|
+|2|[115. Unique Paths II](https://www.lintcode.com/problem/115/)|Easy|[63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|Medium|
+|2|[515. Paint House](https://www.lintcode.com/problem/515/)|Medium|[256. Paint House](https://leetcode.com/problems/paint-house/) (premium)|Medium|
+|2|[512. Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[91. Decode Ways](https://leetcode.com/problems/decode-ways/)|Medium|
+|2|[397. Longest Continuous Increasing Subsequence](https://www.lintcode.com/problem/397/)|Easy|[674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|Easy|
+|2|[110. Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|
+|2|[553. Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) (premium)|Medium|
+|2|[664. Counting Bits](https://www.lintcode.com/problem/664/) (鎖住了)|Medium|[338. Counting Bits](https://leetcode.com/problems/counting-bits/)|Easy|
+|3|[516 · Paint House II](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[](https://www.lintcode.com/problem/516/)|Hard|||
 
 
 * 作業 ( 題)
