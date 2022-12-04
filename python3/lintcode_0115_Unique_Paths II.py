@@ -1,5 +1,16 @@
-# 座標型 DP
-# TC=O(MN), SC=O(MN)
+# 座標型 DP, 計數型 DP
+# 轉移方程:
+#   f[i][j] = f[i-1][j] + f[i][j-1]
+#   f[i][j] = 從 (0, 0) 到 (i, j) 有多少種方式
+# 初始條件:
+#   f[0][0] = 0
+# 邊界情況:
+#   f[i][j] = 0 (i, j) 是障礙
+#   f[i][j] = 0 (i=0, j=0)
+#   f[i][j] = f[i-1][j] 當 j=0 first column
+#   f[i][j] = f[i][j-1] 當 i=0 first row
+# TC = O(MN), SC = O(MN)
+
 from typing import (
     List,
 )
