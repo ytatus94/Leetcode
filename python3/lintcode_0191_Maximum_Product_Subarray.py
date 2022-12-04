@@ -1,5 +1,13 @@
 # 最值型 DP
-# TC=O(N) SC=O(N) 可以用滾動數組變成 
+# 轉移方程:
+#   最大乘積 f[j] = max( a[j], max( a[j]*f[j-1], a[j]*g[j-1])|j>0 )
+#   最小乘積 g[j] = min( a[j], min( a[j]*f[j-1], a[j]*g[j-1])|j>0 )
+#   f[j] = 以 a[j] 結尾的連續子序列的最大乘積
+#   case 1) a[j]: 當子序列本身只有 a[j] 自己
+#   case 2) 以 a[j-1] 結尾的連續子序列最大乘積 f[j-1] 或最小乘積 g[j-1] 再乘上 a[j]
+# 初始條件: 沒有初始條件
+# TC = O(N) SC = O(N) 
+
 from typing import (
     List,
 )
