@@ -1,3 +1,5 @@
+# 座標型, 最值型
+# TC = O(MN), SC = O(MN)
 from typing import (
     List,
 )
