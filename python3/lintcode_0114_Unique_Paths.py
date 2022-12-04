@@ -1,6 +1,6 @@
 # 座標型 DP, 計數型 DP
 # 轉移方程: f[i][j] = f[i-1][j] + f[i][j-1]
-# TC=O(MN), SC=O(MN)
+# TC = O(MN), SC = O(MN)
 
 # 方法 1:
 class Solution:
