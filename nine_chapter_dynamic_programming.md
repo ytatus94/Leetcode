@@ -1,29 +1,58 @@
 # 九章動態規劃
 
+* 依據題目的形式，可以分成
+  * 座標型: 初始條件 f[0] 就是以 a0 結尾的性質，f[i][j] 就是格子 (i, j) 的性質
+  * 序列型
+  * 劃分型
+  * 區間型
+  * 背包型
+  * 最長序列型
+  * 博弈型
+  * 綜合型
+
+* 依據題目要求的答案，可以分成
+  * 計數型
+    * 求有多少種方式
+  * 最值型
+    * 求最大值或最小值 
+  * 存在型
+    * 求是否存在，或是能不能幹嘛 
+
+* DP 的組成部分
+  1. 確定狀態
+     - 最後一步
+     - 子問題
+     - 定義狀態
+  2. 轉移方程
+     - 根據狀態推得 
+  3. 初始值與邊界條件
+     - 要細心考慮周全
+  4. 計算順序 
+
 ## Ch1
 
 ### Examples (4 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|669|[Coin Change](https://www.lintcode.com/problem/669/)||[https://www.jiuzhang.com/solution/coin-change/](https://www.jiuzhang.com/solution/coin-change/)|
-|114|[Unique Paths](https://www.lintcode.com/problem/114/)||[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
-|116|[Jump Game](https://www.lintcode.com/problem/116/)||[http://www.jiuzhang.com/solutions/jump-game/](http://www.jiuzhang.com/solutions/jump-game/)|
-|191|[Maximum Product Subarray](https://www.lintcode.com/problem/191/)||[http://www.jiuzhang.com/solutions/maximum-product-subarray/](http://www.jiuzhang.com/solutions/maximum-product-subarray/)|
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+|最值型|669|[Coin Change](https://www.lintcode.com/problem/669/)|Medium|[https://www.jiuzhang.com/solution/coin-change/](https://www.jiuzhang.com/solution/coin-change/)|
+|計數型|114|[Unique Paths](https://www.lintcode.com/problem/114/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
+|存在型|116|[Jump Game](https://www.lintcode.com/problem/116/)|Medium|[http://www.jiuzhang.com/solutions/jump-game/](http://www.jiuzhang.com/solutions/jump-game/)|
+|最值型|191|[Maximum Product Subarray](https://www.lintcode.com/problem/191/)|Medium|[http://www.jiuzhang.com/solutions/maximum-product-subarray/](http://www.jiuzhang.com/solutions/maximum-product-subarray/)|
 
 ## Ch2
 
 ### Examples (7 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|115|[Unique Paths II](https://www.lintcode.com/problem/115/)||[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
-|515|[Paint House](https://www.lintcode.com/problem/515/)||[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
-|512|[Decode Ways](https://www.lintcode.com/problem/512/)||[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
-|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)||[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
-|110|[Minimum Path Sum](http://www.lintcode.com/problem/minimum-path-sum/)||[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
-|553|[Bomb Enemy](http://www.lintcode.com/problem/bomb-enemy/)||[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
-|664|[Counting Bits](http://www.lintcode.com/en/problem/counting-bits/)|||
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+|座標型, 計數型|115|[Unique Paths II](https://www.lintcode.com/problem/115/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
+|序列型, 最值型|515|[Paint House](https://www.lintcode.com/problem/515/)|Medium|[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
+|劃分型, 計數型|512|[Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
+|座標型, 計數型|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)|Easy|[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
+|座標型, 最值型|110|[Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
+|座標型, 最值型|553|[Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
+|位操作型, 計數型|664|[Counting Bits](https://www.lintcode.com/problem/664/)|Medium||
 
 ## Ch3
 
