@@ -1,4 +1,8 @@
-# 方法 1: 會超時
+# 序列型, 最值型
+# 如果依照和 paint house 一樣的方式 TC = O(NK^2) 會超時
+# 藉由紀錄最小值與次小值，可以將 TC 優化成 TC = O(NK)
+
+# 方法 1: 會超時 TC=O(NK^2)
 from typing import (
     List,
 )
