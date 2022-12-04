@@ -1,8 +1,8 @@
 # 九章動態規劃
 
 * 依據題目的形式，可以分成
-  * 座標型: 初始條件 f[0] 就是以 a0 結尾的性質，f[i][j] 就是格子 (i, j) 的性質
-  * 序列型
+  * 座標型: f[i] 就是以 ai 結尾的性質，f[i][j] 就是格子 (i, j) 的性質。初始條件 f[0] 就是以 a0 結尾的性質
+  * 序列型: f[i] 是前 i 個元素 a[0]...a[i-1] 的某種性質，初始條件 f[0] 就是空序列的性質
   * 劃分型
   * 區間型
   * 背包型
@@ -58,9 +58,9 @@
 
 ### Examples (9 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|516|[Paint House II](http://www.lintcode.com/problem/paint-house-ii/)||[http://www.jiuzhang.com/solutions/paint-house-ii/](http://www.jiuzhang.com/solutions/paint-house-ii/)|
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+|序列型, 最值型|516|[Paint House II](https://www.lintcode.com/problem/516/)||[http://www.jiuzhang.com/solutions/paint-house-ii/](http://www.jiuzhang.com/solutions/paint-house-ii/)|
 |392|[House Robber](http://www.lintcode.com/problem/house-robber/)||[http://www.jiuzhang.com/solutions/house-robber/](http://www.jiuzhang.com/solutions/house-robber/)|
 |534|[House Robber II](http://www.lintcode.com/problem/house-robber-ii/)||[http://www.jiuzhang.com/solutions/house-robber-ii/](http://www.jiuzhang.com/solutions/house-robber-ii/)|
 |149|[Best Time To Buy And Sell Stock](http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/)||[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/)|
