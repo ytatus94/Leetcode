@@ -1,5 +1,13 @@
 # 位操作型 DP, 計數型 DP
+# 轉移方程:
+#   f[i] = f[i>>1] + (i%2)
+#   f[i] = i 的二進制表示中有多少個 1
+#   f[i>>1] = i 的二進制表示右移 1 位後有多少個 1
+#   i%2 = i 的二進制表示中的最後一位
+# 初始條件:
+#   f[0] = 0
 # TC = O(N), SC = O(N)
+
 class Solution:
     def countBits(self, n: int) -> List[int]:
         # f[i] 表示數字 i 的二進位有多少個 1
