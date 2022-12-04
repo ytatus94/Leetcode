@@ -1,7 +1,10 @@
+# 存在型 DP
+# 轉移方程: f[i] = OR_{0 <= j < i}(f[j] and j + a[j] >= i)
+# f[i] = 能不能跳到 i
+# OR_{0 <= j < i}：: 枚舉在 i 之前所有可能的 j, 只要有一個 j 能跳到 i 就可以了
+# TC = O(N^2), SC = O(N)
 
 # 方法1: 用 DP
-# 存在型 DP
-# TC=O(N^2), SC=O(N)
 from typing import (
     List,
 )
