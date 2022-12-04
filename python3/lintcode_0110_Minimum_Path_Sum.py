@@ -83,7 +83,67 @@ class Solution:
 
         return f[m-1][n-1]
 
-                
+# 如果要把路徑印出來的話
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param grid: a list of lists of integers
+    @return: An integer, minimizes the sum of all numbers along its path
+    """
+    def min_path_sum(self, grid: List[List[int]]) -> int:
+        # write your code here
+        m = len(grid)
+        if m == 0:
+            return 0
+
+        n = len(grid[0])
+        if m == 0:
+            return 0
+
+        f = [[float('inf') for col in range(n)] for row in range(m)]
+
+        # 開一個 policy 數組紀錄上一個 minimum path sum 是從哪裡來的
+        # pi[i][j] = 0: 從上面來
+        # pi[i][j] = 1: 從左邊來
+        pi = [[-1 for col in range(n)] for row in range(m)] # 用一個不是 0 或 1 的數來初始化
+
+        for row in range(m):
+            for col in range(n):
+                if row == 0 and col == 0:
+                    f[row][col] = grid[row][col]
+                    continue
+
+                temp = float('inf')
+                if row > 0:
+                    temp = min(temp, f[row - 1][col])
+                    if temp == f[row - 1][col]:
+                        pi[row][col] = 0
+                if col > 0:
+                    temp = min(temp, f[row][col - 1])
+                    if temp == f[row][col - 1]:
+                        pi[row][col] = 1
+
+                f[row][col] = temp + grid[row][col]
+
+        # 然後由後往前找出 path (因為 pi 記錄的是"上一個"來自哪)
+        path = [-1 for i in range(m + n - 1)]
+        x = m - 1
+        y = n - 1
+        for p in range(m + n - 1):
+            path[p] = grid[x][y]
+            if pi[x][y] == 0:
+                x -= 1
+            else:
+                y -= 1
+        # path 中存的是相反的順序，印出來要反著印，就變正的順序
+        for p in range(m + n - 2, -1, -1):
+            print(path[p])
+
+        return f[m - 1][n - 1]    
+    
 # 方法 3:
 from typing import (
     List,
