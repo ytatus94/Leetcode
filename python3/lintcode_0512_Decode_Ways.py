@@ -1,5 +1,11 @@
 # 劃分型 DP, 計數型 DP
+# 轉移方程:
+#   f[i] = f[i-1]|S[i-1] 對應一個字母 + f[i-2]|S[i-2][i-1]對應一個字母
+#   f[i] = 解碼 S 的前 i 個數字成字母有多少種方式
+# 初始條件:
+#   f[0] = 1 空字串只有一種解碼方式
 # TC = O(N), SC = O(N)
+
 class Solution:
     """
     @param s: a string,  encoded message
