@@ -1,3 +1,12 @@
+# 序列型 DP, 最值型 DP
+# 轉移方程:
+#   f[i] = max( 1, f[i-1]+1|j>0 and a[i-1]<a[i])
+#   f[i] = 以 a[i] 結尾的最長連續上升子序列長度
+#   case 1.) 1: 子序列只有 a[i] 自己
+#   case 2.) f[i-1]+1 = 以 a[i-1] 結尾的最長連續上升子序列長度，再加上 a[i]
+# 初始條件: 沒有初始條件
+# TC = O(N), SC=O(N) (其實 SC 是 2N) 可以用滾動數組優化成 SC = O(1)
+
 # 方法 1: TC = O(N), SC=O(N) (其實 SC 是 2N)
 from typing import (
     List,
