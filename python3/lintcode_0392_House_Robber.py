@@ -52,10 +52,10 @@ class Solution:
         f[0] = 0 # rob first 0 house, get 0 money
         f[1] = a[0] # rob the first 1 house can get maximum money a[0]
         # 只有一棟房子能偷，可以偷可以不偷，能偷到的最大金額就是要偷
-        f[2] = max(a[0], a[1])
+        f[2] = max(a[0], a[1]) # 其實可以不要這一行
         # 有兩棟房子能偷，可以偷到的最大金額就是偷其中一棟
 
-        for i in range(3, n + 1): # 注意從 3 開始
+        for i in range(3, n + 1): # 注意從 3 開始 (如果不要 f[2] 那這裡就從 2 開始)
             f[i] = max(f[i-1], f[i-2] + a[i-1])
 
         return f[n]
