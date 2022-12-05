@@ -6,8 +6,9 @@
 #   f[0] = 0
 #   f[1] = A[0]
 #   f[2] = max(A[0], A[1])
-# TC = O(N), SC = O(1)
+# TC = O(N), SC = O(1) (用滾動數組)
 
+# 方法 1:
 from typing import (
     List,
 )
@@ -58,3 +59,37 @@ class Solution:
             f[i] = max(f[i-1], f[i-2] + a[i-1])
 
         return f[n]
+    
+# 方法 2: 用滾動數組
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: An array of non-negative integers
+    @return: The maximum amount of money you can rob tonight
+    """
+    def house_robber(self, a: List[int]) -> int:
+        # write your code here
+        n = len(a)
+        if n == 0:
+            return 0
+        if n == 1:
+            return a[0]
+
+        # Create an array to save the maximum money for the first i houses
+        f = [0 for i in range(n + 1)]
+
+        # use rolling variables
+        # initial conditions:
+        old = 0 # f[0] = 0, rob 0 hourse get nothing
+        new = a[0] # f[1] = a[0], rob first house get a[0]
+
+        for i in range(2, n + 1):
+            t = max(new, old + a[i-1])
+            old = new
+            new = t
+
+        # when leaving for loop, the i = n, and new is f[n]
+        return new
