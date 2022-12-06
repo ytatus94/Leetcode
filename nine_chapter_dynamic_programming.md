@@ -2,11 +2,11 @@
 
 * 依據題目的形式，可以分成
   * 座標型: f[i] 就是以 ai 結尾的性質，f[i][j] 就是格子 (i, j) 的性質。初始條件 f[0] 就是以 a0 結尾的性質
-  * 序列型: f[i] 是前 i 個元素 a[0]...a[i-1] 的某種性質，初始條件 f[0] 就是空序列的性質
+  * 序列型: f[i] 是前 i 個元素 a[0]...a[i-1] 的某種性質，初始條件 f[0] 就是空序列 (前 0 個元素) 的性質
   * 劃分型
   * 區間型
   * 背包型
-  * 最長序列型
+  * 最長序列型: 是一種座標型 DP
   * 博弈型
   * 綜合型
 
@@ -52,7 +52,7 @@
 |座標型, 計數型|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)|Easy|[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
 |座標型, 最值型|110|[Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |座標型, 最值型|553|[Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
-|位操作型, 計數型|664|[Counting Bits](https://www.lintcode.com/problem/664/)|Medium||
+|位操作型, 計數型|664|[Counting Bits](https://www.lintcode.com/problem/664/)|Medium|[https://www.jiuzhang.com/solutions/counting-bits/](https://www.jiuzhang.com/solutions/counting-bits/)|
 
 ## Ch3
 
@@ -60,15 +60,15 @@
 
 |Type|No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|序列型, 最值型|516|[Paint House II](https://www.lintcode.com/problem/516/)||[http://www.jiuzhang.com/solutions/paint-house-ii/](http://www.jiuzhang.com/solutions/paint-house-ii/)|
-|392|[House Robber](http://www.lintcode.com/problem/house-robber/)||[http://www.jiuzhang.com/solutions/house-robber/](http://www.jiuzhang.com/solutions/house-robber/)|
-|534|[House Robber II](http://www.lintcode.com/problem/house-robber-ii/)||[http://www.jiuzhang.com/solutions/house-robber-ii/](http://www.jiuzhang.com/solutions/house-robber-ii/)|
-|149|[Best Time To Buy And Sell Stock](http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/)||[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/)|
-|150|[Best Time To Buy And Sell Stock II](http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock-ii/)||[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-ii/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-ii/)|
-|151|[Best Time To Buy And Sell Stock III](http://www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iii/)||[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/)|
-|393|[Best Time To Buy And Sell Stock IV](http://www.lintcode.com/problem/best-time-to-buy-and-sell-stock-iv/)||[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/)|
-|76|[Longest Increasing Subsequence](http://www.lintcode.com/problem/longest-increasing-subsequence/)||[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
-|602|[Russian Doll Envelopes](http://www.lintcode.com/problem/russian-doll-envelopes/)||[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
+|序列＋狀態型, 最值型|516|[Paint House II](https://www.lintcode.com/problem/516/)|hard|[http://www.jiuzhang.com/solutions/paint-house-ii/](http://www.jiuzhang.com/solutions/paint-house-ii/)|
+|序列＋狀態型, 最值型|392|[House Robber](https://www.lintcode.com/problem/392/)|Medium|[http://www.jiuzhang.com/solutions/house-robber/](http://www.jiuzhang.com/solutions/house-robber/)|
+|序列＋狀態型, 最值型|534|[House Robber II](https://www.lintcode.com/problem/534/)|Medium|[http://www.jiuzhang.com/solutions/house-robber-ii/](http://www.jiuzhang.com/solutions/house-robber-ii/)|
+|序列型, 最值型|149|[Best Time To Buy And Sell Stock](https://www.lintcode.com/problem/149/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock/)|
+|序列型, 最值型|150|[Best Time To Buy And Sell Stock II](https://www.lintcode.com/problem/150/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-ii/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-ii/)|
+|序列＋狀態型, 最值型|151|[Best Time To Buy And Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/)|
+|序列型, 最值型|393|[Best Time To Buy And Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/)|
+|最長序列型, |76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
+|最長序列型, |602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)||[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
 ## Ch4
 
