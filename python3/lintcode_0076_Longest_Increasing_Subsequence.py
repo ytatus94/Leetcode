@@ -63,7 +63,7 @@ class Solution:
 
         # No initial condition
 
-        # 開一個數組紀錄最長子序列
+        # 開一個數組紀錄最長子序列是要選哪一個 index
         pi = [0 for i in range(n)]
         p = 0
 
