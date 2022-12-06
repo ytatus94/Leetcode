@@ -37,3 +37,55 @@ class Solution:
                     f[i] = max(f[i], f[j] + 1)
 
         return max(f)
+
+    
+# 把最長子序列印出來 (要會！)
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param nums: An integer array
+    @return: The length of LIS (longest increasing subsequence)
+    """
+    def longest_increasing_subsequence(self, nums: List[int]) -> int:
+        # write your code here
+        if nums is None:
+            return 0
+        n = len(nums)
+        if n == 0:
+            return 0
+
+        # Create an array
+        f = [0 for i in range(n)]
+        # f[i] means the LIS ending with a[i]
+
+        # No initial condition
+
+        # 開一個數組紀錄最長子序列
+        pi = [0 for i in range(n)]
+        p = 0
+
+        results = 0
+
+        for i in range(n):
+            f[i] = 1 # 如果前面的數都比 a[i] 大，那子序列就是 a[i] 自己
+            pi[i] = -1 # 表示只有自己
+            for j in range(i): # 枚舉 a[i] 前面的所有的數目
+                if nums[i] > nums[j]:
+                    f[i] = max(f[i], f[j] + 1)
+                    if f[i] == f[j] + 1: # 有更新了就要記錄下來
+                        pi[i] = j
+
+            results = max(results, f[i])
+            if f[i] == results: # 有更新了就要記錄下來
+                p = i # 最長子序列是哪個 index 做結尾
+
+        seq = [0 for i in range(results)] # 印出來
+        for i in range(results - 1, -1, -1):
+            seq[i] = nums[p]
+            p = pi[p]
+
+        return results
+    
