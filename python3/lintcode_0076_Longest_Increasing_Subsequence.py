@@ -76,7 +76,7 @@ class Solution:
                 if nums[i] > nums[j]:
                     f[i] = max(f[i], f[j] + 1)
                     if f[i] == f[j] + 1: # 有更新了就要記錄下來
-                        pi[i] = j
+                        pi[i] = j # 這裡記錄的是第 i 個元素的值比第 j 個元素的值大
 
             results = max(results, f[i])
             if f[i] == results: # 有更新了就要記錄下來
