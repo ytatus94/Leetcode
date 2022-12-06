@@ -395,15 +395,15 @@
 |2|[110. Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|
 |2|[553. Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) (premium)|Medium|
 |2|[664. Counting Bits](https://www.lintcode.com/problem/664/) (鎖住了)|Medium|[338. Counting Bits](https://leetcode.com/problems/counting-bits/)|Easy|
-|3|[516 · Paint House II](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[516. Paint House II](https://www.lintcode.com/problem/516/)|Hard|||
+|3|[392. House Robber](https://www.lintcode.com/problem/392/)|Medium|||
+|3|[534. House Robber II](https://www.lintcode.com/problem/534/)|Medium|||
+|3|[149. Best Time to Buy and Sell Stock](https://www.lintcode.com/problem/149/)|Medium|||
+|3|[150. Best Time to Buy and Sell Stock II](https://www.lintcode.com/problem/150/)|Medium|||
+|3|[151. Best Time to Buy and Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|||
+|3|[393. Best Time to Buy and Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|||
+|3|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
+|3|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|||
 
 
 * 作業 ( 題)
