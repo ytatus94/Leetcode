@@ -74,15 +74,15 @@
 
 ### Examples (7 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|513|[Perfect Squares](http://www.lintcode.com/problem/perfect-squares/)||[http://www.jiuzhang.com/solutions/perfect-squares/](http://www.jiuzhang.com/solutions/perfect-squares/)|
-|108|[Palindrome Partitioning II](http://www.lintcode.com/problem/palindrome-partitioning-ii/)||[http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/](http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/)|
-|437|[Copy Books](http://www.lintcode.com/problem/copy-books/)||[http://www.jiuzhang.com/solutions/copy-books/](http://www.jiuzhang.com/solutions/copy-books/)|
-|394|[Coins in A Line](http://www.lintcode.com/problem/coins-in-a-line/)||[http://www.jiuzhang.com/solutions/coins-in-a-line/](http://www.jiuzhang.com/solutions/coins-in-a-line/)|
-|92|[Backpack](http://www.lintcode.com/en/problem/backpack/)||[http://www.jiuzhang.com/solutions/backpack/](http://www.jiuzhang.com/solutions/backpack/)|
-|563|[Backpack V](http://www.lintcode.com/problem/backpack-v/)||[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
-|564|[Backpack VI](http://www.lintcode.com/problem/backpack-vi/)||[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+|劃分型, 最值型|513|[Perfect Squares](http://www.lintcode.com/problem/513/)|Medium|[http://www.jiuzhang.com/solutions/perfect-squares/](http://www.jiuzhang.com/solutions/perfect-squares/)|
+|劃分型, 最值型|108|[Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|[http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/](http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/)|
+|劃分型, 最值型|437|[Copy Books](https://www.lintcode.com/problem/437/)|Medium|[http://www.jiuzhang.com/solutions/copy-books/](http://www.jiuzhang.com/solutions/copy-books/)|
+|博弈型, 存在型|394|[Coins in A Line](https://www.lintcode.com/problem/394/)|Medium|[http://www.jiuzhang.com/solutions/coins-in-a-line/](http://www.jiuzhang.com/solutions/coins-in-a-line/)|
+|背包型, 最值型|92|[Backpack](https://www.lintcode.com/problem/92/)|Medium|[http://www.jiuzhang.com/solutions/backpack/](http://www.jiuzhang.com/solutions/backpack/)|
+||563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
+||564|[Backpack VI](http://www.lintcode.com/problem/backpack-vi/)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
 ## Ch5
 
