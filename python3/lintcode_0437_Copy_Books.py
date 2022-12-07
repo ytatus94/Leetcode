@@ -41,3 +41,64 @@ class Solution:
             time_cost += page
         
         return count + 1
+
+# 劃分型 DP, 最值型 DP
+# 轉移方程
+#   f[k][i] = min_{0<=j<=i}( max( f[k-1][j], A[j]+...+A[i-1] ) )
+#   f[k][i] = 前 k 個人最少用多少時間抄完前 i 本書
+#   f[k-1][j] = 前 k-1 個人最少用多少時間抄完前 j 本書
+#   A[j]+...+A[i-1] = 第 k 個人花了多少時間抄第 j~第 i-1 本書
+# 初始條件
+#   f[0][0] = 0 前 0 個人抄 0 本書費時是 0
+#   f[0][1...n] = inf 前 0 個人不可能抄任何書，所以費時無限大
+#   f[k][0] = 0 前 k 個人抄 0 本書費時 0
+# TC = O(N^2 K), SC = O(NK) 可以優化成 O(N)
+
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+    def copy_books(self, pages: List[int], k: int) -> int:
+        # write your code here
+        if pages is None:
+            return 0
+        n = len(pages)
+        if n == 0:
+            return 0
+        if k >= n:
+            return max(pages)
+
+        # 開一個數組紀錄
+        # f[i][j] = 前 i 個人抄前 j 本書所需要的最短時間
+        f = [[float('inf') for i in range(n + 1)] for j in range(k + 1)]
+
+        # 初始條件
+        f[0][0] = 0 # 前 0 個人只能抄 0 本書，且費時是 0
+        for i in range(1, n + 1):
+            f[0][i] = float('inf') # 前 0 個人不能抄任何書
+
+        for i in range(1, k + 1):
+            f[i][0] = 0 # 前 i 個人抄 0 本書，費時 0
+            for j in range(1, n + 1): # loop 抄一本書到抄 n 本書
+                total_time = 0
+                for p in range(j, -1, -1): # 要計算抄書所花的時間
+                    # 要從後面 loop 可以節省時間複雜度
+                    # 當 p = j 的時候 total_time = 0
+                    f[i][j] = min(
+                        f[i][j],
+                        max(f[i - 1][p], total_time)
+                    )
+                    # 當 j = i 的時候 total_time = 0
+
+                    if p > 0:
+                        total_time += pages[p - 1]
+
+
+        return f[k][n]
+        
