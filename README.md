@@ -404,6 +404,13 @@
 |3|[393. Best Time to Buy and Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|||
 |3|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
 |3|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|||
+|4|[513. Perfect Squares](https://www.lintcode.com/problem/513/)|Medium|||
+|4|[108. Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|||
+|4|[437. Copy Books](https://www.lintcode.com/problem/437/)|Medium|||
+|4|[394. Coins in a Line](https://www.lintcode.com/problem/394/)|Medium|||
+|4|[92. Backpack](https://www.lintcode.com/problem/92/)|Medium|||
+|4|[563. Backpack V](https://www.lintcode.com/problem/563/)|Medium|||
+|4|[564. Backpack VI](https://www.lintcode.com/problem/564/) (找不到)|Medium|||
 
 
 * 作業 ( 題)
