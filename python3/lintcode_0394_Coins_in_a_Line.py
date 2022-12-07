@@ -1,3 +1,14 @@
+# 博弈型 DP, 存在型 DP
+# 轉移方程
+#   f[i] = True 當 f[i-1] = False and f[i-2] = False
+#   f[i] = True 當 f[i-1] = True and f[i-2] = False
+#   f[i] = True 當 f[i-1] = False and f[i-2] = True
+#   f[i] = False 當 f[i-1] = True and f[i-2] = True
+#   f[i] = 當硬幣數目為 i 的時候，是處於會輸 False 還是會贏 True 的狀態
+# 初始條件
+#   f[0] = False, f[1] = True
+# TC = O(N), SC = O(N) 可以用滾動數組優化到 O(1)
+
 class Solution:
     """
     @param n: An integer
