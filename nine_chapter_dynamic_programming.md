@@ -82,7 +82,7 @@
 |博弈型, 存在型|394|[Coins in A Line](https://www.lintcode.com/problem/394/)|Medium|[http://www.jiuzhang.com/solutions/coins-in-a-line/](http://www.jiuzhang.com/solutions/coins-in-a-line/)|
 |背包型, 最值型|92|[Backpack](https://www.lintcode.com/problem/92/)|Medium|[http://www.jiuzhang.com/solutions/backpack/](http://www.jiuzhang.com/solutions/backpack/)|
 |背包型, 計數型|563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
-||564|[Backpack VI](http://www.lintcode.com/problem/backpack-vi/) (找不到)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
+|背包型, 計數型|564|[Backpack VI](http://www.lintcode.com/564/) (找不到)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
 ## Ch5
 
