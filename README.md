@@ -411,6 +411,12 @@
 |4|[92. Backpack](https://www.lintcode.com/problem/92/)|Medium|||
 |4|[563. Backpack V](https://www.lintcode.com/problem/563/)|Medium|||
 |4|[564. Backpack VI](https://www.lintcode.com/problem/564/) (找不到)|Medium|||
+|5|[125. Backpack II](https://www.lintcode.com/problem/125/)|Medium|||
+|5|[440. Backpack III](https://www.lintcode.com/problem/440/)|Medium|||
+|5|[667. Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|||
+|5|[396. Coins In A Line III](https://www.lintcode.com/problem/396/) (鎖住了)|Hard|||
+|5|[430. Scramble String](https://www.lintcode.com/problem/430/)|Hard|||
+|5|[168. Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|||
 
 
 * 作業 ( 題)
