@@ -6,18 +6,20 @@
   * 劃分型:
     * 不指定段數: f[i] = 前 i 個元素分段後的可行性或是最值
     * 指定段數: f[i][j] = 前 i 個元素分成 j 段後的可行性或是最值
-  * 區間型:
+  * 區間型: 對序列或字符串做操作，處理一個區間
+    * f[i][j] 就是區間 i 到 j 
     * 去頭
     * 去尾
-    * 去頭又去尾 
+    * 去頭又去尾
+    * 區間型的子問題，是只長度越來越短，要按照長度 j-i 從小到大的順序去計算
   * 背包型:
     * 背包型動態規劃，一定要把總承重放入狀態
       * 如果物品的順序存在，就要考慮最後一個物品會不會放進背包
       * 如果物品的順序不存在，就沒有所謂的最後一個物品，因此要考慮的是誰是最後一個物品 
+      * 要注意最後一個放進背包的物品是哪一個，還有最後一個物品有沒有放進背包
+      * 當物品的數目無限多的時候，就以種類來計算
     * 可行性: f[i][w] = 前 i 個物品能不能拼出 w
     * 計數型: f[i][w] = 前 i 個物品有多少種方式能拼出 w
-    * 要注意最後一個放進背包的物品是哪一個，還有最後一個物品有沒有放進背包
-    * 當物品的數目無限多的時候，就以種類來計算
   * 最長序列型: 是一種座標型 DP
   * 博弈型
   * 綜合型
@@ -104,7 +106,7 @@
 |:---|:---|:---|:---|:---|
 |背包型, 最值型|125|[Backpack II](https://www.lintcode.com/problem/125/)|Medium|[http://www.jiuzhang.com/solutions/backpack-ii/](http://www.jiuzhang.com/solutions/backpack-ii/)|
 |背包型, 最值型|440|[Backpack III](https://www.lintcode.com/problem/440/)|Medium|[http://www.jiuzhang.com/solutions/backpack-iii/](http://www.jiuzhang.com/solutions/backpack-iii/)|
-||667|[Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
+|區間型|667|[Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
 ||396|[Coins In A Line III](https://www.lintcode.com/problem/396/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/coins-in-a-line-iii/](http://www.jiuzhang.com/solution/coins-in-a-line-iii/)|
 ||430|[Scramble String](https://www.lintcode.com/problem/430/)|Hard|[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
 ||168|[Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
