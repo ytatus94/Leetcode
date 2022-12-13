@@ -118,3 +118,48 @@ class Solution:
         print("result is", "".join(res))
 
         return f[0][n - 1]
+
+# 用記憶化搜索 (可是我 submit 超時了)
+class Solution:
+    """
+    @param s: the maximum length of s is 1000
+    @return: the longest palindromic subsequence's length
+    """
+    def longest_palindrome_subseq(self, s: str) -> int:
+        # write your code here
+        n = len(s)
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        
+        f = [[-1 for j in range(n + 1)] for i in range(n + 1)]
+
+        self.compute(f, s, 0, n - 1)
+
+        return f[0][n - 1]
+
+    def compute(self, f: list, s: str, i: int, j: int) -> int:
+        # memorization
+        if f[i][j] != -1:
+            return
+        # length = 1
+        if i == j:
+            f[i][j] = 1
+            return
+        # length = 2
+        if i + 1 == j:
+            f[i][j] = 2 if s[i] == s[j] else 1
+            return
+        
+        # recursion
+        self.compute(f, s, i + 1, j)
+        self.compute(f, s, i, j - 1)
+        self.compute(f, s, i + 1, j - 1)
+
+        # DP
+        f[i][j] = max(f[i + 1][j], f[i][j - 1])
+        if s[i] == s[j]:
+            f[i][j] = max(f[i][j], f[i + 1][j - 1] + 2)
+        
+   
