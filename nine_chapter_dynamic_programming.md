@@ -2,6 +2,7 @@
 
 * 依據題目的形式，可以分成
   * 座標型: f[i] 就是以 ai 結尾的性質，f[i][j] 就是格子 (i, j) 的性質。初始條件 f[0] 就是以 a0 結尾的性質
+    * 雙序列型其實是座標型 
   * 序列型: f[i] 是前 i 個元素 a[0]...a[i-1] 的某種性質，初始條件 f[0] 就是空序列 (前 0 個元素) 的性質
   * 劃分型:
     * 不指定段數: f[i] = 前 i 個元素分段後的可行性或是最值
@@ -125,27 +126,27 @@
 
 ### Examples (7 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|77|[Longest Common Subsequence](http://www.lintcode.com/problem/longest-common-subsequence/)||[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
-|29|[Interleaving String](http://www.lintcode.com/en/problem/interleaving-string/)||[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
-|119|[Edit Distance](http://www.lintcode.com/problem/edit-distance/)||[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
-|118|[Distinct Subsequences](http://www.lintcode.com/problem/distinct-subsequences/)||[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
-|154|[Regular Expression Matching](http://www.lintcode.com/problem/regular-expression-matching/)||[http://www.jiuzhang.com/solutions/regular-expression-matching/](http://www.jiuzhang.com/solutions/regular-expression-matching/)|
-|192|[Wildcard Matching](http://www.lintcode.com/problem/wildcard-matching/)||[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
-|668|[Ones and Zeroes](http://www.lintcode.com/en/problem/ones-and-zeroes/)||[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+|雙序列型, 最值型|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/))|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
+|雙序列型, |29|[Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
+||119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
+||118|[Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
+||154|[Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[http://www.jiuzhang.com/solutions/regular-expression-matching/](http://www.jiuzhang.com/solutions/regular-expression-matching/)|
+||192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
+||668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
 
 ## Ch7
 
 ### Examples (7 題)
 
-|No|Problem|Level|Solution|
-|:---|:---|:---|:---|
-|91|[Minimum Adjustment Cost](http://www.lintcode.com/en/problem/minimum-adjustment-cost/)||[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
-|89|[K-Sum](http://www.lintcode.com/en/problem/k-sum/)||[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
-|76|[Longest Increasing Subsequence](http://www.lintcode.com/problem/longest-increasing-subsequence/)||[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
-|623|[K Edit Distance](http://www.lintcode.com/problem/k-edit-distance/)||[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
-|622|[Frog Jump](http://www.lintcode.com/problem/frog-jump/)||[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
-|676|[Decode Ways II](http://www.lintcode.com/en/problem/decode-ways-ii/)||[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
-|436|[Maximal Square](http://www.lintcode.com/problem/maximal-square/)||[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
+|Type|No|Problem|Level|Solution|
+|:---|:---|:---|:---|:---|
+||91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
+||89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
+||76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
+||623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
+||622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
+||676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
+||436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
 
