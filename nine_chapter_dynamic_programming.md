@@ -2,9 +2,15 @@
 
 ### 依據題目的形式，可以分成
   * **座標型**:
-    * `f[i]` 就是以 ai 結尾的性質，`f[i][j]` 就是格子 (i, j) 的性質。
-    * 初始條件 `f[0]` 就是以 a0 結尾的性質
-    * 最長序列型和雙序列型其實是座標型，都是開二維數組
+    * `f[i]` 就是以 $a_{i}$ 結尾的性質，`f[i][j]` 就是格子 (i, j) 的性質。
+    * 初始條件 `f[0]` 就是以 $a_{0}$ 結尾的性質
+    * 最長序列型和雙序列型其實是座標型
+      * 都是開二維數組`f = (m + 1)*(n + 1)` 數組
+      * `for i 從 0 到 m`, `for j 從 0 到 n` 要包含 `m` 與 `n` 
+      * 初始條件要寫幾個例子來推斷
+        * 空字串時要如何處理?
+      * 最長序列型都是從最後一個字元開始考慮
+      * 不同情形要考慮清楚，如果需要加 1 時，不要忘記 
   * **序列型**:
     * `f[i]` 是前 i 個元素 a[0]...a[i-1] 的某種性質
     * 初始條件 `f[0]` 就是空序列 (前 0 個元素) 的性質
@@ -22,20 +28,21 @@
       * 如果物品的順序存在，就要考慮最後一個物品會不會放進背包
       * 如果物品的順序不存在，就沒有所謂的最後一個物品，因此要考慮的是誰是最後一個物品 
       * 要注意最後一個放進背包的物品是哪一個，還有最後一個物品有沒有放進背包
-      * 當物品的數目無限多的時候，就以種類來計算
+      * 當物品的數目無限多的時候，就以**種類**來計算
     * 可行性: `f[i][w]` = 前 i 個物品能不能拼出 w
     * 計數型: `f[i][w]` = 前 i 個物品有多少種方式能拼出 w
   * **最長序列型**: 是一種座標型 DP
   * **博弈型**:
-    * 輪到誰，誰就是先手 
+    * 輪到誰，誰就是先手
+    * 對方必輸，就是先手必勝
   * **綜合型**
 
 ### 依據題目要求的答案，可以分成
-  * 計數型
+  * **計數型**
     * 求有多少種方式
-  * 最值型
+  * **最值型**
     * 求最大值或最小值 
-  * 存在型 (可行性)
+  * **存在型 (可行性)**
     * 求是否存在，或是能不能幹嘛 
 
 ### DP 的組成部分
@@ -55,7 +62,8 @@
     * 可以空間優化
   * 記憶化搜索
     * 由上往下: `f(N)`, `f(N-1)`, ... 圓括號是因為 `f` 是函數
-    * 比較簡單
+    * 比較簡單好寫
+    * 無法做空間優化
 
 ## Ch1
 
@@ -125,6 +133,10 @@
 |區間型, |430|[Scramble String](https://www.lintcode.com/problem/430/)|Hard|[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
 |區間型, |168|[Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
 
+* 667 超時
+* 168 wrong answer
+* 668 wrong answer
+
 ## Ch6
 
 ### Examples (7 題)
@@ -136,8 +148,22 @@
 |雙序列型, 最值型|119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
 |雙序列型, 計數型|118|[Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
 |雙序列型, 存在型|154|[Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[http://www.jiuzhang.com/solutions/regular-expression-matching/](http://www.jiuzhang.com/solutions/regular-expression-matching/)|
-||192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
-||668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
+|雙序列型, 存在型|192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
+|雙序列型, 最值型|668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
+
+* 77 runtime error
+* 154 wrong answer
+
+#### 轉移方程
+* 77 Longest Common Subsequence
+f[i][j] = max{f[i-1][j], f[i][j-1], f[i-1][j-1]+1|A[i-1]=B[j-1]}
+* 29 Interleaving String
+* 119 Edit Distance
+* 118 Distinct Subsequences
+* 154 Regular Expression Matching
+* 192 Wildcard Matching
+* 668 Ones and Zeroes
+
 
 ## Ch7
 
