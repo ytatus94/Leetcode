@@ -34,7 +34,10 @@ class Solution:
                     continue
                 
                 # i > 0 && j > 0
+                # 最後一個字元不相等時
                 f[i][j] = f[i - 1][j]
+                
+                # 最後一個字元相等時
                 if s[i - 1] == t[j - 1]:
                     f[i][j] += f[i - 1][j - 1]
 
