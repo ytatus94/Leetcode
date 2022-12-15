@@ -109,24 +109,24 @@ class Solution:
                         if f[i - 1][j] == True:
                             pi[i][j] = 3 # p 末尾的 * 匹配 s 末尾的字元
 
-        res = [None for i in range(m + 1)]
-        # res[i] 表示 s[i] 會和 p[res[i]] 匹配
-        i, j = m, n
-        while True:
-            if j == 0:
-                break
-            if pi[i][j] == 1:
-                res[i-1] = j - 1
-                i -= 1
-                j -= 1
-            elif pi[i][j] == 2:
-                j -= 1
-            elif pi[i][k] == 3:
-                res[i - 1] = j - 1
-                i -= 1
+        if f[m][n]:
+            res = [None for i in range(m + 1)]
+            # res[i] 表示 s[i] 會和 p[res[i]] 匹配
+            i, j = m, n
+            while True:
+                if j == 0:
+                    break
+                if pi[i][j] == 1:
+                    res[i-1] = j - 1
+                    i -= 1
+                    j -= 1
+                elif pi[i][j] == 2:
+                    j -= 1
+                elif pi[i][j] == 3:
+                    res[i - 1] = j - 1
+                    i -= 1
 
-        for i in range(m + 1):
-            print(f'{s[i]} matches {p[res[i]]}' )
+            for i in range(m):
+                print(f'{s[i]} matches {p[res[i]]}' )
 
         return f[m][n]
-                    
