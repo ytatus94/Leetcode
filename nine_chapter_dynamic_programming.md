@@ -285,12 +285,12 @@
 * 668 wrong answer
 
 #### 轉移方程
-* 125. Backpack II
-* 449. Backpack III
-* 667. Longest Palindromic Subsequence
-* 396. Coins In A Line III
-* 430. Scramble String
-* 168. Burst Balloons
+* 125 Backpack II
+* 449 Backpack III
+* 667 Longest Palindromic Subsequence
+* 396 Coins In A Line III
+* 430 Scramble String
+* 168 Burst Balloons
 
 ## Ch6
 
