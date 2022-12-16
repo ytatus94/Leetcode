@@ -54,6 +54,7 @@ class Solution:
 #   f[k][0] = 0 前 k 個人抄 0 本書費時 0
 # TC = O(N^2 K), SC = O(NK) 可以優化成 O(N)
 
+# 會超時
 from typing import (
     List,
 )
