@@ -11,7 +11,7 @@
 #   f[0][1] = 0, f[1...2k+1] = -inf
 # TC = O(NK), SC = O(NK) 用滾動數組可以優化成 O(K)
 
-# 方法1:
+# 方法1: 會造成 Memory Limit Exceeded
 from typing import (
     List,
 )
