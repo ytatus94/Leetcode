@@ -235,13 +235,37 @@
 |背包型, 計數型|564|[Backpack VI](http://www.lintcode.com/564/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
 #### 轉移方程
-* 513. Perfect Squares
-* 108. Palindrome Partitioning II
-* 437. Copy Books
-* 394. Coins in A Line
-* 92. Backpack
-* 563. Backpack V
-* 564. Backpack VI
+* 513 Perfect Squares
+  * `f[i] = min_{1<=j*j<=i}{f[i-j2] + 1}`
+    - `f[i]` 表示 i 最少被分成幾個完全平方數之和
+    - `1<=j*j<=i` 最後一個完全平方數是 $j^{2}$
+* 108 Palindrome Partitioning II
+  * `f[i] = min_{j=0,...,i-1}{f[j] + 1| S[j..i-1] 是回文串}`
+    - `f[i]` s 的前 i 個字元 s[0...i-1] 最少可以劃分成幾個回文串
+* 437 Copy Books
+  * `f[k][i] = min_{j=0,...,i}{max{f[k-1][j], A[j] +... +A[i-1]}}`
+    - `f[k][i]` k 個抄寫員需要多少時間抄完前 i 本書
+    - `A[j] +... +A[i-1]` 第 k 個抄寫員抄完第 j 本書到第 i-1 本書所需的時間
+* 394 Coins in A Line
+  ```
+  f[i] = ┌ True, f[i-1]=False && f[i-2]=False 先手拿一顆或兩顆都必勝
+         ├ True, f[i-1]=False && f[i-2]=True, 先手拿一顆必勝
+         ├ True, f[i-1]=True && f[i-2]=False, 先手拿兩顆必勝
+         └ False, f[i-1]=True && f[i-2]=True, 先手必敗
+  ```
+  * 整理後可得 `f[i] = f[i-1] == FALSE OR f[i-2] == FALSE`
+    - `f[i]` 表示剩下 i 顆石子時，先手是否必勝 
+* 92 Backpack
+  * `f[i][w] = f[i-1][w] OR f[i-1][w-$A_{i-1}$]`
+    - `f[i][w]` 能否用前 i 個物品拼出重量 w
+    - 情況1. 如果用前 n-1 個物品能拼出 w, 那用前 n 個物品也能拼出 w
+    - 情況2. 如果前 n-1 個物品只能拼出 w-$A_{n-1}$，再加上最後的物品 $A_{n-1}$ 就能拼出 w
+* 563 Backpack V
+  * `f[i][w] = f[i-1][w] + f[i-1][w-$A_{i-1}$]`
+    - `f[i][w]` 用前 i 個物品拼出重量 w 有多少種方式
+* 564 Backpack VI
+  * `f[i] = f[i-$A_{0}$] + f[i-$A_{1}$] +...+ f[i-$A_{N-1}$]`
+    - `f[i]` 有多少種組合能拼出重量 i
 
 ## Ch5
 
