@@ -182,19 +182,23 @@
 |最長序列型, |602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|hard|[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
 #### 轉移方程
-* 516. Paint House II
+* 516 Paint House II
   * `f[i][j] = min_{k!=j} {f[i-1][k]} + cost[i-1][j]` 
     * `f[i][j]` 油漆前 i 棟房子，且房子 i-1 是顏色 j 的最小花費
     * `min_{k!=j} {f[i-1][k]}` 油漆前 i-1 棟房子，且房子 i-2 不是顏色 j 的最小花費
     * `cost[i-1][j]` 油漆房子 i-1 的花費
-* 392. House Robber
+* 392 House Robber
   * `f[i] = max{f[i-1], f[i-2] + A[i-1]}` 
     - 情況1. 不偷房子 i-1 `f[i][0] = max{f[i-1][0], f[i-1][1]}`
     - 情況2. 偷房子 i-1 `f[i][1] = f[i-1][0] + A[i-1]`
-* 534. House Robber II
-* 149. Best Time To Buy And Sell Stock
-* 150. Best Time To Buy And Sell Stock II
-* 151. Best Time To Buy And Sell Stock III
+* 534 House Robber II
+  * 情況1. 沒偷房子 0 變成 1...N-1 的 House Robber
+  * 情況2. 沒偷房子 N-1 變成 0...N-2 的 House Robber
+* 149 Best Time To Buy And Sell Stock
+  * 枚舉第 j 天賣出 0<=j<=N-1，時刻保存最低價格 $P_{i}$, 最大獲利 = $P_{j} - P_{i}$
+* 150 Best Time To Buy And Sell Stock II
+  * 拆解成每日交易，今天買明天賣 
+* 151 Best Time To Buy And Sell Stock III
   * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
     - `f[i][j]` 前 i 天 (第 i-1 天) 結束後，在階段 j 的最大獲利
     - `f[i-1][j]` 昨天手上沒有股票
@@ -202,15 +206,15 @@
   * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
     - `f[i-1][j] + $P_{i-1}$ – $P_{i-2}$` 昨天就持有股票，並且繼續持有並獲利
     - `f[i-1][j-1]` 昨天手上沒有股票，今天買入
-* 393. Best Time To Buy And Sell Stock IV
+* 393 Best Time To Buy And Sell Stock IV
   * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
   * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
-* 76. Longest Increasing Subsequence
+* 76 Longest Increasing Subsequence
   * `f[j]=max{1, f[i]+1|i<janda[i]<a[j]}`
     - `f[j]` 以 a[j] 結尾的最長上升子序列的長度
     - 情況1. `1` 子序列就是 a[j] 本身
     - 情況2. `f[i]+1|i<janda[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
-* 602. Russian Doll Envelopes
+* 602 Russian Doll Envelopes
   * `f[i] = max{1, f[j]+1| Ej 能放在 Ei 裡面, j<i}`
     - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
     - 情況1. `1` 只有 Ei 這個信封
