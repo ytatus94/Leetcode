@@ -179,18 +179,42 @@
 |序列＋狀態型, 最值型|151|[Best Time To Buy And Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iii/)|
 |序列型, 最值型|393|[Best Time To Buy And Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|[http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/](http://www.jiuzhang.com/solutions/best-time-to-buy-and-sell-stock-iv/)|
 |最長序列型, |76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
-|最長序列型, |602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)||[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
+|最長序列型, |602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|hard|[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
 #### 轉移方程
 * 516. Paint House II
+  * `f[i][j] = min_{k!=j} {f[i-1][k]} + cost[i-1][j]` 
+    * `f[i][j]` 油漆前 i 棟房子，且房子 i-1 是顏色 j 的最小花費
+    * `min_{k!=j} {f[i-1][k]}` 油漆前 i-1 棟房子，且房子 i-2 不是顏色 j 的最小花費
+    * `cost[i-1][j]` 油漆房子 i-1 的花費
 * 392. House Robber
+  * `f[i] = max{f[i-1], f[i-2] + A[i-1]}` 
+    - 情況1. 不偷房子 i-1 `f[i][0] = max{f[i-1][0], f[i-1][1]}`
+    - 情況2. 偷房子 i-1 `f[i][1] = f[i-1][0] + A[i-1]`
 * 534. House Robber II
 * 149. Best Time To Buy And Sell Stock
 * 150. Best Time To Buy And Sell Stock II
 * 151. Best Time To Buy And Sell Stock III
+  * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
+    - `f[i][j]` 前 i 天 (第 i-1 天) 結束後，在階段 j 的最大獲利
+    - `f[i-1][j]` 昨天手上沒有股票
+    - `f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$` 昨天手上有股票，今天賣出清倉
+  * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
+    - `f[i-1][j] + $P_{i-1}$ – $P_{i-2}$` 昨天就持有股票，並且繼續持有並獲利
+    - `f[i-1][j-1]` 昨天手上沒有股票，今天買入
 * 393. Best Time To Buy And Sell Stock IV
+  * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
+  * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
 * 76. Longest Increasing Subsequence
+  * `f[j]=max{1, f[i]+1|i<janda[i]<a[j]}`
+    - `f[j]` 以 a[j] 結尾的最長上升子序列的長度
+    - 情況1. `1` 子序列就是 a[j] 本身
+    - 情況2. `f[i]+1|i<janda[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
 * 602. Russian Doll Envelopes
+  * `f[i] = max{1, f[j]+1| Ej 能放在 Ei 裡面, j<i}`
+    - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
+    - 情況1. `1` 只有 Ei 這個信封
+    - 情況2. `f[j]+1| Ej 能放在 Ei 裡面` 以 Ej 為次外層信封時，最多的嵌套層數，再加上 Ei
 
 ## Ch4
 
