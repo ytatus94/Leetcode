@@ -181,12 +181,15 @@
 |最長序列型, |76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 |最長序列型, |602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|hard|[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
+* 602 會超時
+
 #### 轉移方程
 * 516 Paint House II
   * `f[i][j] = min_{k!=j} {f[i-1][k]} + cost[i-1][j]` 
     * `f[i][j]` 油漆前 i 棟房子，且房子 i-1 是顏色 j 的最小花費
     * `min_{k!=j} {f[i-1][k]}` 油漆前 i-1 棟房子，且房子 i-2 不是顏色 j 的最小花費
     * `cost[i-1][j]` 油漆房子 i-1 的花費
+  * 要記錄最小值和次小值，不然用上面的轉移方程算會超時 
 * 392 House Robber
   * `f[i] = max{f[i-1], f[i-2] + A[i-1]}` 
     - 情況1. 不偷房子 i-1 `f[i][0] = max{f[i-1][0], f[i-1][1]}`
@@ -234,6 +237,10 @@
 |背包型, 計數型|563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
 |背包型, 計數型|564|[Backpack VI](http://www.lintcode.com/564/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
+* 513 會 Memory Limit Exceeded
+* 437 會超時
+* 564 不知道寫得對不對
+
 #### 轉移方程
 * 513 Perfect Squares
   * `f[i] = min_{1<=j*j<=i}{f[i-j2] + 1}`
@@ -280,17 +287,53 @@
 |區間型, |430|[Scramble String](https://www.lintcode.com/problem/430/)|Hard|[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
 |區間型, |168|[Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
 
-* 667 超時
+* 667 用記憶化搜索時會超時
 * 168 wrong answer
-* 668 wrong answer
 
 #### 轉移方程
 * 125 Backpack II
+  * `f[i][w] = max{f[i-1][w], f[i-1][w-$A_{i-1}$] + Vi-1 | w>=$A_{i-1}$ 且f[i-1][w-$A_{i-1}$] !=-1}`
+    - `f[i][w]` 用前 i 個物品拼出重量 w 時的最大總價值
+    - 情況1. 前 n-1 個物品能拼出 w 最大總價值 v 那麼前 n 個物品也能拼出 w 且最大總價值是 v
+    - 情況2. 前 n-1 個物品能拼出 w-$A_{n-1}$ 最大總價值 v ，那麼再加上最後一個物品 (重量 $A_{n-1}$ 價值 $V_{n-1}$) 就能拼出 w 且最大總價值是 $V + V_{n-1}$
 * 449 Backpack III
+  * `f[i][w] = max_{k>=0}{f[i-1][w-k*$A_{i-1}$] + k*$V_{i-1}$}`
+    - `f[i][w]` 用前 i **種**物品拼出重量 w 時的最大總價值
+    - `f[i-1][w-k*$A_{i-1}$] + k*$V_{i-1}$` 用前 i-1 **種**物品拼出重量 w-$A_{i-1}$ 時的最大總價值，再加上 k 個第 i **種**物品的總價值
+  * 把上式展開後歸納可以得到 `f[i][w] = max{f[i-1][w], f[i][w-$A_{i-1}$] + $V_{i-1}$}`
+    - `f[i-1][w]` 用前 i-1 **種**物品拼出重量 w 時的最大總價值
+    - `f[i][w-$A_{i-1}$] + $V_{i-1}` 用前 i **種**物品拼出重量 w-$A_{i-1}$ 時的最大總價值，加上第 i 種物品的價值
 * 667 Longest Palindromic Subsequence
+  * `f[i][j] = max{f[i+1][j], f[i][j-1], f[i+1][j-1] + 2|S[i]=S[j]}`
+    - `f[i][j]` 是 s[i...j] 的最長回文子字串的長度
+    - 假設最長回文子字串是 T 長度是 M
+      - 情況1. 如果長度 M=1 就是一個字母
+      - 情況2. 如果長度 M>1 則必定 T[0] = T[M-1]，如果 T[0]=S[i], T[M-1]=S[j] 那剩下的部分 T[1...M-2] 也是回文串，而且是 S[i+1...j-1] 的最長回文子字串
+    - 要按照長度 M=j-i 從小到大去計算 
 * 396 Coins In A Line III
+  * `f[i][j] = max{a[i] - f[i+1][j], a[j] - f[i][j-1]}`
+    - `f[i][j]` 當剩下的數是 a[i...j] 的時候，取 a[i] 或 a[j] 時能得到的最大數字差
+    - 情況1. `a[i] - f[i+1][j]` 取 a[i] 而對手採取最優策略 `f[i+1][j]` 時，先手所能得到的最大數字差
+    - 情況2. `a[j] - f[i][j-1]` 取 a[j] 而對手採取最優策略 `f[i][j-1]` 時，先手所能得到的最大數字差
+  * 面對當前的數組，先手的數字和是 A 對手的數字和是 B
+    * 先手看到的數字差 $S_{A} = A - B$
+    * 對手看到的數字差 $S_{B} = B - A = -S_{A}$  
 * 430 Scramble String
+  ```
+  f[i][j][k] = OR_{1<=w<=k-1} {f[i][j][w] AND f[i+w][j+w][k-w]}
+  or
+  f[i][j][k] = OR_{1<=w<=k-1} {f[i][j+k-w][w] AND f[i+w][j][k-w]}
+  ```
+    - `f[i][j][k]` 表示字串 S1[i...i+k-1] 能否通過變換變成 T1[j...j+k-1]
+    - S 能拆解成 S1 和 S2 兩部分，T 能拆解成 T1 和 T2 兩部分
+      - 情況1. T1 是 S1 變來的，T2 是 S2 變來的
+      - 情況2. T1 是 S2 變來的，T2 是 S1 變來的
+      - S1 從 i 開始長度為 k
+      - T1 從 j 開始長度為 k
 * 168 Burst Balloons
+  * `f[i][j] = max_{i<k<j} {f[i][k] + f[k][j] + a[i] * a[k] * a[j]}`
+    - `f[i][j]` 是扎破氣球 i+1...j-1 獲得的最大金幣數
+    - 要倒著想，最後一顆札破的氣球左右兩邊是彼此獨立的
 
 ## Ch6
 
@@ -298,7 +341,7 @@
 
 |Type|No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|雙序列型, 最值型|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/))|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
+|雙序列型, 最值型|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
 |雙序列型, 存在型|29|[Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
 |雙序列型, 最值型|119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
 |雙序列型, 計數型|118|[Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
@@ -306,8 +349,8 @@
 |雙序列型, 存在型|192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
 |雙序列型, 最值型|668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
 
-* 77 runtime error
 * 154 wrong answer
+* 668 wrong answer
 
 #### 轉移方程
 * 77 Longest Common Subsequence
