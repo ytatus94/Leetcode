@@ -9,7 +9,8 @@
 #   只剩下一個數字 (假設剩第 i 個) 那差值就是 a[i]
 # TC = O(N^2), SC = O(N^2)
 
-# 這一題鎖住了，Leetcode 上也找不到類似的
+# 這一題 lintcode 鎖住了，Leetcode 上也找不到類似的
+# 所以不知道答案對不對
 class Solution:
     def firstWillWin(A: list) -> bool:
         n = len(A)
