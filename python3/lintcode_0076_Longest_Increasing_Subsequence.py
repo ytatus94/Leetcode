@@ -89,3 +89,48 @@ class Solution:
 
         return results
     
+# 用二分法 TC = O(N logN)
+# 不過我不是很懂
+
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param nums: An integer array
+    @return: The length of LIS (longest increasing subsequence)
+    """
+    def longest_increasing_subsequence(self, nums: List[int]) -> int:
+        # write your code here
+        if nums is None:
+            return 0
+        n = len(nums)
+        if n == 0:
+            return 0
+
+        # 有可能有好幾個 a[x] 有相同的 f 值
+        # 例如 a[0]=5, a[1]=1, 但是 f[0] = f[1] = 1
+        # 這時候 b[1] = a[1] = 1 
+        # b[i] = 當 f[x] = i 的時候，最小的那個 a[x]
+        # b 的下標就是 f 值，b[下標]=a[x]
+        b = [float('-inf') for i in range(n + 1)]
+
+        top = 0
+        j = 0
+
+        for i in range(n):
+            start = 0
+            end = top
+            while (start <= end):
+                mid = (start + end) // 2
+                if b[mid] < nums[i]:
+                    j = mid
+                    start = mid + 1
+                else:
+                    end = mid - 1
+            b[j + 1] = nums[i]
+            if j + 1 > top:
+                top = j + 1
+        # b[0], b[1],...,b[top]
+        return top
