@@ -380,7 +380,7 @@
 
 #### 九章動態規劃
 
-* 範例 ( 題)
+* 範例 (47 題)
 
 |Chapter|Lintcode|Level|Leetcode|Level|
 |:---|:---|:---|:---|:---|
@@ -417,9 +417,19 @@
 |5|[396. Coins In A Line III](https://www.lintcode.com/problem/396/) (鎖住了)|Hard|||
 |5|[430. Scramble String](https://www.lintcode.com/problem/430/)|Hard|||
 |5|[168. Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|||
+|6|[77. Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|||
+|6|[29. Interleaving String](https://www.lintcode.com/problem/29/)|Hard|||
+|6|[119. Edit Distance](https://www.lintcode.com/problem/119/)|Medium|||
+|6|[118. Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|||
+|6|[154. Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|||
+|6|[192. Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|||
+|6|[668. Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|||
+|7|[91. Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|||
+|7|[89. K-Sum](https://www.lintcode.com/problem/89/)|Hard|||
+|7|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
+|7|[623. K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|||
+|7|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|||
+|7|[676. Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|||
+|7|[436. Maximal Square](https://www.lintcode.com/problem/436/)|Medium|||
 
 
-* 作業 ( 題)
-
-|Chapter|Lintcode|Leetcode|Level|
-|:---|:---|:---|:---|
