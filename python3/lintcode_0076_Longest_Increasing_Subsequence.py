@@ -129,6 +129,9 @@ class Solution:
                     start = mid + 1
                 else:
                     end = mid - 1
+                    
+            # 因為找到了相同 f 值 (f=j) 卻比 nums[i] 還小的 nums[x]
+            # 所以可以放心的把 nums[i] 放到 b[j + 1]
             b[j + 1] = nums[i]
             if j + 1 > top:
                 top = j + 1
