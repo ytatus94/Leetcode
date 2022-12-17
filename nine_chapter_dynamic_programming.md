@@ -4,7 +4,7 @@
   * **座標型**:
     * `f[i]` 就是以 $a_{i}$ 結尾的性質，`f[i][j]` 就是格子 (i, j) 的性質。
     * 初始條件 `f[0]` 就是以 $a_{0}$ 結尾的性質
-    * 最長序列型和雙序列型其實是座標型
+    * **最長序列型**和**雙序列型**其實是**座標型**
       * 都是開二維數組`f = (m + 1)*(n + 1)` 數組
       * `for i 從 0 到 m`, `for j 從 0 到 n` 要包含 `m` 與 `n` 
       * 要有"對子"的觀念，兩個序列的元素組成一個對子
@@ -90,20 +90,20 @@
     - `f[i-1][j]` 有多少種方式走到 (i-1, j)
     - `f[i][j-1]` 有多少種方式走到 (i, j-1)
 * 116 Jump Game
-  * `f[j] = OR_{0<=i<j}(f[i] AND i + a[i] >= j)`
+  * `f[j] = OR_{0<=i<j} (f[i] AND i + a[i] >= j)`
     - `f[j]` 能不能跳到石頭 j
     - `0<=i<j` 枚舉上一個跳到的石頭 i
     - `f[i]` 能不能跳到石頭 i
     - `i + a[i] >= j` 最後一跳的距離不能超過 a[i]
 * 191 Maximum Product Subarray
-  * `f[j] = max{ a[j], max{a[j]*f[j-1], a[j]*g[j-1]}| j>0}`
+  * `f[j] = max{ a[j], max{ a[j]*f[j-1], a[j]*g[j-1] }| j>0 }`
     - `f[j]` 以 a[j] 結尾的連續子序列的最大乘積
     - 情況1. `a[j]` 子序列就是 a[j] 自己而已
-    - 情況2. `max{a[j]*f[j-1], a[j]*g[j-1]}| j>0` 以 a[j-1] 結尾的連續子序列最大或最小乘積，再乘上 a[j]
-  * `g[j] = min{ a[j], min{a[j]*f[j-1], a[j]*g[j-1]}| j>0}`
+    - 情況2. `max{ a[j]*f[j-1], a[j]*g[j-1] }| j>0` 以 a[j-1] 結尾的連續子序列最大或最小乘積，再乘上 a[j]
+  * `g[j] = min{ a[j], min{ a[j]*f[j-1], a[j]*g[j-1] }| j>0 }`
     - `g[j]` 以 a[j] 結尾的連續子序列的最小乘積
     - 情況1. `a[j]` 子序列就是 a[j] 自己而已
-    - 情況2. `min{a[j]*f[j-1], a[j]*g[j-1]}| j>0` 以 a[j-1] 結尾的連續子序列最大或最小乘積，再乘上 a[j]
+    - 情況2. `min{ a[j]*f[j-1], a[j]*g[j-1] }| j>0` 以 a[j-1] 結尾的連續子序列最大或最小乘積，再乘上 a[j]
 
 ## Ch2
 
@@ -185,43 +185,43 @@
 
 #### 轉移方程
 * 516 Paint House II
-  * `f[i][j] = min_{k!=j} {f[i-1][k]} + cost[i-1][j]` 
+  * `f[i][j] = min_{k!=j} { f[i-1][k] } + cost[i-1][j]` 
     * `f[i][j]` 油漆前 i 棟房子，且房子 i-1 是顏色 j 的最小花費
-    * `min_{k!=j} {f[i-1][k]}` 油漆前 i-1 棟房子，且房子 i-2 不是顏色 j 的最小花費
+    * `min_{k!=j} { f[i-1][k] }` 油漆前 i-1 棟房子，且房子 i-2 不是顏色 j 的最小花費
     * `cost[i-1][j]` 油漆房子 i-1 的花費
   * 要記錄最小值和次小值，不然用上面的轉移方程算會超時 
 * 392 House Robber
-  * `f[i] = max{f[i-1], f[i-2] + A[i-1]}` 
-    - 情況1. 不偷房子 i-1 `f[i][0] = max{f[i-1][0], f[i-1][1]}`
-    - 情況2. 偷房子 i-1 `f[i][1] = f[i-1][0] + A[i-1]`
+  * `f[i] = max{ f[i-1], f[i-2] + A[i-1] }` 
+    - 情況1. 不偷房子 i-1 `f[i][0] = max{ f[i-1][0], f[i-1][1] }` 此時房子 i-2 可偷可不偷
+    - 情況2. 偷房子 i-1 `f[i][1] = f[i-1][0] + A[i-1]` 此時房子 i-2 不能偷
 * 534 House Robber II
   * 情況1. 沒偷房子 0 變成 1...N-1 的 House Robber
   * 情況2. 沒偷房子 N-1 變成 0...N-2 的 House Robber
 * 149 Best Time To Buy And Sell Stock
-  * 枚舉第 j 天賣出 0<=j<=N-1，時刻保存最低價格 $P_{i}$, 最大獲利 = $P_{j} - P_{i}$
+  * 枚舉第 j 天賣出 $0 \le j \le N-1$，時刻保存最低價格 $P_{i}$, 最大獲利 = $P_{j} - P_{i}$
 * 150 Best Time To Buy And Sell Stock II
   * 拆解成每日交易，今天買明天賣 
 * 151 Best Time To Buy And Sell Stock III
-  * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
+  * 手中無股票 `f[i][j] = max{ f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$ }`
     - `f[i][j]` 前 i 天 (第 i-1 天) 結束後，在階段 j 的最大獲利
     - `f[i-1][j]` 昨天手上沒有股票
     - `f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$` 昨天手上有股票，今天賣出清倉
-  * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
+  * 手上有股票 `f[i][j] = max{ f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1] }`
     - `f[i-1][j] + $P_{i-1}$ – $P_{i-2}$` 昨天就持有股票，並且繼續持有並獲利
     - `f[i-1][j-1]` 昨天手上沒有股票，今天買入
 * 393 Best Time To Buy And Sell Stock IV
-  * 手中無股票 `f[i][j] = max{f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$}`
-  * 手上有股票 `f[i][j] = max{f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1]}`
+  * 手中無股票 `f[i][j] = max{ f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$ }`
+  * 手上有股票 `f[i][j] = max{ f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1] }`
 * 76 Longest Increasing Subsequence
-  * `f[j]=max{1, f[i]+1|i<janda[i]<a[j]}`
+  * `f[j]=max{ 1, f[i]+1 | i<j and a[i]<a[j] }`
     - `f[j]` 以 a[j] 結尾的最長上升子序列的長度
     - 情況1. `1` 子序列就是 a[j] 本身
-    - 情況2. `f[i]+1|i<janda[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
+    - 情況2. `f[i]+1 | i<j and a[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
 * 602 Russian Doll Envelopes
-  * `f[i] = max{1, f[j]+1| Ej 能放在 Ei 裡面, j<i}`
+  * `f[i] = max{ 1, f[j]+1 | Ej 能放在 Ei 裡面, j<i }`
     - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
     - 情況1. `1` 只有 Ei 這個信封
-    - 情況2. `f[j]+1| Ej 能放在 Ei 裡面` 以 Ej 為次外層信封時，最多的嵌套層數，再加上 Ei
+    - 情況2. `f[j]+1 | Ej 能放在 Ei 裡面` 以 Ej 為次外層信封時，最多的嵌套層數，再加上 Ei
 
 ## Ch4
 
@@ -401,7 +401,7 @@
 |Type|No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
 |序列+狀態, 最值型|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
-||89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
+|背包+狀態型, 計數型|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
 ||76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 ||623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
 ||622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
@@ -410,8 +410,18 @@
 
 #### 轉移方程
 * 91 Minimum Adjustment Cost
+  * `f[i][j] = min_{j-Target<=k<=j+Target, 1<=k<=100}{f[i-1][k] + |j-A[i-1]|}`
+    - `f[i][j]` A 的前 i 個元素改成 B 的最小代價，而且改成 B 之後相鄰的兩個元素的差，不能超過 target，並且 A[i-1]=j
+    - `f[i-1][k]` A 的前 i-1 個元素改成 B 的最小代價，並且 A[i-2]=k 
+    - `|j-A[i-1]|` A[i-1] 改成 j 的代價
 * 89 K-Sum
+  * 其實就是背包問題，A 的元素就是物品重量，Target 就是背包最大承重
+  * `f[i][k][s] = f[i-1][k][s] + f[i-1][k-1][s-A[i-1]]|s>=A[i-1]`
+    - `f[i][k][s]` 有多少種方式可以在前 i 個數中選出 k 個，使得和是 s
+    - 情況1. A[n-1] 不進背包 `f[i-1][k][s]` 在前 i-1 個數中選出 k 個，使得和是 s 的方法數
+    - 情況2. A[n-1] 進背包 `f[i-1][k-1][s-A[i-1]]` 在前 i-1 個數中選出 k-1 個，使得和是 s-A[i-1] 的方法數
 * 76 Longest Increasing Subsequence
+  * 用二分法來把 TC 從 O(N^2) 變成 O(N logN) 
 * 623 K Edit Distance
 * 622 Frog Jump
 * 676 Decode Ways II
