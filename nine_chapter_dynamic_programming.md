@@ -409,10 +409,10 @@
 ||436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
 
 #### 轉移方程
-* 91.
-* 89.
-* 76.
-* 623.
-* 622.
-* 676.
-* 436. Maximal Square
+* 91 Minimum Adjustment Cost
+* 89 K-Sum
+* 76 Longest Increasing Subsequence
+* 623 K Edit Distance
+* 622 Frog Jump
+* 676 Decode Ways II
+* 436 Maximal Square
