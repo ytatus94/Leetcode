@@ -354,7 +354,7 @@
 
 #### 轉移方程
 * 77 Longest Common Subsequence
-  * `f[i][j] = max{f[i-1][j], f[i][j-1], f[i-1][j-1]+1|A[i-1]=B[j-1]}`
+  * `f[i][j] = max{ f[i-1][j], f[i][j-1], f[i-1][j-1]+1|A[i-1]=B[j-1] }`
     - `f[i][j]` 是 A 的前 i 個字元 A[0...i-1] 和 B 的前 j 個字元 B[0...j-1] 的最長 LCS 的長度
     - 情況 1. `f[i-1][j]` A[0...i-2] 和 B[0...j-1] 的最長 LCS
     - 情況 2. `f[i][j-1]` A[0...i-1] 和 B[0...j-2] 的最長 LCS
@@ -365,7 +365,7 @@
     - 情況 1. `f[i-1][j] AND X[i+j-1]==A[i-1]` X 的前 i+j-1 個字元是否由 A 的前 i-1 個字元 A[0...i-2] 和 B 的前 j 個字元 B[0...j-1] 交錯組成，且 X 的第 i+j 個字元 X[i+j-1] 等於 A 的第 i 個字元 A[i-1]
     - 情況 2. `f[i][j-1] AND X[i+j-1]==B[j-1]` X 的前 i+j-1 個字元是否由 A 的前 i 個字元 A[0...i-1] 和 B 的前 j-1 個字元 B[0...j-2] 交錯組成，且 X 的第 i+j 個字元 X[i+j-1] 等於 B 的第 j 個字元 B[j-1]
 * 119 Edit Distance
-  * `f[i][j] = min{f[i][j-1]+1, f[i-1][j-1]+1, f[i-1][j]+1, f[i-1][j-1]|A[i-1]=B[j-1]}`
+  * `f[i][j] = min{ f[i][j-1]+1, f[i-1][j-1]+1, f[i-1][j]+1, f[i-1][j-1]|A[i-1]=B[j-1] }`
     - `f[i][j]` 是 A 的前 i 個個字元 A[0...i-1] 和 B 的前 j 個字元 B[0...j-1] 的最小編輯距離
     - 情況 1. `f[i][j-1]+1` 在 A 最後面插入 B[j-1]
     - 情況 2. `f[i-1][j-1]+1` A 的最後一個字元替換成 B[j-1]
@@ -388,7 +388,7 @@
             └ f[i-1][j] OR f[i][j-1]，如果B [j-1]='*'
   ```
 * 668 Ones and Zeroes
-  * `f[i][j][k] = max{f[i-1][j][k], f[i-1][j-$a_{i-1}$][k-$b_{i-1}$] + 1| j>=$a_{i-1}$ AND k>=$b_{i-1}$}`
+  * `f[i][j][k] = max{ f[i-1][j][k], f[i-1][j-$a_{i-1}$][k-$b_{i-1}$] + 1| j>=$a_{i-1}$ AND k>=$b_{i-1}$ }`
     - `f[i][j][k]` 前 i 個 01 串最多能有多少個被 j 個 0 和 k 個 1 組成
     - 情況 1. 最後一個不進 `f[i-1][j][k]` 前 i-1 個 01 串最多能有多少個被 j 個 0 和 k 個 1 組成
     - 情況 2. 最後一個進 `f[i-1][j-$a_{i-1}$][k-$b_{i-1}$] + 1| j>=$a_{i-1}$ AND k>=$b_{i-1}$` 前 i-1 個 01 串最多能有多少個被 j- $a_{i-1}$ 個 0 和 k- $b_{i-1}$ 個 1 組成，再加上最後一個 $S_{i-1}$
@@ -402,7 +402,7 @@
 |:---|:---|:---|:---|:---|
 |序列+狀態, 最值型|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
 |背包+狀態型, 計數型|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
-||76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
+|最長序列型,|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 ||623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
 ||622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
 ||676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
@@ -410,7 +410,7 @@
 
 #### 轉移方程
 * 91 Minimum Adjustment Cost
-  * `f[i][j] = min_{j-Target<=k<=j+Target, 1<=k<=100}{f[i-1][k] + |j-A[i-1]|}`
+  * `f[i][j] = min_{j-Target<=k<=j+Target, 1<=k<=100}{ f[i-1][k] + |j-A[i-1]| }`
     - `f[i][j]` A 的前 i 個元素改成 B 的最小代價，而且改成 B 之後相鄰的兩個元素的差，不能超過 target，並且 A[i-1]=j
     - `f[i-1][k]` A 的前 i-1 個元素改成 B 的最小代價，並且 A[i-2]=k 
     - `|j-A[i-1]|` A[i-1] 改成 j 的代價
