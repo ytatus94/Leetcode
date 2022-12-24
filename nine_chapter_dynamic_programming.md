@@ -405,7 +405,7 @@
 |背包+狀態型, 計數型|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
 |最長序列型,|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 ||623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
-||622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
+|座標+狀態型, 可行性|622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
 ||676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
 ||436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
 
@@ -425,5 +425,16 @@
   * 用二分法來把 TC 從 O(N^2) 變成 O(N logN) 
 * 623 K Edit Distance
 * 622 Frog Jump
+  * `f[i][j] = f[k][j-1] OR f[k][j] OR f[k][j+1] | a_{k} = a_{i} - j`
+    - `f[i][j]` 能否在最後一跳的長度 j 跳到石頭 $a_{i}$
+    - 石頭 $a_{i}$ 是從石頭 $a_{k}$ 以長度為 j 跳過來的: $a_{k} = a_{i} - j$
+    - 要跳到石頭 $a_{k}$，可以是從上一塊石頭以 j-1, j, j+1 其中一個長度跳過來
+    - `f[k][j-1]` 最後一跳 j-1 跳到石頭 $a_{k}$
+    - `f[k][j]` 最後一跳 j 跳到石頭 $a_{k}$
+    - `f[k][j+1]` 最後一跳 j+1 跳到石頭 $a_{k}$
+  * 假設 `f[k][j] = True` 了，表示從上一顆石頭跳了 j 到石頭 k。
+    - 那從 k 可以跳到 $a_{k}+(j-1)$, $a_{k}+j$, $a_{k}+(j+1)$ 的距離
+    - 看這三個距離上有沒有石頭，有就紀錄到 Si 集合中
+    - Si 集合內存的是所有能跳到石頭 i 的距離 L，所以從石頭 i 能跳的距離就是 L-1, L, L+1，這個距離內有石頭 j 就把結果紀錄到 Sj = {距離}
 * 676 Decode Ways II
 * 436 Maximal Square
