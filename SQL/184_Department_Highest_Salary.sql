@@ -10,3 +10,19 @@ WHERE (E.DepartmentId, E.Salary) IN (
     FROM Employee
     GROUP BY DepartmentId
 );
+
+
+-- 先選出每個部門中最高的薪水
+-- 合併表格後，利用上面的結果篩選出最後答案
+SELECT d.name AS Department,
+       e.name AS Employee,
+       e.salary AS Salary
+FROM Employee e
+LEFT JOIN Department d
+ON e.departmentId = d.id
+WHERE (e.departmentId, e.salary) IN (
+    SELECT departmentId,
+           MAX(Salary) AS Salary
+    FROM Employee
+    GROUP BY departmentId
+);
