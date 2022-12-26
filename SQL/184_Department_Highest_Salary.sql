@@ -26,3 +26,18 @@ WHERE (e.departmentId, e.salary) IN (
     FROM Employee
     GROUP BY departmentId
 );
+
+-- 很慢
+SELECT sub.Department,
+       sub.Employee,
+       sub.Salary
+FROM (
+    SELECT d.name AS Department,
+        e.name AS Employee,
+        e.salary AS Salary,
+        MAX(e.salary) OVER (PARTITION BY d.name) AS max_salary
+    FROM Employee e
+    LEFT JOIN Department d
+    ON e.departmentId = d.id
+) sub
+WHERE sub.Salary = sub.max_salary
