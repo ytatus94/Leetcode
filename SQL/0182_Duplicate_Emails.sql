@@ -1,4 +1,4 @@
 SELECT Email
-From Person
+FROM Person
 GROUP BY Email
 HAVING COUNT(*) > 1;
