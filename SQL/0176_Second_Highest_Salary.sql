@@ -11,9 +11,9 @@ SELECT (
 ) AS SecondHighestSalary;
 
 -- 方法2.
--- WHERE 中的 query 會先執行
--- 再從 Employee 中找出滿足 WHERE 條件的部分
--- 最後再用第一行的 SELECT 顯示出要看的欄位
+-- WHERE 中的 query 會先執行，所以先找出最高的薪水
+-- 再從 Employee 中找出滿足 WHERE 條件的部分，這樣找出來的薪水都比最高薪還低
+-- 最後再用第一行的 SELECT 顯示出要看的欄位，選出剩下的表格中最高薪，這樣就是全部表格中的第二高薪
 SELECT MAX(Salary) AS SecondHighestSalary
 FROM Employee
 WHERE Salary < (
