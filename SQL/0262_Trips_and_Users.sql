@@ -1,3 +1,4 @@
+-- 考會不會用 aggregate function 做計算
 SELECT
     request_at AS Day,
     ROUND(SUM(CASE WHEN status LIKE 'cancelled%' THEN 1 ELSE 0 END) / COUNT(request_at), 2) AS 'Cancellation Rate'
