@@ -1,3 +1,4 @@
+-- 考會不會 join
 SELECT Customers.Name AS Customers
 FROM Customers
 LEFT JOIN Orders
@@ -10,4 +11,4 @@ SELECT name AS Customers
 FROM Customers AS c
 LEFT JOIN Orders AS o
 ON c.id = o.customerId
-WHERE o.customerId IS NULL
+WHERE o.customerId IS NULL;
