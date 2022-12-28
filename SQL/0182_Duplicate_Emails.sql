@@ -1,3 +1,4 @@
+-- 考會不會 GROUP BY 和 HAVING
 SELECT Email
 FROM Person
 GROUP BY Email
