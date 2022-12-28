@@ -3,6 +3,8 @@
 -- 第 n 高的 salary 要 offset n-1
 
 -- 方法 1.
+-- 要知道怎麼宣吿參數還有為參數設初始值
+-- 在 Query 中參數只能直接使用，不能拿參數做計算
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
   DECLARE M INT;
