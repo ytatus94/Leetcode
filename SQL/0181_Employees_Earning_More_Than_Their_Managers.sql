@@ -1,3 +1,4 @@
+-- 考會不會 self-join
 SELECT E1.Name AS Employee
 FROM Employee E1
 LEFT JOIN Employee E2
