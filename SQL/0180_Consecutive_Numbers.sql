@@ -1,4 +1,5 @@
-# Write your MySQL query statement below
+-- 考會不會做 self-join
+-- 如果用 FROM 來 join 表格，那連接的條件就用 WHERE，而且這種方式的 join 是 inner join
 -- 把 Logs 表格做 self-join
 SELECT DISTINCT l1.num AS ConsecutiveNums
 FROM Logs AS l1, Logs AS l2, Logs AS l3
