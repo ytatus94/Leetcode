@@ -6,7 +6,7 @@ ON Customers.Id = Orders.CustomerID
 WHERE Orders.CustomerID IS NULL;
 
 
--- 另一個寫法
+-- 用 alias 的寫法
 SELECT name AS Customers
 FROM Customers AS c
 LEFT JOIN Orders AS o
