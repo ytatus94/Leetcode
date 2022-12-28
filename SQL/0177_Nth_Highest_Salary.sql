@@ -27,7 +27,7 @@ BEGIN
   RETURN (
       # Write your MySQL query statement below.
       SELECT IFNULL(
-          (SELECT DISTINCT salary FROM Employee ORDER BY salary DESC LIMIT M, 1),
+          (SELECT DISTINCT salary FROM Employee ORDER BY salary DESC LIMIT M, 1), -- 不懂這邊的 LIMIT M, 1 雖然知道是等價於 LIMIT 1 OFFSET M
           NULL
       )
   );
