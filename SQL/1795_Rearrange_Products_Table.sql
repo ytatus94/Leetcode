@@ -1,3 +1,5 @@
+-- 考 pivot table
+
 -- 方法 1
 SELECT product_id,
        "store1" AS store,
@@ -21,7 +23,7 @@ SELECT product_id,
            WHEN store3 THEN store3
        END AS price
 FROM Products
-WHERE store3 IS NOT NULL
+WHERE store3 IS NOT NULL;
 
 
 -- 方法 2
@@ -42,4 +44,4 @@ SELECT product_id,
        "store3" AS store,
        store3 AS price
 FROM Products
-WHERE store3 IS NOT NULL
+WHERE store3 IS NOT NULL;
