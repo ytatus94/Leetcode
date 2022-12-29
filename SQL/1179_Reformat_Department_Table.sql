@@ -1,7 +1,11 @@
+-- 考會不會 pivot table
+
 -- 方法1: 很多 join 所以很慢
-# Write your MySQL query statement below
+-- 先用 Common Table Expression (CTE, 就是 WITH 敘述句) 算出每個月的收入
+-- 然後每個 LEFT JOIN 都只選出某個特定月份
 WITH t AS (
-    SELECT id,
+    SELECT
+        id,
         month,
         SUM(revenue) AS tot_revenue
     FROM Department
@@ -94,7 +98,7 @@ LEFT JOIN (
     FROM t
     WHERE month = "Dec"
 ) AS dece -- 用 dec 會有問題，大概是關鍵字之類的
-ON t.id = dece.id
+ON t.id = dece.id;
 
 -- 方法2. 用 IF(condition, value_if_true, value_if_false)
 SELECT
@@ -112,4 +116,4 @@ SELECT
     SUM(IF(month = 'Nov', revenue, null)) AS 'Nov_Revenue',
     SUM(IF(month = 'Dec', revenue, null)) AS 'Dec_Revenue'
 FROM Department
-GROUP BY 1
+GROUP BY 1;
