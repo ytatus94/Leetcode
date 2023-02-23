@@ -28,3 +28,23 @@ class Solution:
                 f[row][col] = f[row - 1][col] + f[row][col - 1]
                 
         return f[rows - 1][cols - 1]
+
+# 方法 2
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        # 開一個二維陣列紀錄走到 (i, j) 有幾種方式
+        dp = [[0] * n] * m
+        for i in range(m):
+            for j in range(n):
+                if i == 0 and j == 0:
+                    # 初始條件: 一開始在原點只有一種方式
+                    dp[i][j] = 1
+                elif i == 0:
+                    # 最上面的 row 只可能從左邊的格子走過來
+                    dp[i][j] = dp[i][j - 1]
+                elif j == 0:
+                    # 最左邊的 column 只可能從上面的格子走過來
+                    dp[i][j] = dp[i - 1][j]
+                else:
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1]
+        return dp[m - 1][n - 1]
