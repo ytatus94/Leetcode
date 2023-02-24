@@ -1,4 +1,5 @@
 # lintcode 116
+# 會超時
 class Solution:
     """
     @param A: A list of integers
