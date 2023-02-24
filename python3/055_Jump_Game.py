@@ -55,3 +55,13 @@ class Solution:
                     # 如果已經能跳到 i 就不用再繼續看之後的 j 了
                     break
         return dp[len(nums) - 1]
+# 貪心法會過
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        if nums is None or len(nums) == 0:
+            return False
+        reachable_index = 0 + nums[0]
+        for i in range(1, len(nums)):
+            if i <= reachable_index and i + nums[i] > reachable_index:
+                reachable_index = i + nums[i]
+        return reachable_index >= len(nums) - 1
