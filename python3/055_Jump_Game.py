@@ -40,3 +40,17 @@ class Solution:
                 farthest = A[i] + i
                 
         return farthest >= len(A) - 1
+
+# 會超時
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        # 開一個陣列紀錄是否能跳到
+        dp = [False] * len(nums)
+        dp[0] = True # 一開始就在 first index 上面
+        for i in range(1, len(nums)):
+            for j in range(i): # loop 所有可能的上一步
+                if dp[j] and j + nums[j] >= i:
+                    dp[i] = True
+                    # 如果已經能跳到 i 就不用再繼續看之後的 j 了
+                    break
+        return dp[len(nums) - 1]
