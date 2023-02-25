@@ -72,7 +72,7 @@
 ### Examples (4 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |最值型|322|669|[Coin Change](https://www.lintcode.com/problem/669/)|Medium|[https://www.jiuzhang.com/solution/coin-change/](https://www.jiuzhang.com/solution/coin-change/)|
 |計數型|62|114|[Unique Paths](https://www.lintcode.com/problem/114/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths/](http://www.jiuzhang.com/solutions/unique-paths/)|
 |存在型|55|116|[Jump Game](https://www.lintcode.com/problem/116/)|Medium|[http://www.jiuzhang.com/solutions/jump-game/](http://www.jiuzhang.com/solutions/jump-game/)|
@@ -112,7 +112,7 @@
 ### Examples (7 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |座標型, 計數型|63|115|[Unique Paths II](https://www.lintcode.com/problem/115/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
 |序列型, 最值型|256|515|[Paint House](https://www.lintcode.com/problem/515/)|Medium|[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
 |劃分型, 計數型|92|512|[Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
@@ -172,7 +172,7 @@
 ### Examples (9 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |序列＋狀態型, 最值型|265|516|[Paint House II](https://www.lintcode.com/problem/516/)|hard|[http://www.jiuzhang.com/solutions/paint-house-ii/](http://www.jiuzhang.com/solutions/paint-house-ii/)|
 |序列＋狀態型, 最值型|198|392|[House Robber](https://www.lintcode.com/problem/392/)|Medium|[http://www.jiuzhang.com/solutions/house-robber/](http://www.jiuzhang.com/solutions/house-robber/)|
 |序列＋狀態型, 最值型|213|534|[House Robber II](https://www.lintcode.com/problem/534/)|Medium|[http://www.jiuzhang.com/solutions/house-robber-ii/](http://www.jiuzhang.com/solutions/house-robber-ii/)|
