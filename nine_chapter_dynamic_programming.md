@@ -186,7 +186,7 @@
 |最長序列型, |300|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 |最長序列型, |354|602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|hard|[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
-* 602 會超時
+* 602 Russian Doll Envelopes 會超時
 
 #### 轉移方程
 * 516 Paint House II
