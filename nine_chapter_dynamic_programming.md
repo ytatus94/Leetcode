@@ -120,7 +120,7 @@
 |座標型, 計數型|674|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)|Easy|[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
 |座標型, 最值型|64|110|[Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |座標型, 最值型|361 (鎖)|553|[Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
-|位操作型, 計數型|338|664|[Counting Bits](https://www.lintcode.com/problem/664/) (鎖住了)|Medium|[https://www.jiuzhang.com/solutions/counting-bits/](https://www.jiuzhang.com/solutions/counting-bits/)|
+|位操作型, 計數型|338|664 (鎖)|[Counting Bits](https://www.lintcode.com/problem/664/) (鎖住了)|Medium|[https://www.jiuzhang.com/solutions/counting-bits/](https://www.jiuzhang.com/solutions/counting-bits/)|
 
 #### 轉移方程
 * 115 Unique Paths II
