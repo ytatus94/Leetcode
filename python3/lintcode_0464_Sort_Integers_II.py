@@ -79,11 +79,11 @@ class Solution:
 
         # quick sort 用 left <= right (有等號) 不是用 left < right
         while left <= right:
-            while left <= right and a[left] < pivot:
+            while left <= right and a[left] < pivot: # 元素值比 pivot 小就不用動，把改變 index 就好
                 left += 1
-            while left <= right and a[right] > pivot:
+            while left <= right and a[right] > pivot: # 元素值比 pivot 小就不用動，把改變 index 就好
                 right -= 1
-            if left <= right:
+            if left <= right: # 不然就要交換元素
                 temp = a[left]
                 a[left] = a[right]
                 a[right] = temp
