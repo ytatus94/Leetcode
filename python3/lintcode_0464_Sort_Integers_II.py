@@ -1,0 +1,53 @@
+# 用 Merge Sort
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: an integer array
+    @return: nothing
+    """
+    def sort_integers2(self, a: List[int]):
+        # write your code here
+        temp = [None for i in range(len(a))]
+        self.merge_sort(a, 0, len(a) - 1, temp)
+
+    def merge_sort(self, a: List[int], start: int, end: int, temp: List[int]):
+        if start >= end:
+            return
+        mid = (start + end) // 2
+
+        # 先不斷地左右拆分
+        self.merge_sort(a, start, mid, temp)
+        self.merge_sort(a, mid + 1, end, temp)
+        # 拆分完後要排序，然後合併
+        self.merge_array(a, start, mid, end, temp)
+
+    def merge_array(self, a: List[int], start: int, mid: int, end: int, temp: List[int]):
+        left = start
+        right = mid + 1
+        idx = start
+
+        while left <= mid and right <= end:
+            if a[left] <= a[right]:
+                temp[idx] = a[left]
+                left += 1
+            else:
+                temp[idx] = a[right]
+                right += 1
+            idx += 1
+
+        # 如果還有剩下的，就把剩下的加入
+        while left <= mid:
+            temp[idx] = a[left]
+            left += 1
+            idx += 1
+        while right <= end:
+            temp[idx] = a[right]
+            right += 1
+            idx += 1
+        # 因為目前只有 start 到 end 排序好了
+        # 所以只要把 start 到 end 的部分寫入 a 就好
+        for i in range(start, end + 1):
+            a[i] = temp[i]
