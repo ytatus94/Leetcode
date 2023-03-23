@@ -10,7 +10,7 @@ class Solution:
     """
     def sort_integers2(self, a: List[int]):
         # write your code here
-        temp = [None for i in range(len(a))]
+        temp = [None for i in range(len(a))] # 需要用來記錄排序好的部分
         self.merge_sort(a, 0, len(a) - 1, temp)
 
     def merge_sort(self, a: List[int], start: int, end: int, temp: List[int]):
