@@ -16,7 +16,7 @@ class Solution:
     def merge_sort(self, a: List[int], start: int, end: int, temp: List[int]):
         if start >= end:
             return
-        mid = (start + end) // 2
+        mid = (start + end) // 2 # 要求中間點
 
         # 先不斷地左右拆分
         self.merge_sort(a, start, mid, temp)
@@ -51,3 +51,46 @@ class Solution:
         # 所以只要把 start 到 end 的部分寫入 a 就好
         for i in range(start, end + 1):
             a[i] = temp[i]
+
+# 用 quick sort
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: an integer array
+    @return: nothing
+    """
+    def sort_integers2(self, a: List[int]):
+        # write your code here
+        self.quick_sort(a, 0, len(a) - 1)
+
+    def quick_sort(self, a: List[int], start: int, end: int):
+        if start >= end:
+            return
+
+        left = start
+        right = end
+
+        # 用中間點當 pivot
+        mid = (start + end) // 2
+        pivot = a[mid]
+
+        # quick sort 用 left <= right (有等號) 不是用 left < right
+        while left <= right:
+            while left <= right and a[left] < pivot:
+                left += 1
+            while left <= right and a[right] > pivot:
+                right -= 1
+            if left <= right:
+                temp = a[left]
+                a[left] = a[right]
+                a[right] = temp
+                left += 1
+                right -= 1
+
+        # 離開 while loop 時，一定是這種格式 start .... right left ... end
+        # 就是 right 在 left 左邊了
+        self.quick_sort(a, start, right)
+        self.quick_sort(a, left, end)
