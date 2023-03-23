@@ -14,7 +14,7 @@ class Solution:
         self.merge_sort(a, 0, len(a) - 1, temp)
 
     def merge_sort(self, a: List[int], start: int, end: int, temp: List[int]):
-        if start >= end:
+        if start >= end: # 不管是 merge sort 或是 quick sort 都要有這個判斷
             return
         mid = (start + end) // 2 # 要求中間點
 
@@ -67,7 +67,7 @@ class Solution:
         self.quick_sort(a, 0, len(a) - 1)
 
     def quick_sort(self, a: List[int], start: int, end: int):
-        if start >= end:
+        if start >= end: # 不管是 merge sort 或是 quick sort 都要有這個判斷
             return
 
         left = start
