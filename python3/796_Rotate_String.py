@@ -24,6 +24,8 @@ class Solution:
             
         # abcdefgabcdefg
         temp = (str * 2)[len(str) - offset : 2 * len(str) - offset]
+        # 也可以用下面的方式
+        # temp = s[-offset:] + s[:-offset]
         
         for idx in range(len(str)):
             str[idx] = temp[idx] # 要修改原本的 str
