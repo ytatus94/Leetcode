@@ -19,3 +19,15 @@ class Solution:
         b = ((number - c) // 10) % 10
         a = ((number - (b * 10 + c)) // 100) % 10
         return c * 100 + b * 10 + a
+
+class Solution:
+    """
+    @param number: A 3-digit number.
+    @return: Reversed number.
+    """
+    def reverse_integer(self, number: int) -> int:
+        # write your code here
+        c = number % 10
+        b = (number // 10) % 10
+        a = (number // 100) % 10
+        return c * 100 + b * 10 + a
