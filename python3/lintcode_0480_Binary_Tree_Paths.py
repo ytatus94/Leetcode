@@ -48,7 +48,6 @@ class Solution:
             self.dfs(root.right, current_path + "->" + str(root.right.val), result)
 
 # 用 Divide conquer 的方法
-# 用 Traverse 的方法
 class Solution:
     """
     @param root: the root of the binary tree
