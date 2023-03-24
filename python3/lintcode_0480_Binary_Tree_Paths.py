@@ -36,7 +36,7 @@ class Solution:
         # 出口: 處理空節點
         # 遇到空節點就什麼都不做，直接回傳
         if root is None:
-            result
+            return
         # 當遇到葉子節點的時候，就把現在累積起來的路徑放到 result 裡面，然後回傳
         if root.left is None and root.right is None:
             result += [current_path]
