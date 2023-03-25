@@ -70,8 +70,8 @@
 |:---|:---|:---|:---|:---|
 |1|[9. Fizz Buzz](http://www.lintcode.com/en/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|
 |1|[37. Reverse 3-digit Integer](http://www.lintcode.com/en/problem/37/)|Naive|||
-|2|[239. Root of Equation](http://www.lintcode.com/en/problem/239/)|Easy|||
-|3|[241. String To Integer](http://www.lintcode.com/en/problem/241/)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
+|2|[239. Root of Equation](http://www.lintcode.com/en/problem/239/) (locked)|Easy|||
+|3|[241. String To Integer](http://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
 |3|[8. Rotate String](http://www.lintcode.com/en/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
 |3|[172. Remove Element](http://www.lintcode.com/en/problem/172/)|Easy|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
 |3|[35. Reverse Linked List](http://www.lintcode.com/en/problem/35/)|Easy|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
@@ -80,7 +80,7 @@
 |4|[423. Valid Parentheses](https://www.lintcode.com/en/problem/423/)|Easy|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|
 |4|[492. Implement Queue by Linked List](http://www.lintcode.com/en/problem/492/)|Easy|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
 |5|[366. Fibonacci](http://www.lintcode.com/en/problem/366/)|Naive|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
-|5|[481. Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/481/)|Easy|||
+|5|[481. Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/481/) (locked)|Easy|||
 |5|[97. Maximum Depth of Binary Tree](http://www.lintcode.com/en/problem/97/)|Easy|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
 |5|[Identical Binary Tree](http://www.lintcode.com/en/problem/identical-binary-tree/)|||
 |5|[66. Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/66/)|Easy|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
@@ -97,45 +97,45 @@
 |Chapter|LintCode|Level|Leetcode|Level|
 |:---|:---|:---|:---|:---|
 |1|[479. Second Max of Array](https://www.lintcode.com/problem/479/)|Easy|||
-|1|[478. Simple Calculator](https://www.lintcode.com/problem/478/)|Naive|||
+|1|[478. Simple Calculator](https://www.lintcode.com/problem/478/) (locked)|Naive|||
 |1|[283. Max of 3 Numbers](https://www.lintcode.com/problem/283/)|Naive|||
 |1|[145. Lowercase to Uppercase](https://www.lintcode.com/problem/145/)|Naive|||
 |1|[37. Reverse 3-digit Integer](https://www.lintcode.com/problem/37/)|Naive|||
 |1|[9. Fizz Buzz](https://www.lintcode.com/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)| Easy |
 |2|[454. Rectangle Area](https://www.lintcode.com/problem/454/)|Naive|[223. Rectangle Area](https://leetcode.com/problems/rectangle-area)| Medium |
-|2|[222. Setter and Getter](https://www.lintcode.com/problem/222/)|Naive|||
-|2|[455. Student ID](https://www.lintcode.com/problem/455/)|Easy|||
-|2|[218. Student Level](https://www.lintcode.com/problem/218/)|Easy|||
+|2|[222. Setter and Getter](https://www.lintcode.com/problem/222/) (locked)|Naive|||
+|2|[455. Student ID](https://www.lintcode.com/problem/455/) (locked)|Easy|||
+|2|[218. Student Level](https://www.lintcode.com/problem/218/) (locked)|Easy|||
 |2|[497. Shape Factory](https://www.lintcode.com/problem/497/)|Easy|||
-|3|[483. Convert Linked List to Array List](https://www.lintcode.com/problem/483/)|Naive|||
-|3|[225. Find Node in Linked List](https://www.lintcode.com/problem/225/)|Naive|||
-|3|[219. Insert Node in Sorted Linked List](https://www.lintcode.com/problem/219/)|Easy|||
+|3|[483. Convert Linked List to Array List](https://www.lintcode.com/problem/483/) (locked)|Naive|||
+|3|[225. Find Node in Linked List](https://www.lintcode.com/problem/225/) (locked)|Naive|||
+|3|[219. Insert Node in Sorted Linked List](https://www.lintcode.com/problem/219/) (locked)|Easy|||
 |3|[452. Remove Linked List Elements](https://www.lintcode.com/problem/452/)|Easy|[203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)| Easy |
-|3|[241. String to Integer](https://www.lintcode.com/problem/241/)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Medium |
+|3|[241. String to Integer](https://www.lintcode.com/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Medium |
 |3|[415. Valid Palindrome](https://www.lintcode.com/problem/415/)|Medium|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)| Easy |
 |3|[174. Remove Nth Node From End of List](https://www.lintcode.com/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)| Medium |
 |3|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)|Easy|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
 |4|[495. Implement Stack](https://www.lintcode.com/problem/495/)|Easy|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)| Easy |
-|4|[494. Implement Stack by Two Queues](https://www.lintcode.com/problem/494/)|Easy||| 
+|4|[494. Implement Stack by Two Queues](https://www.lintcode.com/problem/494/) (locked)|Easy||| 
 |4|[423. Valid Parentheses](https://www.lintcode.com/problem/423/)|Easy|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)| Easy | 
 |4|[40. Implement Queue by Two Stacks](https://www.lintcode.com/problem/40/)|Medium|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
-|5|[647. Find All Anagrams in a String](https://www.lintcode.com/problem/647/)|Medium|[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)| Medium | 
+|5|[647. Find All Anagrams in a String](https://www.lintcode.com/problem/647/) (locked)|Medium|[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)| Medium | 
 |5|[644. Strobogrammatic Number](https://www.lintcode.com/problem/644/)|Easy|[246. Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number)| Easy | 
-|5|[557. Count Characters](https://www.lintcode.com/problem/557/)|Easy||| 
+|5|[557. Count Characters](https://www.lintcode.com/problem/557/) (locked)|Easy||| 
 |5|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)|Easy|[704. Binary Search](https://leetcode.com/problems/binary-search)| Easy | 
-|5|[487. Name Deduplication](https://www.lintcode.com/problem/487/)|Easy|||
-|6|[481. Binary Tree Leaf Sum](https://www.lintcode.com/problem/481/)|Easy||| 
+|5|[487. Name Deduplication](https://www.lintcode.com/problem/487/) (locked)|Easy|||
+|6|[481. Binary Tree Leaf Sum](https://www.lintcode.com/problem/481/) (locked)|Easy||| 
 |6|[480. Binary Tree Paths](https://www.lintcode.com/problem/480/)|Easy|[257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)| Easy | 
 |6|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/problem/97/)|Easy|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Easy | 
-|6|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/)|Easy|[124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)| Hard | 
-|6|[482. Binary Tree Level Sum](https://www.lintcode.com/problem/482/)|Easy|[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree)| Medium |
+|6|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/) (locked)|Easy|[124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)| Hard | 
+|6|[482. Binary Tree Level Sum](https://www.lintcode.com/problem/482/) (locked)|Easy|[1161. Maximum Level Sum of a Binary Tree](https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree)| Medium |
 |7|[463. Sort Integers](https://www.lintcode.com/problem/463/)|Naive||| 
 |7|[464. Sort Integers II](https://www.lintcode.com/problem/464/)|Easy||| 
 |7|[173. Insertion Sort List](https://www.lintcode.com/problem/173/)|Easy|[147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list)| Medium | 
 |7|[184. Largest Number](https://www.lintcode.com/problem/184/)|Medium|[179. Largest Number](https://leetcode.com/problems/largest-number)| Medium | 
 |7|[148. Sort Colors](https://www.lintcode.com/problem/148/)|Medium|[75. Sort Colors](https://leetcode.com/problems/sort-colors)| Medium | 
 |7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)|Medium||| 
-|7|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/)|Medium||| 
+|7|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/) (locked)|Medium||| 
 |7|[98. Sort List](https://www.lintcode.com/problem/98/)|Medium|[148. Sort List](https://leetcode.com/problems/sort-list)| Medium | 
 |7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|Medium|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)| Medium |
 
@@ -431,5 +431,3 @@
 |7|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|||
 |7|[676. Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|||
 |7|[436. Maximal Square](https://www.lintcode.com/problem/436/)|Medium|||
-
-
