@@ -26,6 +26,6 @@ class Solution:
 
     def compare(self, a, b):
         if int(str(a) + str(b)) > int(str(b) + str(a)):
-            return -1
+            return -1 # 注意這邊要傳回 -1 而不是 1
         else:
             return 1
