@@ -24,8 +24,10 @@ class Solution:
         else:
             return ''.join([str(i) for i in nums])
 
+    # 在 cmp_to_key(self.compare) 呼叫時，如果 nums =[n1, n2, n3, n4]
+    # 那呼叫的順序是 compare(n2, n1), compare(n3, n2), compare(n4, n3)
     def compare(self, a, b):
         if int(str(a) + str(b)) > int(str(b) + str(a)):
-            return -1 # 注意這邊要傳回 -1 而不是 1
+            return -1 # 注意這邊要傳回 -1 而不是 1，這樣 b 才會排前面
         else:
             return 1
