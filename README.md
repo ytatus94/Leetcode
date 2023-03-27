@@ -389,23 +389,28 @@
 |1|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|[55. Jump Game](https://leetcode.com/problems/jump-game/)|Medium|
 |1|[191. Maximum Product Subarray](https://www.lintcode.com/problem/191/)|Medium|[152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)|Medium|
 |2|[115. Unique Paths II](https://www.lintcode.com/problem/115/)|Easy|[63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)|Medium|
-|2|[515. Paint House](https://www.lintcode.com/problem/515/)|Medium|[256. Paint House](https://leetcode.com/problems/paint-house/) (premium)|Medium|
+|2|[515. Paint House](https://www.lintcode.com/problem/515/)|Medium|[256. Paint House](https://leetcode.com/problems/paint-house/) (locked)|Medium|
 |2|[512. Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[91. Decode Ways](https://leetcode.com/problems/decode-ways/)|Medium|
 |2|[397. Longest Continuous Increasing Subsequence](https://www.lintcode.com/problem/397/)|Easy|[674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)|Easy|
 |2|[110. Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)|Medium|
-|2|[553. Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) (premium)|Medium|
+|2|[553. Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[361. Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) (locked)|Medium|
 |2|[664. Counting Bits](https://www.lintcode.com/problem/664/) (鎖住了)|Medium|[338. Counting Bits](https://leetcode.com/problems/counting-bits/)|Easy|
-|3|[516. Paint House II](https://www.lintcode.com/problem/516/)|Hard|||
-|3|[392. House Robber](https://www.lintcode.com/problem/392/)|Medium|||
-|3|[534. House Robber II](https://www.lintcode.com/problem/534/)|Medium|||
-|3|[149. Best Time to Buy and Sell Stock](https://www.lintcode.com/problem/149/)|Medium|||
-|3|[150. Best Time to Buy and Sell Stock II](https://www.lintcode.com/problem/150/)|Medium|||
-|3|[151. Best Time to Buy and Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|||
-|3|[393. Best Time to Buy and Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|||
-|3|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
-|3|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|||
-|4|[513. Perfect Squares](https://www.lintcode.com/problem/513/)|Medium|||
-|4|[108. Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|||
+|3|[516. Paint House II](https://www.lintcode.com/problem/516/)|Hard|265. Paint House II (locked)|Hard|
+|3|[392. House Robber](https://www.lintcode.com/problem/392/)|Medium|[198. House Robber](https://leetcode.com/problems/house-robber/)|Medium|
+|3|[534. House Robber II](https://www.lintcode.com/problem/534/)|Medium|[213. House Robber II](https://leetcode.com/problems/house-robber-ii/)|Medium|
+|3|[149. Best Time to Buy and Sell Stock](https://www.lintcode.com/problem/149/)|Medium|[
+121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|
+|3|[150. Best Time to Buy and Sell Stock II](https://www.lintcode.com/problem/150/)|Medium|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|
+|3|[151. Best Time to Buy and Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|[123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)|Hard|
+|3|[393. Best Time to Buy and Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|[
+188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)|Hard|
+|3|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[
+300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|Medium|
+|3|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|[
+354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)|Hard|
+|4|[513. Perfect Squares](https://www.lintcode.com/problem/513/)|Medium|[279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)|Medium|
+|4|[108. Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|[
+132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)|Hard|
 |4|[437. Copy Books](https://www.lintcode.com/problem/437/)|Medium|||
 |4|[394. Coins in a Line](https://www.lintcode.com/problem/394/)|Medium|||
 |4|[92. Backpack](https://www.lintcode.com/problem/92/)|Medium|||
@@ -413,21 +418,26 @@
 |4|[564. Backpack VI](https://www.lintcode.com/problem/564/) (找不到)|Medium|||
 |5|[125. Backpack II](https://www.lintcode.com/problem/125/)|Medium|||
 |5|[440. Backpack III](https://www.lintcode.com/problem/440/)|Medium|||
-|5|[667. Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|||
+|5|[667. Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[516. Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/)|Medium|
 |5|[396. Coins In A Line III](https://www.lintcode.com/problem/396/) (鎖住了)|Hard|||
-|5|[430. Scramble String](https://www.lintcode.com/problem/430/)|Hard|||
-|5|[168. Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|||
-|6|[77. Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|||
-|6|[29. Interleaving String](https://www.lintcode.com/problem/29/)|Hard|||
-|6|[119. Edit Distance](https://www.lintcode.com/problem/119/)|Medium|||
-|6|[118. Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|||
-|6|[154. Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|||
-|6|[192. Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|||
-|6|[668. Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|||
+|5|[430. Scramble String](https://www.lintcode.com/problem/430/)|Hard|[
+87. Scramble String](https://leetcode.com/problems/scramble-string/)|Hard|
+|5|[168. Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[312. Burst Balloons](https://leetcode.com/problems/burst-balloons/)|Hard|
+|6|[77. Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|[
+1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|Medium|
+|6|[29. Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[
+97. Interleaving String](https://leetcode.com/problems/interleaving-string/)|Medium|
+|6|[119. Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[72. Edit Distance](https://leetcode.com/problems/edit-distance/)|Hard|
+|6|[118. Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|Hard|
+|6|[154. Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[
+10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|Hard|
+|6|[192. Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|Hard|
+|6|[668. Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|Medium|
 |7|[91. Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|||
 |7|[89. K-Sum](https://www.lintcode.com/problem/89/)|Hard|||
-|7|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|||
+|7|[76. Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)|Medium|
 |7|[623. K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|||
-|7|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|||
-|7|[676. Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|||
-|7|[436. Maximal Square](https://www.lintcode.com/problem/436/)|Medium|||
+|7|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[403. Frog Jump](https://leetcode.com/problems/frog-jump/)|Hard|
+|7|[676. Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[
+639. Decode Ways II](https://leetcode.com/problems/decode-ways-ii/)|Hard|
+|7|[436. Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[221. Maximal Square](https://leetcode.com/problems/maximal-square/)|Medium|
