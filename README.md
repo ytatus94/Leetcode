@@ -140,6 +140,16 @@
 |7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|Medium|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)| Medium |
 
 #### 九章算法
+* ch1.
+* ch2. Binary Search
+* ch3. Binary Tree & Divide Conquer
+* ch4. BFS
+* ch5. DFS
+* ch6. Linked List
+* ch7. Two Pointers
+* ch8. Hash & Heap
+* ch9. Dynamic Programming
+
 * 範例 (151 題)
 
 |Chapter|Lintcode|Level|Leetcode|Level|
