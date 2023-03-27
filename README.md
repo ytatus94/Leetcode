@@ -398,8 +398,7 @@
 |3|[516. Paint House II](https://www.lintcode.com/problem/516/)|Hard|265. Paint House II (locked)|Hard|
 |3|[392. House Robber](https://www.lintcode.com/problem/392/)|Medium|[198. House Robber](https://leetcode.com/problems/house-robber/)|Medium|
 |3|[534. House Robber II](https://www.lintcode.com/problem/534/)|Medium|[213. House Robber II](https://leetcode.com/problems/house-robber-ii/)|Medium|
-|3|[149. Best Time to Buy and Sell Stock](https://www.lintcode.com/problem/149/)|Medium|[
-121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|
+|3|[149. Best Time to Buy and Sell Stock](https://www.lintcode.com/problem/149/)|Medium|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|
 |3|[150. Best Time to Buy and Sell Stock II](https://www.lintcode.com/problem/150/)|Medium|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)|Medium|
 |3|[151. Best Time to Buy and Sell Stock III](https://www.lintcode.com/problem/151/)|Medium|[123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)|Hard|
 |3|[393. Best Time to Buy and Sell Stock IV](https://www.lintcode.com/problem/393/)|Medium|[
