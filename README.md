@@ -296,7 +296,7 @@
 |9|[602. Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|Hard|||
 |9|[622. Frog Jump](https://www.lintcode.com/problem/622/)|Hard|||
 
-* 作業 (76 題)
+* 作業 (75 題)
 
 |Chapter|Lintcode|Leetcode|Level|
 |:---|:---|:---|:---|
