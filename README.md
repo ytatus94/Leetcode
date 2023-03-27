@@ -140,7 +140,7 @@
 |7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|Medium|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)| Medium |
 
 #### 九章算法
-* 範例 ( 題)
+* 範例 (151 題)
 
 |Chapter|Lintcode|Level|Leetcode|Level|
 |:---|:---|:---|:---|:---|
