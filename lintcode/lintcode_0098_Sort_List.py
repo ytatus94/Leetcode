@@ -1,3 +1,4 @@
+# 用 merge sort
 from lintcode import (
     ListNode,
 )
@@ -58,3 +59,4 @@ class Solution:
 
         return dummy.next
 
+# 用 quick sort
