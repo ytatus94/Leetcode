@@ -105,3 +105,54 @@ class Solution:
         return min(f[n])
 
     
+# 改寫一下滾動數組
+# 最小值和次小值，還有對應的顏色應該放到 for i in range(1, n+1) 才對
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param costs: n x k cost matrix
+    @return: an integer, the minimum cost to paint all houses
+    """
+    def min_cost_i_i(self, costs: List[List[int]]) -> int:
+        # write your code here
+        n = len(costs)
+        if n == 0:
+            return 0
+
+        if n == 1:
+            return min(costs[0])
+
+        k = len(costs[0])
+        if k == 0:
+            return 0
+
+        dp = [[float('inf') for j in range(k)] for i in range(n + 1)]
+
+        for j in range(k):
+            dp[0][j] = 0
+
+        for i in range(1, n + 1):
+            min_cost1 = float('inf')
+            min_cost2 = float('inf')
+            min_color1 = 0
+            min_color2 = 0
+            for j in range(k):
+                if dp[i - 1][j] < min_cost1:
+                    min_cost2 = min_cost1
+                    min_cost1 = dp[i - 1][j]
+                    min_color2 = min_color1
+                    min_color1 = j
+                elif dp[i - 1][j] < min_cost2:
+                    min_cost2 = dp[i - 1][j]
+                    min_color2 = j
+
+            for j in range(k):
+                if j != min_color1:
+                    dp[i][j] = min_cost1 + costs[i - 1][j]
+                else:
+                    dp[i][j] = min_cost2 + costs[i - 1][j]
+
+        return min(dp[n])
