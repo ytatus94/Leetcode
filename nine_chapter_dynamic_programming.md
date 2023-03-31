@@ -116,7 +116,7 @@
 |:---|:---|:---|:---|:---|:---|
 |座標型, 計數型|63|115|[Unique Paths II](https://www.lintcode.com/problem/115/)|Easy|[http://www.jiuzhang.com/solutions/unique-paths-ii/](http://www.jiuzhang.com/solutions/unique-paths-ii/)|
 |序列型, 最值型|256 (鎖)|515|[Paint House](https://www.lintcode.com/problem/515/)|Medium|[https://www.jiuzhang.com/solution/paint-house/](https://www.jiuzhang.com/solution/paint-house/)|
-|劃分型, 計數型|92|512|[Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
+|劃分型, 計數型|91|512|[Decode Ways](https://www.lintcode.com/problem/512/)|Medium|[http://www.jiuzhang.com/solutions/decode-ways/](http://www.jiuzhang.com/solutions/decode-ways/)|
 |座標型, 計數型|674|397|[Longest Increasing Continuous Subsequence](https://www.lintcode.com/problem/397/)|Easy|[http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-continuous-subsequence/)|
 |座標型, 最值型|64|110|[Minimum Path Sum](https://www.lintcode.com/problem/110/)|Easy|[http://www.jiuzhang.com/solutions/minimum-path-sum/](http://www.jiuzhang.com/solutions/minimum-path-sum/)|
 |座標型, 最值型|361 (鎖)|553|[Bomb Enemy](https://www.lintcode.com/problem/553/)|Medium|[http://www.jiuzhang.com/solutions/bomb-enemy/](http://www.jiuzhang.com/solutions/bomb-enemy/)|
