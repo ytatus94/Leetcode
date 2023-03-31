@@ -12,3 +12,12 @@ class Solution:
             dp_min[i] = min(nums[i], min(nums[i] * dp_max[i - 1], nums[i] * dp_min[i - 1]))
 
         return max(dp_max)
+
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        prod = nums[:]
+        prod_inv = nums[::-1] # 不懂為什麼要取反向的乘積
+        for i in range(1, len(nums)):
+            prod[i] *= prod[i - 1] or 1 # 用 1 是避免出現 nums[i]=0 的情況
+            prod_inv[i] *= prod_inv[i - 1] or 1
+        return max(prod + prod_inv) # 不懂
