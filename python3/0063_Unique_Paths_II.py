@@ -15,6 +15,7 @@ class Solution:
         
         for row in range(rows):
             for col in range(cols):
+                # 先處理障礙點
                 if obstacleGrid[row][col] == 1:
                     grid[row][col] = 0 # 把障礙點設成 0
                 elif row == 0 and col == 0:
