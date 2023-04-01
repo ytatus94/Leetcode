@@ -215,6 +215,9 @@
   * 情況2. 沒偷房子 N-1 變成 0...N-2 的 House Robber
 * 149 Best Time To Buy And Sell Stock
   * 枚舉第 j 天賣出 $0 \le j \le N-1$，時刻保存最低價格 $P_{i}$, 最大獲利 = $P_{j} - P_{i}$
+  * `f[i] = min(f[i], prices[i] - prices[j])`
+    * `f[i]` = 第 i 天賣的最大獲利
+    * `f[0] = 0`, `f[1] = 0` 第一天買又第一天賣，賺到 0 元
 * 150 Best Time To Buy And Sell Stock II
   * 拆解成每日交易，今天買明天賣 
 * 151 Best Time To Buy And Sell Stock III
