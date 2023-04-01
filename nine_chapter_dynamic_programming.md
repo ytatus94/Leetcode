@@ -210,6 +210,7 @@
     - 情況2. 偷房子 i-1 `f[i][1] = f[i-1][0] + A[i-1]` 此時房子 i-2 不能偷
     - 房子編號從 0 開始，偷前 i 棟房子，那最後一棟的編號是 i-1
 * 534 House Robber II
+  * 因為環狀，所以房子 0 和 N-1 相連，其中一個必須不偷 
   * 情況1. 沒偷房子 0 變成 1...N-1 的 House Robber
   * 情況2. 沒偷房子 N-1 變成 0...N-2 的 House Robber
 * 149 Best Time To Buy And Sell Stock
