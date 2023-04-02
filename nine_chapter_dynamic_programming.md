@@ -236,11 +236,13 @@
   * 手中無股票 `f[i][j] = max{ f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$ }`
   * 手上有股票 `f[i][j] = max{ f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1] }`
 * 76 Longest Increasing Subsequence
+  * 簡寫為 LIS 
   * `f[j]=max{ 1, f[i]+1 | i<j and a[i]<a[j] }`
     - `f[j]` 以 a[j] 結尾的最長上升子序列的長度
     - 情況1. `1` 子序列就是 a[j] 本身
     - 情況2. `f[i]+1 | i<j and a[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
 * 602 Russian Doll Envelopes
+  * 其實是 LIS 的 2 維版本
   * `f[i] = max{ 1, f[j]+1 | Ej 能放在 Ei 裡面, j<i }`
     - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
     - 情況1. `1` 只有 Ei 這個信封
