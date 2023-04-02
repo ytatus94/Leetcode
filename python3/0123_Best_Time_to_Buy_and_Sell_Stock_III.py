@@ -46,7 +46,13 @@ class Solution:
             cost1 = min(cost1, price) # 找出第一次交易的最低價格
             profit1 = max(profit1, price - cost1)
 
-            cost2 = min(cost2, price - profit1) # 不懂這裡
+            # profit2 = (sell_price2 - buy_price2) + (sell_price1 - buy_price1)
+            #         = sell_price2 - buy_price2 + profit1
+            #         = sell_price2 - (buy_price2 - profit1)
+            #         = sell_price2 - cost2
+            # 所以 cost2 = buy_price2 - profit1
+            
+            cost2 = min(cost2, price - profit1)
             profit2 = max(profit2, price - cost2)
 
         return profit2
