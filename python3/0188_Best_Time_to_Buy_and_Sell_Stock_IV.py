@@ -34,3 +34,22 @@ class Solution:
                 max_profit = max(max_profit, dp[n][j])
 
         return max_profit
+
+# 方法 2:
+class Solution:
+    def maxProfit(self, k: int, prices: List[int]) -> int:
+        if prices is None or len(prices) == 0:
+            return 0
+
+        # 有 k 次交易，所以最多有 k 個買入價格 (成本) 和 k 次獲利
+        cost = [float('inf') for i in range(k)]
+        profit = [0 for i in range(k)]
+
+        for price in prices:
+            cost[0] = min(cost[0], price)
+            profit[0] = max(profit[0], price - cost[0])
+            for i in range(1, k):
+                cost[i] = min(cost[i], price - profit[i - 1])
+                profit[i] = max(profit[i], price - cost[i])
+
+        return profit[-1]
