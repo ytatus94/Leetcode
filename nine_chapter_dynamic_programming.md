@@ -230,6 +230,9 @@
     - `f[i-1][j] + $P_{i-1}$ – $P_{i-2}$` 昨天就持有股票，並且繼續持有並獲利
     - `f[i-1][j-1]` 昨天手上沒有股票，今天買入
 * 393 Best Time To Buy And Sell Stock IV
+  * 能買賣 k 次，所以會有 2k + 1 個狀態
+    * 基本上就是 Best Time To Buy And Sell Stock III 的推廣
+    * 但是照 Best Time To Buy And Sell Stock III 的方式會超時
   * 手中無股票 `f[i][j] = max{ f[i-1][j], f[i-1][j-1] + $P_{i-1}$ – $P_{i-2}$ }`
   * 手上有股票 `f[i][j] = max{ f[i-1][j] + $P_{i-1}$ – $P_{i-2}$, f[i-1][j-1] }`
 * 76 Longest Increasing Subsequence
