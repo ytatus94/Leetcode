@@ -1,3 +1,18 @@
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        if nums is None or len(nums) == 0:
+            return 0
+
+        dp = [0 for i in range(len(nums))]
+
+        for i in range(len(nums)):
+            dp[i] = 1 # 自己就是一個子序列
+            for j in range(i): # 數字不需要相鄰，只要前面有比自己小的，就列入計算
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+            
+        return max(dp)
+
 # lintcode 076
 class Solution:
     """
