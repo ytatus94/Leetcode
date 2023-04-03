@@ -428,7 +428,7 @@
 |序列+狀態, 最值型|not found|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
 |背包+狀態型, 計數型|not found|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
 |最長序列型,|300|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
-||623|not found|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
+||not found|623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
 |座標+狀態型, 可行性|403|622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
 ||639|676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
 ||221|436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
