@@ -253,7 +253,7 @@
 ### Examples (7 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |劃分型, 最值型|279|513|[Perfect Squares](http://www.lintcode.com/problem/513/)|Medium|[http://www.jiuzhang.com/solutions/perfect-squares/](http://www.jiuzhang.com/solutions/perfect-squares/)|
 |劃分型, 最值型|132|108|[Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|[http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/](http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/)|
 |劃分型, 最值型|not found|437|[Copy Books](https://www.lintcode.com/problem/437/)|Medium|[http://www.jiuzhang.com/solutions/copy-books/](http://www.jiuzhang.com/solutions/copy-books/)|
@@ -304,7 +304,7 @@
 ### Examples (6 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |背包型, 最值型|not found|125|[Backpack II](https://www.lintcode.com/problem/125/)|Medium|[http://www.jiuzhang.com/solutions/backpack-ii/](http://www.jiuzhang.com/solutions/backpack-ii/)|
 |背包型, 最值型|not found|440|[Backpack III](https://www.lintcode.com/problem/440/)|Medium|[http://www.jiuzhang.com/solutions/backpack-iii/](http://www.jiuzhang.com/solutions/backpack-iii/)|
 |區間型|516|667|[Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
@@ -365,7 +365,7 @@
 ### Examples (7 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |雙序列型, 最值型|1143|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
 |雙序列型, 存在型|97|29|[Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
 |雙序列型, 最值型|72|119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
@@ -424,7 +424,7 @@
 ### Examples (7 題)
 
 |Type|LeetCode No|LintCode No|Problem|Level|Solution|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |序列+狀態, 最值型|not found|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
 |背包+狀態型, 計數型|not found|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
 |最長序列型,|300|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
