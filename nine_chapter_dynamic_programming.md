@@ -268,7 +268,7 @@
 
 #### 轉移方程
 * 513 Perfect Squares
-  * `f[i] = min_{1<=j*j<=i}{f[i-j2] + 1}`
+  * `f[i] = min_{1<=j*j<=i}{f[i-j^2] + 1}`
     - `f[i]` 表示 i 最少被分成幾個完全平方數之和
     - `1<=j*j<=i` 最後一個完全平方數是 $j^{2}$
 * 108 Palindrome Partitioning II
