@@ -242,7 +242,7 @@
     - 情況1. `1` 子序列就是 a[j] 本身
     - 情況2. `f[i]+1 | i<j and a[i]<a[j]` 以 a[i] 結尾的最長上升子序列的長度，再加上 a[j] 一個
 * 602 Russian Doll Envelopes
-  * 其實是 LIS 的 2 維版本
+  * 其實是 LIS 的 2 維版本，但是照 LIS 的方法會超時
   * `f[i] = max{ 1, f[j]+1 | Ej 能放在 Ei 裡面, j<i }`
     - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
     - 情況1. `1` 只有 Ei 這個信封
@@ -252,15 +252,15 @@
 
 ### Examples (7 題)
 
-|Type|No|Problem|Level|Solution|
+|Type|LeetCode No|LintCode No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|劃分型, 最值型|513|[Perfect Squares](http://www.lintcode.com/problem/513/)|Medium|[http://www.jiuzhang.com/solutions/perfect-squares/](http://www.jiuzhang.com/solutions/perfect-squares/)|
-|劃分型, 最值型|108|[Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|[http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/](http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/)|
-|劃分型, 最值型|437|[Copy Books](https://www.lintcode.com/problem/437/)|Medium|[http://www.jiuzhang.com/solutions/copy-books/](http://www.jiuzhang.com/solutions/copy-books/)|
-|博弈型, 存在型|394|[Coins in A Line](https://www.lintcode.com/problem/394/)|Medium|[http://www.jiuzhang.com/solutions/coins-in-a-line/](http://www.jiuzhang.com/solutions/coins-in-a-line/)|
-|背包型, 可行性|92|[Backpack](https://www.lintcode.com/problem/92/)|Medium|[http://www.jiuzhang.com/solutions/backpack/](http://www.jiuzhang.com/solutions/backpack/)|
-|背包型, 計數型|563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
-|背包型, 計數型|564|[Backpack VI](http://www.lintcode.com/564/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
+|劃分型, 最值型|279|513|[Perfect Squares](http://www.lintcode.com/problem/513/)|Medium|[http://www.jiuzhang.com/solutions/perfect-squares/](http://www.jiuzhang.com/solutions/perfect-squares/)|
+|劃分型, 最值型|132|108|[Palindrome Partitioning II](https://www.lintcode.com/problem/108/)|Medium|[http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/](http://www.jiuzhang.com/solutions/palindrome-partitioning-ii/)|
+|劃分型, 最值型|not found|437|[Copy Books](https://www.lintcode.com/problem/437/)|Medium|[http://www.jiuzhang.com/solutions/copy-books/](http://www.jiuzhang.com/solutions/copy-books/)|
+|博弈型, 存在型|not found|394|[Coins in A Line](https://www.lintcode.com/problem/394/)|Medium|[http://www.jiuzhang.com/solutions/coins-in-a-line/](http://www.jiuzhang.com/solutions/coins-in-a-line/)|
+|背包型, 可行性|not found|92|[Backpack](https://www.lintcode.com/problem/92/)|Medium|[http://www.jiuzhang.com/solutions/backpack/](http://www.jiuzhang.com/solutions/backpack/)|
+|背包型, 計數型|not found|563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
+|背包型, 計數型|not found|564|[Backpack VI](http://www.lintcode.com/564/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
 * 513 會 Memory Limit Exceeded
 * 437 會超時
@@ -303,14 +303,14 @@
 
 ### Examples (6 題)
 
-|Type|No|Problem|Level|Solution|
+|Type|LeetCode No|LintCode No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|背包型, 最值型|125|[Backpack II](https://www.lintcode.com/problem/125/)|Medium|[http://www.jiuzhang.com/solutions/backpack-ii/](http://www.jiuzhang.com/solutions/backpack-ii/)|
-|背包型, 最值型|440|[Backpack III](https://www.lintcode.com/problem/440/)|Medium|[http://www.jiuzhang.com/solutions/backpack-iii/](http://www.jiuzhang.com/solutions/backpack-iii/)|
-|區間型|667|[Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
+|背包型, 最值型|not found|125|[Backpack II](https://www.lintcode.com/problem/125/)|Medium|[http://www.jiuzhang.com/solutions/backpack-ii/](http://www.jiuzhang.com/solutions/backpack-ii/)|
+|背包型, 最值型|not found|440|[Backpack III](https://www.lintcode.com/problem/440/)|Medium|[http://www.jiuzhang.com/solutions/backpack-iii/](http://www.jiuzhang.com/solutions/backpack-iii/)|
+|區間型|516|667|[Longest Palindromic Subsequence](https://www.lintcode.com/problem/667/)|Medium|[https://www.jiuzhang.com/solution/longest-palindromic-subsequence/](https://www.jiuzhang.com/solution/longest-palindromic-subsequence/)|
 |博弈型, 存在型|396|[Coins In A Line III](https://www.lintcode.com/problem/396/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/coins-in-a-line-iii/](http://www.jiuzhang.com/solution/coins-in-a-line-iii/)|
-|區間型, |430|[Scramble String](https://www.lintcode.com/problem/430/)|Hard|[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
-|區間型, |168|[Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
+|區間型, |87|430|[Scramble String](https://www.lintcode.com/problem/430/)|Hard|[http://www.jiuzhang.com/solutions/scramble-string/](http://www.jiuzhang.com/solutions/scramble-string/)|
+|區間型, |312|168|[Burst Balloons](https://www.lintcode.com/problem/168/)|Hard|[http://www.jiuzhang.com/solutions/burst-ballons/](http://www.jiuzhang.com/solutions/burst-ballons/)|
 
 * 667 用記憶化搜索時會超時
 * 168 wrong answer
@@ -364,15 +364,15 @@
 
 ### Examples (7 題)
 
-|Type|No|Problem|Level|Solution|
+|Type|LeetCode No|LintCode No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|雙序列型, 最值型|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
-|雙序列型, 存在型|29|[Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
-|雙序列型, 最值型|119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
-|雙序列型, 計數型|118|[Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
-|雙序列型, 存在型|154|[Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[http://www.jiuzhang.com/solutions/regular-expression-matching/](http://www.jiuzhang.com/solutions/regular-expression-matching/)|
-|雙序列型, 存在型|192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
-|雙序列型, 最值型|668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
+|雙序列型, 最值型|1143|77|[Longest Common Subsequence](https://www.lintcode.com/problem/77/)|Medium|[http://www.jiuzhang.com/solutions/longest-common-subsequence/](http://www.jiuzhang.com/solutions/longest-common-subsequence/)|
+|雙序列型, 存在型|97|29|[Interleaving String](https://www.lintcode.com/problem/29/)|Hard|[http://www.jiuzhang.com/solutions/interleaving-string/](http://www.jiuzhang.com/solutions/interleaving-string/)|
+|雙序列型, 最值型|72|119|[Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[https://www.jiuzhang.com/solutions/edit-distance/](https://www.jiuzhang.com/solutions/edit-distance/)|
+|雙序列型, 計數型|115|118|[Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[http://www.jiuzhang.com/solutions/distinct-subsequences/](http://www.jiuzhang.com/solutions/distinct-subsequences/)|
+|雙序列型, 存在型|10|154|[Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[http://www.jiuzhang.com/solutions/regular-expression-matching/](http://www.jiuzhang.com/solutions/regular-expression-matching/)|
+|雙序列型, 存在型|44|192|[Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[http://www.jiuzhang.com/solutions/wildcard-matching/](http://www.jiuzhang.com/solutions/wildcard-matching/)|
+|雙序列型, 最值型|474|668|[Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[http://www.jiuzhang.com/solutions/ones-and-zeroes](http://www.jiuzhang.com/solutions/ones-and-zeroes)|
 
 * 154 wrong answer
 * 668 wrong answer
@@ -423,15 +423,15 @@
 
 ### Examples (7 題)
 
-|Type|No|Problem|Level|Solution|
+|Type|LeetCode No|LintCode No|Problem|Level|Solution|
 |:---|:---|:---|:---|:---|
-|序列+狀態, 最值型|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
-|背包+狀態型, 計數型|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
-|最長序列型,|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
-||623|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
-|座標+狀態型, 可行性|622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
-||676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
-||436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
+|序列+狀態, 最值型|not found|91|[Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/minimum-adjustment-cost/](http://www.jiuzhang.com/solutions/minimum-adjustment-cost/)|
+|背包+狀態型, 計數型|not found|89|[K-Sum](https://www.lintcode.com/problem/89/)|Hard|[http://www.jiuzhang.com/solutions/k-sum/](http://www.jiuzhang.com/solutions/k-sum/)|
+|最長序列型,|300|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
+||623|not found|[K Edit Distance](https://www.lintcode.com/problem/623/) (鎖住了)|Hard|[https://www.jiuzhang.com/solutions/k-edit-distance/](https://www.jiuzhang.com/solutions/k-edit-distance/)|
+|座標+狀態型, 可行性|403|622|[Frog Jump](https://www.lintcode.com/problem/622/)|Hard|[http://www.jiuzhang.com/solutions/frog-jump/](http://www.jiuzhang.com/solutions/frog-jump/)|
+||639|676|[Decode Ways II](https://www.lintcode.com/problem/676/) (鎖住了)|Hard|[http://www.jiuzhang.com/solution/decode-ways-ii/](http://www.jiuzhang.com/solution/decode-ways-ii/)|
+||221|436|[Maximal Square](https://www.lintcode.com/problem/436/)|Medium|[http://www.jiuzhang.com/solutions/maximal-square/](http://www.jiuzhang.com/solutions/maximal-square/)|
 
 #### 轉移方程
 * 91 Minimum Adjustment Cost
