@@ -5,6 +5,48 @@
 #   f[0] = 0
 # TC = O(N^1.5), SC = O(N)
 
+class Solution:
+    def numSquares(self, n: int) -> int:
+        # 對於每一個整數 n 都可以由 n 個 1 的和組成，而 1 是完全平方數
+        # 因此整數 n 最多可由 n 個完全平方數的和組成
+
+        # i "最少"由 dp[i] 個完全平方數之和組成
+        # 所以初始化成最大值，這邊可以用 float('inf') 或是 i 自己
+        dp = [i for i in range(n + 1)]
+
+        # 初始化
+        dp[0] = 0
+        for i in range(1, n + 1):
+            if i * i <= n:
+                dp[i * i] = 1
+
+            # 這樣寫記憶體會超過
+            # for j in range(1, i):
+            #     if j * j <= i:
+            #         dp[i] = min(dp[i], dp[i - j * j] + 1)
+            
+            sqrt = int(i ** 0.5)
+            for j in range(1, sqrt + 1):
+                dp[i] = min(dp[i], dp[i - j * j] + 1)
+
+        return dp[n]
+
+# Memory Limit Exceeded
+class Solution:
+    """
+    @param n: a positive integer
+    @return: An integer
+    """
+    def num_squares(self, n: int) -> int:
+        # write your code here
+        f = [float('inf') for i in range(n + 1)]
+        f[0] = 0
+        for i in range(1, n + 1):
+            for j in range(1, i + 1):
+                if j * j <= i:
+                    f[i] = min(f[i], f[i - j * j] + 1)
+        return f[n]
+
 # Memory Limit Exceeded
 class Solution:
     """
@@ -27,7 +69,7 @@ class Solution:
 
         # f[i] = i 最少被分成幾個完全平方數的和
         f = [float('inf') for i in range(n + 1)]
-        # # 初始條件
+        # 初始條件
         f[0] = 0
 
         for i in range(1, n + 1):
