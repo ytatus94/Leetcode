@@ -192,7 +192,7 @@
 |最長序列型, |300|76|[Longest Increasing Subsequence](https://www.lintcode.com/problem/76/)|Medium|[http://www.jiuzhang.com/solutions/longest-increasing-subsequence/](http://www.jiuzhang.com/solutions/longest-increasing-subsequence/)|
 |最長序列型, |354|602|[Russian Doll Envelopes](https://www.lintcode.com/problem/602/)|hard|[http://www.jiuzhang.com/solutions/russian-doll-envelopes/](http://www.jiuzhang.com/solutions/russian-doll-envelopes/)|
 
-* 602 Russian Doll Envelopes 會超時
+* 602 Russian Doll Envelopes 暴力法 O(N^2) 會超時，要用二分法 O(NlogN) 才不會超時
 
 #### 轉移方程
 * 516 Paint House II
@@ -254,6 +254,9 @@
     - `f[i]` 以 Ei 為最外層信封時，最多的嵌套層數
     - 情況1. `1` 只有 Ei 這個信封
     - 情況2. `f[j]+1 | Ej 能放在 Ei 裡面` 以 Ej 為次外層信封時，最多的嵌套層數，再加上 Ei
+  * 先排序，w 升序排列 h 降序排列，然後就能把問題簡化成只看 h 的一維 LIS 問題
+    - 當 nums[i] 比 LIS[-1] 大，就直接加到 LIS 後面
+    - 當 nums[i] 比 LIS[-1] 小，用 binary search 找插入的位置 LIS[j - 1] < nums[i] < LIS[j] 然後用 LIS[j] = nums[i] 取代
 
 ## Ch4
 
