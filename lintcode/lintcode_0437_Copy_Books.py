@@ -20,7 +20,7 @@ class Solution:
         # 由一個人來抄會最慢，全部抄完要 3+2+4 = 9 分鐘 (最長時間)
         start, end = max(pages), sum(pages)
         while start + 1 < end:
-            mid = start + (end - start) // 2
+            mid = start + (end - start) // 2 # 抄書所需的時間
             if self.get_last_people(pages, mid) <= k:
                 end = mid
             else:
@@ -31,6 +31,7 @@ class Solution:
             
         return end
         
+    # 計算需要幾個人能在 time_limit 內抄完全部的書
     def get_last_people(self, pages, time_limit):
         count = 0
         time_cost = 0
