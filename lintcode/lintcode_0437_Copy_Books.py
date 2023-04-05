@@ -104,3 +104,46 @@ class Solution:
 
         return f[k][n]
         
+# 超時
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+    def copy_books(self, pages: List[int], k: int) -> int:
+        # # write your code here
+        if pages is None or len(pages) == 0:
+            return 0
+        
+        num_of_books = len(pages)
+        # 前 i 本書共有幾頁
+        total_pages = [0 for i in range(num_of_books + 1)]
+        for i in range(1, len(total_pages)):
+            # 第 i 本書的頁數是 pages[i - 1]
+            total_pages[i] = total_pages[i - 1] + pages[i - 1]
+
+        # # 前 i 本書給 j 個人抄寫，所需要花得最少時間是 dp[i][j]
+        dp = [[float('inf') for j in range(k + 1)] for i in range(num_of_books + 1)]
+
+        # 前 0 本書給 0 個人抄寫，費時 0
+        # 前 0 本書給 j 個人抄寫 (j > 0)，也是費時 0
+        for j in range(k + 1):
+            dp[0][j] = 0
+
+        for i in range(1, num_of_books + 1): # 從第一本書看起
+            for j in range(1, k + 1): # 從第一個人算起
+                # 可能前 m 本書 (編號 0~m-1)已經分派給前 j-1 個人抄了
+                # 第 j 個人要抄的書是剩下的書 (編號 m 到 i)
+                for m in range(i):
+                    # 第 j 個人抄第 m 到 i 所花的時間
+                    time = total_pages[i] - total_pages[m]
+                    # 第 j 個人抄書和前 j-1 個人抄書，都是同一時間開始抄的
+                    # 所以所需的時間就是最大的那個時間
+                    dp[i][j] = min(dp[i][j], max(dp[m][j - 1], time))
+
+        return dp[num_of_books][k]
