@@ -73,7 +73,7 @@ class Solution:
         n = len(pages)
         if n == 0:
             return 0
-        if k >= n:
+        if k >= n: # 抄書的人數比書本多的時候，就可以一個人抄一本
             return max(pages)
 
         # 開一個數組紀錄
