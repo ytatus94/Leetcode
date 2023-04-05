@@ -89,6 +89,7 @@ class Solution:
             f[i][0] = 0 # 前 i 個人抄 0 本書，費時 0
             for j in range(1, n + 1): # loop 抄一本書到抄 n 本書
                 total_time = 0
+                # 第 i 個人抄書 book[p]...book[j-1] 費時 pages[p]+...+pages[j-1]
                 for p in range(j, -1, -1): # 要計算抄書所花的時間
                     # 要從後面 loop 可以節省時間複雜度
                     # 當 p = j 的時候 total_time = 0
