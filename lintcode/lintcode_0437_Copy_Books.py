@@ -78,7 +78,7 @@ class Solution:
 
         # 開一個數組紀錄
         # f[i][j] = 前 i 個人抄前 j 本書所需要的最短時間
-        f = [[float('inf') for i in range(n + 1)] for j in range(k + 1)]
+        f = [[float('inf') for j in range(n + 1)] for i in range(k + 1)]
 
         # 初始條件
         f[0][0] = 0 # 前 0 個人只能抄 0 本書，且費時是 0
