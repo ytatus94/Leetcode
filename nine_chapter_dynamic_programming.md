@@ -272,7 +272,7 @@
 |背包型, 計數型|not found|563|[Backpack V](https://www.lintcode.com/problem/563/)|Medium|[http://www.jiuzhang.com/solutions/backpack-v/](http://www.jiuzhang.com/solutions/backpack-v/)|
 |背包型, 計數型|not found|564|[Backpack VI](http://www.lintcode.com/564/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/backpack-vi/](http://www.jiuzhang.com/solutions/backpack-vi/)|
 
-* 513 會 Memory Limit Exceeded
+* 513 會 Memory Limit Exceeded，j 要 loop 到 sqrt(i) 就好，這樣才不會超過記憶體大小
 * 437 會超時
 * 564 不知道寫得對不對
 
