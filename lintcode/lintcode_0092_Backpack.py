@@ -113,3 +113,43 @@ class Solution:
                 i -= a[j - 1]
 
         return results
+
+# 方法2
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param m: An integer m denotes the size of a backpack
+    @param a: Given n items with size A[i]
+    @return: The maximum size
+    """
+    def back_pack(self, m: int, a: List[int]) -> int:
+        # write your code here
+        n_items = len(a)
+
+        # 先想成要看能不能用 n 個物品組成 size = 0 ~ m
+        # 然後再找 n 個物品能組成的最大 size
+
+        # dp[i][j] = 能不能用前 i 個物品組成 size=j
+        dp = [[False for j in range(m + 1)] for i in range(n_items + 1)]
+        dp[0][0] = True # 用前 0 個物品組成 size=0，當然行
+
+        for i in range(1, n_items + 1):
+            for j in range(0, m + 1):
+                dp[i][j] = dp[i - 1][j] # 用前 i-1 個物品就能組成 size=j
+                if j >= a[i - 1]:
+                    # 如果前 i-1 個物品只能拼成 size=j-a[i-1]
+                    # 加上第 i 個物品的 size=a[i-1] 就能拼成 size=j
+                    dp[i][j] = dp[i][j] or dp[i - 1][j - a[i - 1]]
+
+        # 要看全部物品能拼成的最大 size
+        # 全部物品 --> 只看 n_items row
+        # 要找最大 size --> 從後面開始往前找
+        max_size = 0
+        for j in range(m, -1, -1):
+            if dp[n_items][j] == True:
+                max_size = j
+                
+                return max_size
