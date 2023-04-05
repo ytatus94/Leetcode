@@ -93,6 +93,8 @@ class Solution:
                 for p in range(j, -1, -1): # 要計算抄書所花的時間
                     # 要從後面 loop 可以節省時間複雜度
                     # 當 p = j 的時候 total_time = 0
+                    # 看成前 i 個人抄前 j 本書，且第 i 個人是從 index=p 的書一直抄到最後一本 (第 j 本，編號 j-1)
+                    # 所以當 index=p=j 的時候，不存在這本書，所以費時 0
                     f[i][j] = min(
                         f[i][j],
                         max(f[i - 1][p], total_time)
