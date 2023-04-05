@@ -20,7 +20,7 @@ class Solution:
             if i * i <= n:
                 dp[i * i] = 1
 
-            # 這樣寫記憶體會超過
+            # j 不可以 loop 到 i (這樣寫記憶體會超過)
             # for j in range(1, i):
             #     if j * j <= i:
             #         dp[i] = min(dp[i], dp[i - j * j] + 1)
@@ -31,7 +31,6 @@ class Solution:
 
         return dp[n]
 
-# Memory Limit Exceeded
 class Solution:
     """
     @param n: a positive integer
@@ -42,12 +41,13 @@ class Solution:
         f = [float('inf') for i in range(n + 1)]
         f[0] = 0
         for i in range(1, n + 1):
-            for j in range(1, i + 1):
-                if j * j <= i:
-                    f[i] = min(f[i], f[i - j * j] + 1)
+            j = 1
+            while j * j <= i:
+                f[i] = min(f[i], f[i - j * j] + 1)
+                j += 1
+                
         return f[n]
 
-# Memory Limit Exceeded
 class Solution:
     """
     @param n: a positive integer
@@ -55,8 +55,6 @@ class Solution:
     """
     def num_squares(self, n: int) -> int:
         # write your code here
-
-        # 先看看 n 是不是完全平方數
         sqrt_n = int(n**0.5)
         if sqrt_n * sqrt_n == n:
             return 1
@@ -73,9 +71,10 @@ class Solution:
         f[0] = 0
 
         for i in range(1, n + 1):
-            for j in range(i+1): # j 最大可以等於 i
-                if i - j * j >= 0:
-                    f[i] = min(f[i], f[i - j*j] + 1)
+            j = 1
+            while j * j <= i: # j^2 最大可以等於 i
+                f[i] = min(f[i], f[i - j*j] + 1)
+                j += 1
         
         return f[n]
         
