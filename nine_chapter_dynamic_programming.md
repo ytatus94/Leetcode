@@ -283,6 +283,7 @@
     - `1<=j*j<=i` 最後一個完全平方數是 $j^{2}$
     - 要注意 loop j 的時候不可以 loop 到 i，這樣記憶體會超過，要 loop 到 sqrt(i) 就好
 * 108 Palindrome Partitioning II
+  * 回文 `s == s[::-1]` 
   * `f[i] = min_{j=0,...,i-1}{f[j] + 1| S[j..i-1] 是回文串}`
     - `f[i]` s 的前 i 個字元 s[0...i-1] 最少可以劃分成幾個回文串
 * 437 Copy Books
