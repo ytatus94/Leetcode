@@ -150,3 +150,47 @@ class Solution:
                     dp[i][j] = min(dp[i][j], max(dp[m][j - 1], time))
 
         return dp[num_of_books][k]
+
+# 超時
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+    def copy_books(self, pages: List[int], k: int) -> int:
+        n = len(pages)
+        if n == 0:
+            return 0
+        
+        if k > n: # 前 n 個人一個人抄一本書，然後剩下 k-n 個人不做事
+            k = n # 也可以直接 return max(pages)
+
+        # 開一個數組紀錄
+        # f[i][j] = 前 i 個人抄前 j 本書所需要的最短時間
+        f = [[float('inf') for j in range(n + 1)] for i in range(k + 1)]
+
+        # 初始條件
+        f[0][0] = 0 # 前 0 個人只能抄 0 本書，且費時是 0
+        # for j in range(1, n + 1):
+        #     f[0][j] = float('inf') # 前 0 個人不能抄任何書
+
+        for m in range(1, k + 1):
+            f[m][0] = 0 # 前 m 個人抄 0 本書，費時 0
+            for i in range(1, n + 1):
+                f[m][i] = float('inf') # 初始化
+                # A[j] + ... + A[i-1]
+                tot = 0
+                for j in range(i, -1, -1):
+                    # sum = A[j] + ... + A[i - 1]
+                    # f[k][j] = min_{j=0...i}( max(f[k-1][j], A[j]+...+A[i-1]))
+                    f[m][i] = min(f[m][i], max(f[m - 1][j], tot))
+
+                    if j > 0:
+                        tot += pages[j - 1]
+
+        return f[k][n]
