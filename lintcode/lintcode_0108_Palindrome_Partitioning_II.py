@@ -64,3 +64,41 @@ class Solution:
                 j += 1
 
         return f
+
+    
+# 方法2:
+class Solution:
+    """
+    @param s: A string
+    @return: An integer
+    """
+    def min_cut(self, s: str) -> int:
+        # write your code here
+
+        # 先建立一個表格，找出 s[i...j] 是不是回文串 (這個表格一定是右上三角形才有值)
+        is_palindrome = [[False for j in range(len(s))] for i in range(len(s))]
+        for i in range(len(s)):
+            is_palindrome[i][i] = True # 自己一個字元一定是回文串 (長度=1 的字串)
+            if i + 1 < len(s): # 看相鄰的兩個字元 (長度=2 的字串)
+                is_palindrome[i][i + 1] = (s[i] == s[i + 1])
+
+        # 2< 長度 n=j-i <len(s) 的字串 
+        # 如果 s[i+1...j-1] 是回文串，且 s[i] = s[j] 那這樣 s[i...j] 也會是回文串
+        # 例如 abcbad 其中 s[1:4]=bcb 是回文串 s[0] = s[4] = a 所以 s[0:5] 也是回文串
+        # 不能用 for i in range(len(s) - 2): 因為這時候 is_palindrome[i+1][j-1] 還沒判斷
+        for i in range(len(s) - 1, -1, -1): 
+            for j in range(i + 2, len(s)):
+                is_palindrome[i][j] = (is_palindrome[i + 1][j - 1] and s[i] == s[j])
+
+        # 如果前 i 個字元"最少"能被切成 n 個回文串，那就要切 n-1 刀
+        # n 個字元切 n-1 刀，會形成 n 個回文串 (每個回文串就是一個字元)
+        # 前 i 個字元要切 dp[i] 刀形成最少的回文串
+        dp = [i - 1 for i in range(len(s) + 1)]
+
+        # 如果 s[j+1...i] 是回文串，那 dp[i] = dp[j] + 1
+        for i in range(1, len(s) + 1):
+            for j in range(i):
+                if is_palindrome[j][i - 1]:
+                    dp[i] = min(dp[i], dp[j] + 1)
+
+        return dp[len(s)]        
