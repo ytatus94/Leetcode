@@ -194,3 +194,38 @@ class Solution:
                         tot += pages[j - 1]
 
         return f[k][n]
+
+# 九章的答案也超時了 
+class Solution:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+
+    def copyBooks(self, pages, k):
+        if not pages or not k:
+            return 0
+        
+        n = len(pages)
+        # get prefix sum
+        prefix_sum = [0] * (n + 1)
+        for i in range(1, n + 1):
+            prefix_sum[i] = prefix_sum[i - 1] + pages[i - 1]
+        
+        # state: dp[i][j] 表示前 i 本书，划分给 j 个人抄写，最少需要耗费多少时间
+        dp = [[float('inf')] * (k + 1) for _ in range(n + 1)]
+        
+        # initialization
+        for i in range(k + 1):
+            dp[0][i] = 0
+
+        # function
+        for i in range(1, n + 1):
+            for j in range(1, k + 1):
+                for prev in range(i):
+                    cost = prefix_sum[i] - prefix_sum[prev]
+                    dp[i][j] = min(dp[i][j], max(dp[prev][j - 1], cost))
+
+        # answer
+        return dp[n][k]
