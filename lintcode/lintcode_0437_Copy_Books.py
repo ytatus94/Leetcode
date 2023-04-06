@@ -1,4 +1,50 @@
 # lintcode 437
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param pages: an array of integers
+    @param k: An integer
+    @return: an integer
+    """
+    def copy_books(self, pages: List[int], k: int) -> int:
+        if pages is None or len(pages) == 0:
+            return 0
+            
+        # 抄書的時間一定是介於 max(pages) ~ sum(pages) 之間
+        # max(pages): 每一個人各抄一本書，最慢的那個就是抄書所需的時間
+        # sum(pages): 只有一個人抄全部的書
+        start = max(pages)
+        end = sum(pages)
+
+        while start + 1 < end:
+            mid = (start + end) // 2
+            # 在 mid 時間內抄完全部的書，要幾個人？
+            # 比 k 少的人就能在 mid 時間內抄完，那 k 個人一定用更短的時間 --> end 移到 mid
+            # 比 k 多的人才能在 mid 時間內抄完，那 k 個人一定用更長的時間 --> start 移到 mid
+            if self.get_least_people(pages, mid) <= k:
+                end = mid
+            else:
+                start = mid
+                
+        if self.get_least_people(pages, start) <= k:
+            return start
+            
+        return end
+        
+    def get_least_people(self, pages, time_limit):
+        count = 0
+        time_cost = 0 
+        for page in pages:
+            if time_cost + page > time_limit: # 時間內抄不完
+                count += 1 # 加派人手
+                time_cost = 0
+            time_cost += page
+            
+        return count + 1
+    
 class Solution:
     """
     @param pages: an array of integers
