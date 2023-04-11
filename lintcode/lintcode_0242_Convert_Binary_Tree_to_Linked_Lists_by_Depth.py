@@ -81,7 +81,7 @@ class Solution:
         curr = None
 
         while queue:
-            curr = dummy
+            curr = dummy # 每一層是一個 linked list 所以要在這邊 curr = dummy 不可以在 81 行就 curr = dummy
             for i in range(len(queue)):
                 node = queue.pop(0)
                 curr.next = ListNode(node.val, None)
