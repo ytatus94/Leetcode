@@ -70,3 +70,49 @@ class Solution:
                     hash_map.append(neighbor)
     
         return hash_map
+
+# 方法 2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param org: a permutation of the integers from 1 to n
+    @param seqs: a list of sequences
+    @return: true if it can be reconstructed only one or false
+    """
+    def sequence_reconstruction(self, org: List[int], seqs: List[List[int]]) -> bool:
+        # write your code here
+        all_nodes = [i for seq in seqs for i in seq]
+        if set(org) != set(all_nodes):
+            return False
+
+        graph = {i: [] for i in org}
+        indegree = {i: 0 for i in org}
+        for seq in seqs:
+            for i in range(1, len(seq)):
+                graph[seq[i - 1]].append(seq[i])
+                indegree[seq[i]] += 1
+
+        queue = [k for k, v in indegree.items() if v == 0]
+        hash_set = [k for k, v in indegree.items() if v == 0]
+
+        while queue:
+            if len(queue) > 1:
+                return False
+            n = queue.pop(0)
+            for neighbor in graph[n]:
+                indegree[neighbor] -= 1
+                if indegree[neighbor] == 0:
+                    queue.append(neighbor)
+                    hash_set.append(neighbor)
+
+        if len(hash_set) != len(org):
+            return False
+
+        for i in range(len(org)):
+            if hash_set[i] != org[i]:
+                return False
+
+        return True
