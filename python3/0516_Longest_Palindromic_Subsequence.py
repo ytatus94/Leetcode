@@ -1,3 +1,4 @@
+# 方法 1: 由下往上
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         if s == s[::-1]:
@@ -19,3 +20,30 @@ class Solution:
                     dp[i][j] = max(dp[i][j - 1], dp[i + 1][j]) # i 逆著來 loop 的原因是因為要先用到 i+1
 
         return dp[0][n - 1]
+
+# 方法 2: 由上往下
+class Solution:
+    def longestPalindromeSubseq(self, s: str) -> int:
+        n = len(s)
+
+        # dp[i][j] = s[i] 到 s[j] 的子字串中最長的 palindrome 長度
+        dp = [[0 for j in range(n)] for i in range(n)]
+
+        return self.lps(s, 0, n - 1, dp)
+
+    def lps(self, s, start, end, dp):
+        # 記憶化搜索
+        if dp[start][end] != 0:
+            return dp[start][end]
+        
+        if start > end:
+            return 0
+        if start == end:
+            return 1 # 自己一個字母一定是回文串
+
+        if s[start] == s[end]:
+            dp[start][end] = 2 + self.lps(s, start + 1, end - 1, dp)
+        else:
+            dp[start][end] = max(self.lps(s, start + 1, end, dp), self.lps(s, start, end - 1, dp))
+
+        return dp[start][end]
