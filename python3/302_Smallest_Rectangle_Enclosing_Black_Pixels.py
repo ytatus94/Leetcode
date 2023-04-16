@@ -32,7 +32,6 @@ class Solution:
         end = len(image) - 1
         while start + 1 < end:
             mid = start + (end - start) // 2
-            print(start, end, mid)
             if self.is_empty_row(image, mid):
                 end = mid
             else:
@@ -47,11 +46,11 @@ class Solution:
         end = y
         while start + 1 < end:
             mid = start + (end - start) // 2
-            if self.is_empyt_col(image, mid):
+            if self.is_empty_col(image, mid):
                 start = mid
             else:
                 end = mid
-        if self.is_empyt_col(image, start):
+        if self.is_empty_col(image, start):
             return end
         else:
             return start
@@ -61,11 +60,11 @@ class Solution:
         end = len(image[0]) - 1
         while start + 1 < end:
             mid = start + (end - start) // 2
-            if self.is_empyt_col(image, mid):
+            if self.is_empty_col(image, mid):
                 end = mid
             else:
                 start = mid
-        if self.is_empyt_col(image, end):
+        if self.is_empty_col(image, end):
             return start
         else:
             return end
@@ -75,8 +74,8 @@ class Solution:
             if image[row][i] == '1':
                 return False
         return True
-        
-    def is_empyt_col(self, image, col):
+
+    def is_empty_col(self, image, col):
         for i in range(len(image)):
             if image[i][col] == '1':
                 return False
