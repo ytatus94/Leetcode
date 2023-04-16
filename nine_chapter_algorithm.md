@@ -115,7 +115,7 @@ BFS 處理:
 |605|[Sequence Reconstruction](https://www.lintcode.com/problem/605/)|Medium|[https://www.jiuzhang.com/solutions/sequence-reconstruction/](https://www.jiuzhang.com/solutions/sequence-reconstruction/)|
 |433|[Number of Islands](https://www.lintcode.com/problem/433/)|Easy|[http://www.jiuzhang.com/solutions/number-of-islands/](http://www.jiuzhang.com/solutions/number-of-islands/)|
 |598|[Zombie in Matrix](https://www.lintcode.com/problem/598/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/zombie-in-matrix/](http://www.jiuzhang.com/solutions/zombie-in-matrix/)|
-|611|[Knight Shortest Path](https://www.lintcode.com/problem/611/) (鎖住了)|Medium|[http://www.jiuzhang.com/solutions/knight-shortest-path/](http://www.jiuzhang.com/solutions/knight-shortest-path/)|
+|611|[Knight Shortest Path](https://www.lintcode.com/problem/611/)|Medium|[http://www.jiuzhang.com/solutions/knight-shortest-path/](http://www.jiuzhang.com/solutions/knight-shortest-path/)|
 |573|[Build Post Office II](https://www.lintcode.com/problem/573/) (鎖住了)|Hard|[http://www.jiuzhang.com/solutions/build-post-office-ii/](http://www.jiuzhang.com/solutions/build-post-office-ii/)|
 |431|[Connected Component in Undirected Graph](https://www.lintcode.com/problem/431/) (鎖住了)|Medium|[https://www.jiuzhang.com/solutions/connected-component-in-undirected-graph/](https://www.jiuzhang.com/solutions/connected-component-in-undirected-graph/)|
 |600|[Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)|Hard|[https://www.jiuzhang.com/solutions/smallest-rectangle-enclosing-black-pixels/](https://www.jiuzhang.com/solutions/smallest-rectangle-enclosing-black-pixels/)|
