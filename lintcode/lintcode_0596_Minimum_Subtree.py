@@ -13,7 +13,7 @@ class Solution:
     @return: the root of the minimum subtree
     """
     # Traverse + divide conquer
-    findSubtree() 本身用的是 Traverse
+    # findSubtree() 本身用的是 Traverse
     def findSubtree(self, root):
         # write your code here
         self.minimum = float('inf') # 要記錄當前 subtree sum 的最小值
