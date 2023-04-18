@@ -45,7 +45,7 @@ class Solution:
         return node
         
     # 傳回以 root 為根的子樹中
-    # 1. 平均值最大的子數的根節點
+    # 1. 平均值最大的子樹的根節點
     # 2. 子樹的和
     # 3. 子樹的節點數目
     def helper(self, root):
