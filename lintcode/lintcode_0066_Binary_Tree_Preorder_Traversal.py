@@ -36,7 +36,7 @@ class Solution:
         self.traversal(root.left, result)
         self.traversal(root.right, result)
 
-# 用 Divider conquer
+# 用 Divide conquer
 class Solution:
     """
     @param root: A Tree
