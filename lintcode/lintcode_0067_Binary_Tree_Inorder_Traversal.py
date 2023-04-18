@@ -44,7 +44,6 @@ class Solution:
     def inorder_traversal(self, root: TreeNode) -> List[int]:
         result = []
         # 出口:
-        result = []
         if root is None:
             return result
         # 拆解:
