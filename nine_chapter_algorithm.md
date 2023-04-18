@@ -44,6 +44,10 @@
 
 ## ch3 Binary Tree & Divide Conquer
 
+* 遞歸三要素:
+  * 定義
+  * 出口
+  * 拆解
 * T(N) = 2 T(N/2) + O(1) = O(N)
 * T(N) = 2 T(N/2) + O(N) = O(N log N)
 * Preorder 根左右
