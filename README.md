@@ -72,7 +72,7 @@
 |1|[37. Reverse 3-digit Integer](https://www.lintcode.com/en/problem/37/)|Naive|||
 |2|[239. Root of Equation](https://www.lintcode.com/en/problem/239/) (locked)|Easy|||
 |3|[241. String To Integer](https://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
-|3|[8. Rotate String](https://www.lintcode.com/en/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
+|3|[8. Rotate Character Array](https://www.lintcode.com/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
 |3|[172. Remove Element](https://www.lintcode.com/en/problem/172/)|Easy|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
 |3|[35. Reverse Linked List](https://www.lintcode.com/en/problem/35/)|Easy|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
 |3|[174. Remove Nth Node From End of List](https://www.lintcode.com/en/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Medium|
