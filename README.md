@@ -195,25 +195,25 @@
 |3|[11. Search Range in Binary Search Tree](https://www.lintcode.com/problem/11/)|Medium|[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|
 |3|[85. Insert Node in a Binary Search Tree](https://www.lintcode.com/problem/85/)|Easy|[701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)|Medium|
 |3|[87. Remove Node in Binary Search Tree](https://www.lintcode.com/problem/87/)|Hard|||
-|4|[69. Binary Tree Level Order Traversal](https://www.lintcode.com/problem/69/)|Easy|||
-|4|[7. Serialize and Deserialize Binary Tree](https://www.lintcode.com/problem/7/)|Medium|||
-|4|[70. Binary Tree Level Order Traversal II](https://www.lintcode.com/problem/70/)|Medium|||
-|4|[71. Binary Tree Zigzag Level Order Traversal](https://www.lintcode.com/problem/71/)|Medium|||
+|4|[69. Binary Tree Level Order Traversal](https://www.lintcode.com/problem/69/)|Easy|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)|Medium|
+|4|[7. Serialize and Deserialize Binary Tree](https://www.lintcode.com/problem/7/)|Medium|[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|Hard|
+|4|[70. Binary Tree Level Order Traversal II](https://www.lintcode.com/problem/70/)|Medium|[107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)|Medium|
+|4|[71. Binary Tree Zigzag Level Order Traversal](https://www.lintcode.com/problem/71/)|Medium|[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|Medium|
 |4|[242. Convert Binary Tree to Linked Lists by Depth](https://www.lintcode.com/problem/242/)|Easy|||
-|4|[178. Graph Valid Tree](https://www.lintcode.com/problem/178/)|Medium|||
-|4|[137. Clone Graph](https://www.lintcode.com/problem/137/)|Medium|||
+|4|[178. Graph Valid Tree](https://www.lintcode.com/problem/178/)|Medium|[261. Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) (locked)|Medium|
+|4|[137. Clone Graph](https://www.lintcode.com/problem/137/)|Medium|[133. Clone Graph](https://leetcode.com/problems/clone-graph/)|Medium|
 |4|[618. Search Graph Nodes](https://www.lintcode.com/problem/618/)|Medium|||
 |4|[127. Topological Sorting](https://www.lintcode.com/problem/127/)|Medium|||
-|4|[615. Course Schedule](https://www.lintcode.com/problem/615/)|Medium|||
-|4|[616. Course Schedule II](https://www.lintcode.com/problem/616/)|Medium|||
-|4|[605. Sequence Reconstruction](https://www.lintcode.com/problem/605/)|Medium|||
-|4|[433. Number of Islands](https://www.lintcode.com/problem/433/)|Easy|||
+|4|[615. Course Schedule](https://www.lintcode.com/problem/615/)|Medium|[207. Course Schedule](https://leetcode.com/problems/course-schedule/)|Medium|
+|4|[616. Course Schedule II](https://www.lintcode.com/problem/616/)|Medium|[210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)|Medium|
+|4|[605. Sequence Reconstruction](https://www.lintcode.com/problem/605/)|Medium|[444. Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction/) (locked)|Medium|
+|4|[433. Number of Islands](https://www.lintcode.com/problem/433/)|Easy|[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|Medium|
 |4|[598. Zombie in Matrix](https://www.lintcode.com/problem/598/)|Medium|||
 |4|[611. Knight Shortest Path](https://www.lintcode.com/problem/611)|Medium|||
 |4|[573. Build Post Office II](https://www.lintcode.com/problem/573/)|Hard|||
 |4|[431. Connected Component in Undirected Graph](https://www.lintcode.com/problem/431/)|Medium|||
-|4|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)|Hard|||
-|4|[120. Word Ladder](https://www.lintcode.com/problem/120/)|Hard|||
+|4|[600. Smallest Rectangle Enclosing Black Pixels](https://www.lintcode.com/problem/600/)|Hard|[302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/) (locked)|Hard|
+|4|[120. Word Ladder](https://www.lintcode.com/problem/120/)|Hard|[127. Word Ladder](https://leetcode.com/problems/word-ladder/)|Hard|
 |5|[135. Combination Sum](https://www.lintcode.com/problem/135)|Medium|||
 |5|[153. Combination Sum II](https://www.lintcode.com/problem/153/)|Medium|||
 |5|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|||
