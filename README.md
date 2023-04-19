@@ -71,7 +71,7 @@
 |1|[9. Fizz Buzz](http://www.lintcode.com/en/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|
 |1|[37. Reverse 3-digit Integer](http://www.lintcode.com/en/problem/37/)|Naive|||
 |2|[239. Root of Equation](http://www.lintcode.com/en/problem/239/) (locked)|Easy|||
-|3|[241. String To Integer](http://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
+|3|[241. String To Integer](https://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
 |3|[8. Rotate String](http://www.lintcode.com/en/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
 |3|[172. Remove Element](http://www.lintcode.com/en/problem/172/)|Easy|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
 |3|[35. Reverse Linked List](http://www.lintcode.com/en/problem/35/)|Easy|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
@@ -87,7 +87,7 @@
 |5|[67. Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/67/)|Easy|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
 |5|[68. Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/68/)|Easy|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
 |6|[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/6/)|Easy|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| Easy |
-|6|[464. Sort Integer II](http://www.lintcode.com/en/problem/464/)|Easy|||
+|6|[464. Sort Integers II](https://www.lintcode.com/problem/464/)|Easy|||
 |6|[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
 |6|[31. Partition Array](http://www.lintcode.com/en/problem/31/)|Medium|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
 |6|[Quick Sort](http://www.jiuzhang.com/solutions/quick-sort)|||
@@ -111,7 +111,7 @@
 |3|[225. Find Node in Linked List](https://www.lintcode.com/problem/225/) (locked)|Naive|||
 |3|[219. Insert Node in Sorted Linked List](https://www.lintcode.com/problem/219/) (locked)|Easy|||
 |3|[452. Remove Linked List Elements](https://www.lintcode.com/problem/452/)|Easy|[203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)| Easy |
-|3|[241. String to Integer](https://www.lintcode.com/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Medium |
+|3|[241. String To Integer](https://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Medium |
 |3|[415. Valid Palindrome](https://www.lintcode.com/problem/415/)|Medium|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)| Easy |
 |3|[174. Remove Nth Node From End of List](https://www.lintcode.com/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)| Medium |
 |3|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)|Easy|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
@@ -159,7 +159,7 @@
 |1|[18. Subsets II](https://www.lintcode.com/problem/18/)|Medium|[90. Subsets II](https://leetcode.com/problems/subsets-ii/)|Medium|
 |2|[Binary search](https://www.jiuzhang.com/solutions/binary-search/)||||
 |2|[457. Classical Binary Search](https://www.lintcode.com/problem/457/)|Easy|[704. Binary Search](https://leetcode.com/problems/binary-search/)|Easy|
-|2|[14.First Position of Target](https://www.lintcode.com/problem/14/)|Easy|[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|
+|2|[14. First Position of Target](https://www.lintcode.com/problem/14/)|Easy|[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|
 |2|[458. Last Position of Target](https://www.lintcode.com/problem/458/)|Easy|[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|Medium|
 |2|[74. First Bad Version](https://www.lintcode.com/problem/74/)|Medium|[278. First Bad Version](https://leetcode.com/problems/first-bad-version/)|Easy|
 |2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)|Medium|||
@@ -236,7 +236,7 @@
 |6|[170. Rotate List](https://www.lintcode.com/problem/170/)|Medium|[61. Rotate List](https://leetcode.com/problems/rotate-list/)|Medium|
 |6|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)|Medium|[138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)|Medium|
 |6|[102. Linked List Cycle](https://www.lintcode.com/problem/102/)|Medium|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)|Easy|
-|6|[103. Linked List Cycle II](https://www.lintcode.com/problem/103/) (鎖住了)|Medium|[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|Medium|
+|6|[103. Linked List Cycle II](https://www.lintcode.com/problem/103/) (locked)|Medium|[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|Medium|
 |6|[380. Intersection of Two Linked Lists](https://www.lintcode.com/problem/380/)|Medium|[160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|Easy|
 |6|[98. Sort List](https://www.lintcode.com/problem/98/)|Medium|[148. Sort List](https://leetcode.com/problems/sort-list/)|Medium|
 |6|[106. Convert Sorted List to Binary Search Tree](https://www.lintcode.com/problem/106/)|Medium|[109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|Medium|
@@ -248,47 +248,47 @@
 |6|[65. Median of two Sorted Arrays](https://www.lintcode.com/problem/65/)|Hard|[4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|Hard|
 |6|[41. Maximum Subarray](https://www.lintcode.com/problem/41/)|Easy|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)|Medium|
 |6|[138. Subarray Sum](https://www.lintcode.com/problem/138/)|Easy|||
-|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/) (鎖住了)|Medium|||
-|7|[604. Window Sum](https://www.lintcode.com/problem/604/) (鎖住了)|Easy|||
+|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/) (locked)|Medium|||
+|7|[604. Window Sum](https://www.lintcode.com/problem/604/) (locked)|Easy|||
 |7|[539. Move Zeroes](https://www.lintcode.com/problem/539/)|Easy|[283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)|Easy|
-|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/) (鎖住了)|Easy|||
+|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/) (locked)|Easy|||
 |7|[415. Valid Palindrome](https://www.lintcode.com/problem/415/)|Medium|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)|Easy|
 |7|Rotat String||[796. Rotate String](https://leetcode.com/problems/rotate-string/)|Easy|
 |7|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)|Easy|||
 |7|[56. Two Sum](https://www.lintcode.com/problem/56/)|Easy|[1. Two Sum](https://leetcode.com/problems/two-sum/)|Easy|
-|7|[607 . Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)|Easy|[170. Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) (locked)|Easy|
-|7|[608. Two Sum  II - input array is sorted](https://www.lintcode.com/problem/608/) (鎖住了)|Medium|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|
-|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/) (鎖住了)|Medium|||
+|7|[607. Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)|Easy|[170. Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) (locked)|Easy|
+|7|[608. Two Sum  II - input array is sorted](https://www.lintcode.com/problem/608/) (locked)|Medium|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|
+|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/) (locked)|Medium|||
 |7|[57. 3Sum](https://www.lintcode.com/problem/57/)|Medium|[15. 3Sum](https://leetcode.com/problems/3sum/)|Medium|
-|7|[382. Triangle Count](https://www.lintcode.com/problem/382/) (鎖住了)|Medium|||
-|7|[609. Two Sum - less than or equal to target](https://www.lintcode.com/problem/609/) (鎖住了)|Medium|[1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) (locked)|Easy|
-|7|[443. Two Sum - Greater than target](https://www.lintcode.com/problem/443/) (鎖住了)|Medium|||
-|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/) (鎖住了)|Medium|||
+|7|[382. Triangle Count](https://www.lintcode.com/problem/382/) (locked)|Medium|||
+|7|[609. Two Sum - less than or equal to target](https://www.lintcode.com/problem/609/) (locked)|Medium|[1099. Two Sum Less Than K](https://leetcode.com/problems/two-sum-less-than-k/) (locked)|Easy|
+|7|[443. Two Sum - Greater than target](https://www.lintcode.com/problem/443/) (locked)|Medium|||
+|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/) (locked)|Medium|||
 |7|[59. 3Sum Closest](https://www.lintcode.com/problem/59/)|Medium|[16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)|Medium|
 |7|[58. 4Sum](https://www.lintcode.com/problem/58/)|Medium|[18. 4Sum](https://leetcode.com/problems/4sum/)|Medium|
-|7|[610. Two Sum - Difference equals to target](https://www.lintcode.com/problem/610/) (鎖住了)|Medium|||
+|7|[610. Two Sum - Difference equals to target](https://www.lintcode.com/problem/610/) (locked)|Medium|||
 |7|[31. Partition Array](https://www.lintcode.com/problem/31/)|Medium|[561. Array Partition](https://leetcode.com/problems/array-partition/)|Easy|
-|7|[461. Kth Smallest Numbers in Unsorted Array](https://www.lintcode.com/problem/461/) (鎖住了)|Medium|||
+|7|[461. Kth Smallest Numbers in Unsorted Array](https://www.lintcode.com/problem/461/) (locked)|Medium|||
 |7|[5. Kth Largest Element](https://www.lintcode.com/problem/5/)|Medium|[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)|Medium|
-|7|[373. Partition Array by Odd and Even](https://www.lintcode.com/problem/373/) (鎖住了)|Easy|||
+|7|[373. Partition Array by Odd and Even](https://www.lintcode.com/problem/373/) (locked)|Easy|||
 |7|[144. Interleaving Positive and Negative Numbers](https://www.lintcode.com/problem/144/)|Medium|||
 |7|[49. Sort Letters by Case](https://www.lintcode.com/problem/49/)|Medium|||
 |7|[148. Sort Colors](https://www.lintcode.com/problem/148/)|Medium|[75. Sort Colors](https://leetcode.com/problems/sort-colors/)|Medium|
 |7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)|Medium|||
-|8|[129. Rehashing](https://www.lintcode.com/problem/129/) (鎖住了)|Medium|||
+|8|[129. Rehashing](https://www.lintcode.com/problem/129/) (locked)|Medium|||
 |8|[134. LRU Cache](https://www.lintcode.com/problem/134/)|Hard|||
 |8|[138. Subarray Sum](https://www.lintcode.com/problem/138/)|Easy|||
 |8|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)|Medium|||
 |8|[171. Anagrams](https://www.lintcode.com/problem/171/)|Medium|||
 |8|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|||
 |8|[4. Ugly Number II](https://www.lintcode.com/problem/517/)|Medium|||
-|8|[545. Top k Largest Number II](https://www.lintcode.com/problem/545/) (鎖住了)|Medium|||
+|8|[545. Top k Largest Number II](https://www.lintcode.com/problem/545/) (locked)|Medium|||
 |8|[104. Merge K Sorted Lists](https://www.lintcode.com/problem/104/)|Medimu|||
-|8|[613. High Five](https://www.lintcode.com/problem/613/) (鎖住了)|Medium|||
-|8|[612. K Closest Points](https://www.lintcode.com/problem/612/) (鎖住了)|Medium|||
-|8|[486. Merge K Sorted Arrays](https://www.lintcode.com/problem/486/) (鎖住了)|Medium|||
+|8|[613. High Five](https://www.lintcode.com/problem/613/) (locked)|Medium|||
+|8|[612. K Closest Points](https://www.lintcode.com/problem/612/) (locked)|Medium|||
+|8|[486. Merge K Sorted Arrays](https://www.lintcode.com/problem/486/) (locked)|Medium|||
 |8|Data Stream Median||||
-|8|[544. TopK Largest Numbers](https://www.lintcode.com/problem/544/) (鎖住了)|Medium|||
+|8|[544. TopK Largest Numbers](https://www.lintcode.com/problem/544/) (locked)|Medium|||
 |8|[401. Kth Smallest Number in Sorted Matrix](https://www.lintcode.com/problem/401/)|Medium|||
 |8|Building Outline||||
 |8|[471. Top K Frequent Words](https://www.lintcode.com/problem/471/)|Medium|||
@@ -296,7 +296,7 @@
 |9|[136. Palindrome Partitioning](https://www.lintcode.com/problem/136/)|Medium|||
 |9|[124. Longest Consecutive Sequence](https://www.lintcode.com/problem/124/)|Medium|||
 |9|[110. Minimum Path Sum](https://www.lintcode.com/problem/110/)|Medium|||
-|9|[114. Unique Path](https://www.lintcode.com/problem/114/)|Easy|||
+|9|[114. Unique Paths](https://www.lintcode.com/problem/114/)|Easy|||
 |9|[111. Climbing Stairs](https://www.lintcode.com/problem/111/)|Easy|||
 |9|[116. Jump Game](https://www.lintcode.com/problem/116/)|Medium|||
 |9|[117. Jump Game II](https://www.lintcode.com/problem/117)|Medium|||
@@ -318,7 +318,7 @@
 |2|[28. Search a 2D Matrix](https://www.lintcode.com/problem/28/)||
 |2|[585. Maximum Number in Mountain Sequence](https://www.lintcode.com/problem/585/)||
 |2|[447. Search in a Big Sorted Array](https://www.lintcode.com/problem/447/)||
-|2|[159. Find Minimum in Rotated Sorted](https://www.lintcode.com/problem/159/)||
+|2|[159. Find Minimum in Rotated Sorted Array](https://www.lintcode.com/problem/159/)||
 |2|[75. Find Peak Element](https://www.lintcode.com/problem/75/)||
 |2|[74. First Bad Version](https://www.lintcode.com/problem/74/)||
 |2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)||
@@ -341,7 +341,7 @@
 |3|[597. Subtree with Maximum Average](https://www.lintcode.com/problem/597/)||
 |3|[596. Minimum Subtree](https://www.lintcode.com/problem/596/)||
 |3|[595. Binary Tree Longest Consecutive Sequence](https://www.lintcode.com/problem/595/)||
-|3|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/)||
+|3|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/) (locked)||
 |3|[480. Binary Tree Paths](https://www.lintcode.com/problem/480/)||
 |3|[453. Flatten Binary Tree to Linked List](https://www.lintcode.com/problem/453/)||
 |3|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/problem/97/)||
@@ -367,20 +367,20 @@
 |5|[135. Combination Sum](https://www.lintcode.com/problem/135/)||
 |6|[599. Insert into a Cyclic Sorted List](https://www.lintcode.com/problem/599/)||
 |6|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)||
-|6|[138. 找不到這題](https://www.lintcode.com/problem/138/)||
+|6|[138. Subarray Sum](https://www.lintcode.com/problem/138/)||
 |6|[41. Maximum Subarray](https://www.lintcode.com/problem/41/)||
-|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/)||
+|6|[139. Subarray Sum Closest](https://www.lintcode.com/problem/139/) (locked)||
 |6|[105. Copy List with Random Pointer](https://www.lintcode.com/problem/105/)||
 |6|[102. Linked List Cycle](https://www.lintcode.com/problem/102/)||
 |6|[98. Sort List](https://www.lintcode.com/problem/98/)||
 |6|[450. Reverse Nodes in k-Group](https://www.lintcode.com/problem/450/)||
 |6|[65. Median of two Sorted Arrays](https://www.lintcode.com/problem/65/)||
 |7|[607. Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)||
-|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/)||
-|7|[609. Two Sum - Less than or equal to target](https://www.lintcode.com/problem/609/)||
-|7|[608. Two Sum II - Input array is sorted](https://www.lintcode.com/problem/608/)||
-|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/)||
-|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/)||
+|7|[521. Remove Duplicate Numbers in Array](https://www.lintcode.com/problem/521/) (locked)||
+|7|[609. Two Sum - less than or equal to target](https://www.lintcode.com/problem/609/) (locked)||
+|7|[608. Two Sum  II - input array is sorted](https://www.lintcode.com/problem/608/) (locked)||
+|7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/) (locked)||
+|7|[533. Two Sum - Closest to target](https://www.lintcode.com/problem/533/) (locked)||
 |7|[148. Sort Colors](https://www.lintcode.com/problem/148/)||
 |7|[143. Sort Colors II](https://www.lintcode.com/problem/143/)||
 |7|[57. 3Sum](https://www.lintcode.com/problem/57/)||
