@@ -174,26 +174,26 @@
 |2|[62. Search in Rotated Sorted Array](https://www.lintcode.com/problem/62/)|Medium|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)|Medium|
 |2|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)|Easy|||
 |2|[1790. Rotate String II](https://www.lintcode.com/problem/1790/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string/)|Easy|
-|3|[66. Binary Tree Preorder Traversal](https://www.lintcode.com/problem/66/)|Easy|||
-|3|[67. Binary Tree Inorder Traversal](https://www.lintcode.com/problem/67/)|Easy|||
-|3|[68. Binary Tree Postorder Traversal](https://www.lintcode.com/problem/68/)|Easy|||
-|3|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/problem/97/)|Easy|||
-|3|[480. Binary Tree Paths](https://www.lintcode.com/problem/480/)|Easy|||
+|3|[66. Binary Tree Preorder Traversal](https://www.lintcode.com/problem/66/)|Easy|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)|Easy|
+|3|[67. Binary Tree Inorder Traversal](https://www.lintcode.com/problem/67/)|Easy|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)|Easy|
+|3|[68. Binary Tree Postorder Traversal](https://www.lintcode.com/problem/68/)|Easy|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)|Easy|
+|3|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/problem/97/)|Easy|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)|Easy|
+|3|[480. Binary Tree Paths](https://www.lintcode.com/problem/480/)|Easy|[257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)|Easy|
 |3|[596. Minimum Subtree](https://www.lintcode.com/problem/596/)|Easy|||
-|3|[93. Balanced Binary Tree](https://www.lintcode.com/problem/93/)|Easy|||
-|3|[597. Subtree with Maximum Average](https://www.lintcode.com/problem/597/)|Easy|||
-|3|[453. Flatten Binary Tree to Linked List](https://www.lintcode.com/problem/453/)|Easy|||
-|3|[88. Lowest Common Ancestor of a Binary Tree](https://www.lintcode.com/problem/88/)|Medium|||
-|3|[595. Binary Tree Longest Consecutive Sequence](https://www.lintcode.com/problem/595/)|Easy|||
+|3|[93. Balanced Binary Tree](https://www.lintcode.com/problem/93/)|Easy|[110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)|Easy|
+|3|[597. Subtree with Maximum Average](https://www.lintcode.com/problem/597/)|Easy|[1120. Maximum Average Subtree](https://leetcode.com/problems/maximum-average-subtree/)|Medium|
+|3|[453. Flatten Binary Tree to Linked List](https://www.lintcode.com/problem/453/)|Easy|[114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|Medium|
+|3|[88. Lowest Common Ancestor of a Binary Tree](https://www.lintcode.com/problem/88/)|Medium|[236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|Medium|
+|3|[595. Binary Tree Longest Consecutive Sequence](https://www.lintcode.com/problem/595/)|Easy|[298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)|Medium|
 |3|[376. Binary Tree Path Sum](https://www.lintcode.com/problem/376/)|Easy|||
 |3|[246. Binary Tree Path Sum II](https://www.lintcode.com/problem/246/)|Medium|||
 |3|[472. Binary Tree Path Sum III](https://www.lintcode.com/problem/472/)|Hard|||
-|3|[95. Validate Binary Search Tree](https://www.lintcode.com/problem/95/)|Medium|||
-|3|[1534. Convert Binary Search Tree to Sorted Doubly Linked List](https://www.lintcode.com/problem/1534/)|Medium||
-|3|[86. Binary Search Tree Iterator](https://www.lintcode.com/problem/86/)|Hard|||
-|3|[448. Inorder Successor in BST](https://www.lintcode.com/problem/448/)|Medium|||
-|3|[11. Search Range in Binary Search Tree](https://www.lintcode.com/problem/11/)|Medium||
-|3|[85. Insert Node in a Binary Search Tree](https://www.lintcode.com/problem/85/)|Easy|||
+|3|[95. Validate Binary Search Tree](https://www.lintcode.com/problem/95/)|Medium|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)|Medium|
+|3|[1534. Convert Binary Search Tree to Sorted Doubly Linked List](https://www.lintcode.com/problem/1534/)|Medium|[426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/)|Medium|
+|3|[86. Binary Search Tree Iterator](https://www.lintcode.com/problem/86/)|Hard|[173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)|Medium|
+|3|[448. Inorder Successor in BST](https://www.lintcode.com/problem/448/)|Medium|[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)|Medium|
+|3|[11. Search Range in Binary Search Tree](https://www.lintcode.com/problem/11/)|Medium|[700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)|Easy|
+|3|[85. Insert Node in a Binary Search Tree](https://www.lintcode.com/problem/85/)|Easy|[701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)|Medium|
 |3|[87. Remove Node in Binary Search Tree](https://www.lintcode.com/problem/87/)|Hard|||
 |4|[69. Binary Tree Level Order Traversal](https://www.lintcode.com/problem/69/)|Easy|||
 |4|[7. Serialize and Deserialize Binary Tree](https://www.lintcode.com/problem/7/)|Medium|||
