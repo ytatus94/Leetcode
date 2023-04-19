@@ -86,7 +86,7 @@
 |5|[66. Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/66/)|Easy|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
 |5|[67. Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/67/)|Easy|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
 |5|[68. Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/68/)|Easy|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
-|6|[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/6/)|Easy|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
+|6|[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/6/)|Easy|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| Easy |
 |6|[464. Sort Integer II](http://www.lintcode.com/en/problem/464/)|Easy|||
 |6|[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
 |6|[31. Partition Array](http://www.lintcode.com/en/problem/31/)|Medium|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
@@ -100,7 +100,7 @@
 |1|[478. Simple Calculator](https://www.lintcode.com/problem/478/) (locked)|Naive|||
 |1|[283. Max of 3 Numbers](https://www.lintcode.com/problem/283/)|Naive|||
 |1|[145. Lowercase to Uppercase](https://www.lintcode.com/problem/145/)|Naive|||
-|1|[37. Reverse 3-digit Integer](https://www.lintcode.com/problem/37/)|Naive|||
+|1|[37. Reverse 3-digit Integer](https://www.lintcode.com/problem/37/)|Naive|[7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)| Medium |
 |1|[9. Fizz Buzz](https://www.lintcode.com/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)| Easy |
 |2|[454. Rectangle Area](https://www.lintcode.com/problem/454/)|Naive|[223. Rectangle Area](https://leetcode.com/problems/rectangle-area)| Medium |
 |2|[222. Setter and Getter](https://www.lintcode.com/problem/222/) (locked)|Naive|||
@@ -116,7 +116,7 @@
 |3|[174. Remove Nth Node From End of List](https://www.lintcode.com/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)| Medium |
 |3|[165. Merge Two Sorted Lists](https://www.lintcode.com/problem/165/)|Easy|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Easy |
 |4|[495. Implement Stack](https://www.lintcode.com/problem/495/)|Easy|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)| Easy |
-|4|[494. Implement Stack by Two Queues](https://www.lintcode.com/problem/494/) (locked)|Easy||| 
+|4|[494. Implement Stack by Two Queues](https://www.lintcode.com/problem/494/) (locked)|Easy|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|Easy| 
 |4|[423. Valid Parentheses](https://www.lintcode.com/problem/423/)|Easy|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)| Easy | 
 |4|[40. Implement Queue by Two Stacks](https://www.lintcode.com/problem/40/)|Medium|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
 |5|[647. Find All Anagrams in a String](https://www.lintcode.com/problem/647/) (locked)|Medium|[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)| Medium | 
