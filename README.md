@@ -68,29 +68,29 @@
 
 |Chapter|Lintcode|Level|Leetcode|Level|
 |:---|:---|:---|:---|:---|
-|1|[9. Fizz Buzz](http://www.lintcode.com/en/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|
-|1|[37. Reverse 3-digit Integer](http://www.lintcode.com/en/problem/37/)|Naive|||
-|2|[239. Root of Equation](http://www.lintcode.com/en/problem/239/) (locked)|Easy|||
+|1|[9. Fizz Buzz](https://www.lintcode.com/en/problem/9/)|Easy|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Easy|
+|1|[37. Reverse 3-digit Integer](https://www.lintcode.com/en/problem/37/)|Naive|||
+|2|[239. Root of Equation](https://www.lintcode.com/en/problem/239/) (locked)|Easy|||
 |3|[241. String To Integer](https://www.lintcode.com/en/problem/241/) (locked)|Naive|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|
-|3|[8. Rotate String](http://www.lintcode.com/en/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
-|3|[172. Remove Element](http://www.lintcode.com/en/problem/172/)|Easy|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
-|3|[35. Reverse Linked List](http://www.lintcode.com/en/problem/35/)|Easy|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
-|3|[174. Remove Nth Node From End of List](http://www.lintcode.com/en/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Medium|
+|3|[8. Rotate String](https://www.lintcode.com/en/problem/8/)|Easy|[796. Rotate String](https://leetcode.com/problems/rotate-string)|Easy|
+|3|[172. Remove Element](https://www.lintcode.com/en/problem/172/)|Easy|[27. Remove Element](https://leetcode.com/problems/remove-element)|Easy|
+|3|[35. Reverse Linked List](https://www.lintcode.com/en/problem/35/)|Easy|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)|Easy|
+|3|[174. Remove Nth Node From End of List](https://www.lintcode.com/en/problem/174/)|Easy|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Medium|
 |4|[495. Implement Stack](https://www.lintcode.com/en/problem/495/)|Easy|[225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)|Easy|
 |4|[423. Valid Parentheses](https://www.lintcode.com/en/problem/423/)|Easy|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|
-|4|[492. Implement Queue by Linked List](http://www.lintcode.com/en/problem/492/)|Easy|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
-|5|[366. Fibonacci](http://www.lintcode.com/en/problem/366/)|Naive|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
-|5|[481. Binary Tree Leaf Sum](http://www.lintcode.com/en/problem/481/) (locked)|Easy|||
-|5|[97. Maximum Depth of Binary Tree](http://www.lintcode.com/en/problem/97/)|Easy|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
-|5|[Identical Binary Tree](http://www.lintcode.com/en/problem/identical-binary-tree/)|||
-|5|[66. Binary Tree Preorder Traversal](http://www.lintcode.com/en/problem/66/)|Easy|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
-|5|[67. Binary Tree Inorder Traversal](http://www.lintcode.com/en/problem/67/)|Easy|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
-|5|[68. Binary Tree Postorder Traversal](http://www.lintcode.com/en/problem/68/)|Easy|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
-|6|[6. Merge Two Sorted Arrays](http://www.lintcode.com/en/problem/6/)|Easy|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| Easy |
+|4|[492. Implement Queue by Linked List](https://www.lintcode.com/en/problem/492/)|Easy|[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)| Easy |
+|5|[366. Fibonacci](https://www.lintcode.com/en/problem/366/)|Naive|[509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|
+|5|[481. Binary Tree Leaf Sum](https://www.lintcode.com/en/problem/481/) (locked)|Easy|||
+|5|[97. Maximum Depth of Binary Tree](https://www.lintcode.com/en/problem/97/)|Easy|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|
+|5|[Identical Binary Tree](https://www.lintcode.com/en/problem/identical-binary-tree/)|||
+|5|[66. Binary Tree Preorder Traversal](https://www.lintcode.com/en/problem/66/)|Easy|[144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)| Easy |
+|5|[67. Binary Tree Inorder Traversal](https://www.lintcode.com/en/problem/67/)|Easy|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)| Easy |
+|5|[68. Binary Tree Postorder Traversal](https://www.lintcode.com/en/problem/68/)|Easy|[145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)| Easy |
+|6|[6. Merge Two Sorted Arrays](https://www.lintcode.com/en/problem/6/)|Easy|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| Easy |
 |6|[464. Sort Integers II](https://www.lintcode.com/problem/464/)|Easy|||
-|6|[Merge Sort](http://www.jiuzhang.com/solutions/merge-sort)|||
-|6|[31. Partition Array](http://www.lintcode.com/en/problem/31/)|Medium|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
-|6|[Quick Sort](http://www.jiuzhang.com/solutions/quick-sort)|||
+|6|[Merge Sort](https://www.jiuzhang.com/solutions/merge-sort)|||
+|6|[31. Partition Array](https://www.lintcode.com/en/problem/31/)|Medium|[561. Array Partition I](https://leetcode.com/problems/array-partition-i)| Easy |
+|6|[Quick Sort](https://www.jiuzhang.com/solutions/quick-sort)|||
 
 * 作業 (42 題)
 
@@ -432,7 +432,7 @@
 |6|[119. Edit Distance](https://www.lintcode.com/problem/119/)|Medium|[72. Edit Distance](https://leetcode.com/problems/edit-distance/)|Hard|
 |6|[118. Distinct Subsequences](https://www.lintcode.com/problem/118/)|Medium|[115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)|Hard|
 |6|[154. Regular Expression Matching](https://www.lintcode.com/problem/154/)|Hard|[10. Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)|Hard|
-|6|[192. Wildcard Matching](http://www.lintcode.com/problem/192/)|Hard|[44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|Hard|
+|6|[192. Wildcard Matching](https://www.lintcode.com/problem/192/)|Hard|[44. Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)|Hard|
 |6|[668. Ones and Zeroes](https://www.lintcode.com/problem/668/)|Medium|[474. Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/)|Medium|
 |7|[91. Minimum Adjustment Cost](https://www.lintcode.com/problem/91/) (locked)|Medium|||
 |7|[89. K-Sum](https://www.lintcode.com/problem/89/)|Hard|||
