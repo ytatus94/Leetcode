@@ -239,8 +239,7 @@
 |6|[103. Linked List Cycle II](https://www.lintcode.com/problem/103/) (鎖住了)|Medium|[142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)|Medium|
 |6|[380. Intersection of Two Linked Lists](https://www.lintcode.com/problem/380/)|Medium|[160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)|Easy|
 |6|[98. Sort List](https://www.lintcode.com/problem/98/)|Medium|[148. Sort List](https://leetcode.com/problems/sort-list/)|Medium|
-|6|[106. Convert Sorted List to Binary Search Tree](https://www.lintcode.com/problem/106/)|Medium|[109. Convert Sorted List to Binary Search Tree
-](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|Medium|
+|6|[106. Convert Sorted List to Binary Search Tree](https://www.lintcode.com/problem/106/)|Medium|[109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)|Medium|
 |6|Delete Node in the Middle of Singly Linked List||[2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)|Medium|
 |6|[1534. Convert Binary Search Tree to Sorted Doubly Linked List](https://www.lintcode.com/problem/1534/)|Medium|[426. Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) (locked)|Medium|
 |6|[6. Merge Two Sorted Arrays](https://www.lintcode.com/problem/6/)|Easy|||
@@ -257,7 +256,7 @@
 |7|Rotat String||[796. Rotate String](https://leetcode.com/problems/rotate-string/)|Easy|
 |7|[39. Recover Rotated Sorted Array](https://www.lintcode.com/problem/39/)|Easy|||
 |7|[56. Two Sum](https://www.lintcode.com/problem/56/)|Easy|[1. Two Sum](https://leetcode.com/problems/two-sum/)|Easy|
-|7|[607 . Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)|Easy|[170. Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/)|Easy|
+|7|[607 . Two Sum III - Data structure design](https://www.lintcode.com/problem/607/)|Easy|[170. Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) (locked)|Easy|
 |7|[608. Two Sum  II - input array is sorted](https://www.lintcode.com/problem/608/) (鎖住了)|Medium|[167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)|Medium|
 |7|[587. Two Sum - Unique pairs](https://www.lintcode.com/problem/587/) (鎖住了)|Medium|||
 |7|[57. 3Sum](https://www.lintcode.com/problem/57/)|Medium|[15. 3Sum](https://leetcode.com/problems/3sum/)|Medium|
