@@ -33,3 +33,24 @@ class Solution:
         # 離開迴圈時就是找到了，此時 start = end 就是答案
 
         return end
+
+# 方法 2:
+class Solution:
+    def minimizeArrayValue(self, nums: List[int]) -> int:
+        if nums is None or len(nums) == 0:
+            return 0
+        # 把 nums[i] 某部分的數值，搬到 nums[i - 1]
+        # 這樣一直搬的話， nums[0] 的數值會越來越大，要找出一個最小的 nums[0]
+        # 因為後面的數值可以往前搬 (前面的數值不可以往後搬)
+        # 要把數值盡量平均分佈給範圍內的每個數，這樣 nums[0] 的最大可能值就會最小
+
+        result = 0
+        prefix_sum = 0
+
+        for i in range(len(nums)):
+            prefix_sum += nums[i] # 範圍內的數值總和
+            avg = math.ceil(prefix_sum / (i + 1)) # 有 i + 1 個數，且 avg 可能有小數點，要用 ceil 無條件進位  
+            # 因為只能往前搬，所以要看 max
+            result = max(result, avg)
+
+        return result
