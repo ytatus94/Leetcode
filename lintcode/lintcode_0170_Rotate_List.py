@@ -1,5 +1,23 @@
+from lintcode import (
+    ListNode,
+)
+
+"""
+Definition of ListNode:
+class ListNode(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+"""
+
 class Solution:
-    def rotateRight(self, head, k):
+    """
+    @param head: the List
+    @param k: rotate to the right k places
+    @return: the list after rotation
+    """
+    def rotate_right(self, head: ListNode, k: int) -> ListNode:
+        # write your code here
         stack = []
         curr = head
 
