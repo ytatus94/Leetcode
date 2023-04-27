@@ -189,8 +189,6 @@ class Solution:
                     continue
                 dp[row][col] += min(dp[row - 1][col], dp[row][col - 1])
 
-        print(dp)
-
         return dp[m - 1][n - 1]
 
 # 方法 4: 用滾動數組
