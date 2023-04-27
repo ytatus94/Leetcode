@@ -5,6 +5,7 @@
 #   f[0] = 0
 # TC = O(N^1.5), SC = O(N)
 
+# 超時
 class Solution:
     def numSquares(self, n: int) -> int:
         # 對於每一個整數 n 都可以由 n 個 1 的和組成，而 1 是完全平方數
@@ -31,6 +32,7 @@ class Solution:
 
         return dp[n]
 
+# 超出記憶體
 class Solution:
     """
     @param n: a positive integer
@@ -48,6 +50,7 @@ class Solution:
                 
         return f[n]
 
+# 超出記憶體
 class Solution:
     """
     @param n: a positive integer
