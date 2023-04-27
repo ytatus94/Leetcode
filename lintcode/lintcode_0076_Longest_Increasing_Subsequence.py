@@ -38,6 +38,40 @@ class Solution:
 
         return max(f)
 
+# 方法 2:
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param nums: An integer array
+    @return: The length of LIS (longest increasing subsequence)
+    """
+    def longest_increasing_subsequence(self, nums: List[int]) -> int:
+        # write your code here
+        if nums is None or len(nums) == 0:
+            return 0
+
+        dp = [0 for i in range(len(nums))]
+        # 初始條件 dp[i] = 1 每個字母都是自己一個 subsequence
+        for i in range(len(nums)):
+            dp[i] = 1
+
+        for i in range(len(nums)):
+            for j in range(i):
+                if nums[j] < nums[i]:
+                    dp[i] = max(dp[i], dp[j] + 1)
+
+        best = float('-inf')
+        for i in range(len(nums)):
+            best = min(best, dp[i])
+
+        result = 0
+        for i in range(len(nums)):
+            result = max(result, dp[i])
+        
+        return result
     
 # 把最長子序列印出來 (要會！)
 from typing import (
