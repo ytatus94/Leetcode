@@ -27,3 +27,48 @@ class Solution:
         return f[len(a)-1]
 
 # 方法2: 貪心法
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: A list of integers
+    @return: An integer
+    """
+    def jump(self, a: List[int]) -> int:
+        # write your code here
+        end = 0 # 上一步所能達到的最遠 index
+        max_jump = 0 # 當前 index 所能達到的最遠 index
+        count = 0 # 要跳幾步
+
+        # 不可以包含最後一個點，因為只要能跳到最後一個點就好
+        # 如果包含的話，會被多計算多跳一步
+        for i in range(len(a) - 1): 
+            max_jump = max(max_jump, a[i] + i)
+            # 如果當前的 index 正好是上一步的能跳到的最遠 index 了
+            # 那就要再多跳一步才能達到當前 index 所能達到的 max_jump 位置
+            if end == i:
+                end = max_jump
+                count += 1
+        return count
+
+# 方法3: 貪心法
+from typing import (
+    List,
+)
+
+class Solution:
+    """
+    @param a: A list of integers
+    @return: An integer
+    """
+    def jump(self, a: List[int]) -> int:
+        # write your code here
+        p = [0]
+        for i in range(len(a) - 1):
+            while(i + a[i] >= len(p) and len(p) < len(a)):
+                p.append(p[i] + 1)
+
+        return p[-1]
+
