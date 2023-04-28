@@ -5,7 +5,8 @@
 #   f[0] = 0
 # TC = O(N^1.5), SC = O(N)
 
-# 超時
+# 方法1: DP
+# leetcode 能過 lintcode 不能過 (超時)
 class Solution:
     def numSquares(self, n: int) -> int:
         # 對於每一個整數 n 都可以由 n 個 1 的和組成，而 1 是完全平方數
@@ -32,6 +33,41 @@ class Solution:
 
         return dp[n]
 
+# 方法2: 四平方和
+class Solution:
+    """
+    @param n: a positive integer
+    @return: An integer
+    """
+    def num_squares(self, n: int) -> int:
+        # write your code here
+        # 四平方和定理: 一個整數一定可以表示四個以內的完全平方數的和
+        # 所以這題的答案只有 1, 2, 3, 4 四種可能
+        # 如果 n 是 4 的倍數，就可以一直除以 4 讓 n 變小
+        # 特例: 如果 n 除以 8 餘 7，那 n 一定等於四個完全平方數的和
+
+        while n % 4 == 0: # n 是 4 的倍數，可以藉由除以 4 縮小 n
+            n /= 4
+
+        if n % 8 == 7: # 注意要先縮小 n 才能再拿來 mod 8
+            return 4
+
+        n = int(n) # 因為用除法，所以 n/4 變成 float 了，要變回整數
+
+        for i in range(n + 1):
+            if i * i <= n:
+                # square = i * i
+                # rest = n - square
+                sqrt_rest = int( (n - i * i) ** 0.5)
+                if i * i + sqrt_rest * sqrt_rest == n:
+                    # 當 i = 0 的時候 n 就是 sqrt_rest 的平方
+                    # 當 i > 1 的時候 n 就是 i 的平方和 sqrt_rest 的平方之和
+                    return 1 + (0 if i * i == 0 else 1)
+                    
+        # 上面情形都不成立時，n 只可能是三個完全平方數的和
+        return 3
+
+# 方法 3: DP
 # 超出記憶體
 class Solution:
     """
