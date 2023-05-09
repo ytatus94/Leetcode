@@ -15,3 +15,8 @@ class Solution:
     def average(self, salary: List[int]) -> float:
         salary = sorted(salary)
         return sum(salary[1:-1]) / (len(salary) - 2)
+
+# 方法 3.
+class Solution:
+    def average(self, salary: List[int]) -> float:
+        return (sum(salary) - max(salary) - min(salary)) / (len(salary) - 2)
