@@ -1,11 +1,14 @@
+# 方法 1.
 SELECT Name
 FROM Employee
-WHERE Id IN (SELECT ManagerId
-             FROM Employee
-             GROUP BY ManagerId
-             HAVING COUNT(*) > 4);
+WHERE Id IN (
+    SELECT ManagerId
+    FROM Employee
+    GROUP BY ManagerId
+    HAVING COUNT(*) > 4
+);
 
-# 方法二:
+# 方法2.
 SELECT e2.Name
 FROM Employee AS e1
 JOIN Employee AS e2
