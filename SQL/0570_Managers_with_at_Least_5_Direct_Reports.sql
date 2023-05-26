@@ -8,7 +8,7 @@ WHERE Id IN (
     HAVING COUNT(*) > 4
 );
 
-# 方法2.
+# 方法2. e1 是員工, e2 是主管
 SELECT e2.Name
 FROM Employee AS e1
 JOIN Employee AS e2
