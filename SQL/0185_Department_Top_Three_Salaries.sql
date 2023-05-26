@@ -13,7 +13,7 @@ FROM (
 ) e
 JOIN Department d
 ON e.departmentId = d.id
-WHERE e.rank <= 3
+WHERE e.rank <= 3;
 
 -- 方法2 是 leetcode 提供的答案
 -- 合併 Employee 和 Department 後得到 (先不做任何篩選)
