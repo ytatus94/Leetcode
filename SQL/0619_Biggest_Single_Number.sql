@@ -19,4 +19,4 @@ FROM (
     FROM MyNumbers
     GROUP BY 1
 ) AS t
-WHERE cnt = 1
+WHERE cnt = 1;
