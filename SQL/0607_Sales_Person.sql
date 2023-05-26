@@ -9,5 +9,3 @@ WHERE sales_id NOT IN (
     ON o.com_id = c.com_id
     WHERE c.name = 'RED'
 );
-
-
