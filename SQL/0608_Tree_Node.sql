@@ -9,4 +9,4 @@ SELECT
         WHEN p_id IS NOT NULL AND id IN (SELECT DISTINCT p_id FROM Tree) THEN 'Inner'
         ELSE 'Leaf'
     END AS type
-FROM Tree
+FROM Tree;
