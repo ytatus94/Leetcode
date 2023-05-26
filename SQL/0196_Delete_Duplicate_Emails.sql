@@ -27,4 +27,4 @@ WHERE id NOT IN (
         FROM Person
         GROUP BY email
     ) AS p
-)
+);
