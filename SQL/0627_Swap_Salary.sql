@@ -13,4 +13,4 @@ SET sex =
 
 -- 方法2.
 UPDATE Salary
-SET sex = IF(sex = 'm', 'f', 'm')
+SET sex = IF(sex = 'm', 'f', 'm');
