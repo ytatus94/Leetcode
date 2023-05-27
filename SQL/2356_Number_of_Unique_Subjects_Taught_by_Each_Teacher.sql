@@ -1,4 +1,4 @@
-# Write your MySQL query statement below
+-- 要 unique subject 所以記得要加上 DISTINCT
 SELECT
     teacher_id,
     COUNT(DISTINCT subject_id) AS cnt
