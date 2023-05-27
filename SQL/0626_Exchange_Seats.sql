@@ -7,4 +7,4 @@ SELECT
     student
 FROM seat, (SELECT COUNT(*) AS counts
             FROM seat) AS seat_counts
-ORDER BY id ASC
+ORDER BY id ASC;
