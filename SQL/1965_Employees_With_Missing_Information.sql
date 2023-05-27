@@ -12,7 +12,7 @@ FROM Salaries AS s
 LEFT JOIN Employees AS e
 ON s.employee_id = e.employee_id
 WHERE e.name IS NULL
-ORDER BY employee_id
+ORDER BY employee_id;
 
 -- 方法 2:
 SELECT employee_id
@@ -28,4 +28,4 @@ WHERE employee_id NOT IN (
     SELECT employee_id
     FROM Employees
 )
-ORDER BY employee_id
+ORDER BY employee_id;
