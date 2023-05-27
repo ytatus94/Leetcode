@@ -11,4 +11,4 @@ FROM (
           a2.activity_type = 'end'
 ) AS t
 GROUP BY 1
-ORDER BY 1
+ORDER BY 1;
