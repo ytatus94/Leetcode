@@ -4,4 +4,3 @@ SELECT user_id,
 FROM Logins
 WHERE EXTRACT(YEAR FROM time_stamp) = 2020
 GROUP BY user_id;
-
