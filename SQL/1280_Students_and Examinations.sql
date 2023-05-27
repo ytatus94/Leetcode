@@ -9,4 +9,4 @@ LEFT JOIN Examinations AS e
 ON s.student_id = e.student_id AND
    e.subject_name = s2.subject_name
 GROUP BY 1, 2, 3
-ORDER BY 1, 3
+ORDER BY 1, 3;
