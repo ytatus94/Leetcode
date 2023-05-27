@@ -9,7 +9,7 @@
 SELECT user_id,
        CONCAT(UPPER(LEFT(name, 1)), LOWER(SUBSTR(name, 2))) AS name
 FROM Users
-ORDER BY 1
+ORDER BY 1;
 
 # 方法 2.
 # Write your MySQL query statement below
@@ -17,4 +17,4 @@ SELECT
     user_id,
     CONCAT(UPPER(LEFT(name, 1)), LOWER(RIGHT(name, LENGTH(name) - 1))) AS name
 FROM Users
-ORDER BY 1
+ORDER BY 1;
