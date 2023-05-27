@@ -4,4 +4,4 @@ SELECT
     COUNT(DISTINCT subject_id) AS cnt
 FROM Teacher
 GROUP BY 1
-ORDER BY 1
+ORDER BY 1;
