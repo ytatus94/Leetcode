@@ -15,4 +15,3 @@ LEFT JOIN (
     GROUP BY 1
 ) AS o
 ON u.user_id = o.buyer_id;
-
