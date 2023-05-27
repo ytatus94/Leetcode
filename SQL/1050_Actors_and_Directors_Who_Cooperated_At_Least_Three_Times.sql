@@ -12,7 +12,7 @@ FROM (
     FROM ActorDirector
     GROUP BY 1, 2
 ) sub
-WHERE cnt >= 3
+WHERE cnt >= 3;
 
 -- 方法2 比較快
 SELECT
@@ -20,4 +20,4 @@ SELECT
     director_id
 FROM ActorDirector
 GROUP BY 1, 2
-HAVING COUNT(1) >= 3
+HAVING COUNT(1) >= 3;
