@@ -24,4 +24,4 @@ WHERE (customer_id, order_date) IN (
         MIN(order_date)
     FROM Delivery
     GROUP BY 1
-)
+);
